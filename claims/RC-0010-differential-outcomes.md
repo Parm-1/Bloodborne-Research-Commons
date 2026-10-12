@@ -1,6 +1,6 @@
 # RC-0010 — skip, setup failure and selected comparison success are separate
 
-**Level:** SOURCE_INSPECTED. **Checked:** 2026-10-12, bbhost `566184a74f071166299bb656c4af479e5bbe2771`, selected Linux/SysV offline `decomp_follow_camera` source; no execution or reproduction. Independent review pending.
+**Level:** SOURCE_INSPECTED. **Checked:** 2026-10-12, bbhost `566184a74f071166299bb656c4af479e5bbe2771`, selected Linux/SysV offline `decomp_follow_camera` source; no execution or reproduction. [Independent r1 review](../docs/reviews/BRC-DIFFERENTIAL-VALIDATION-01-REVIEW-r1.md) supports this principal claim; the linked r2 override-control repair is pending same-reviewer affected recheck.
 
 The kit exits 77 before selected comparison for missing/unreadable or wrong-hash input; CMake marks 77 as a skipped test. Loading/eligibility/binding rejection exits 1; a reached unbound function import aborts. The selected test returns zero only with no failed frames and nonzero mouse-turn, held-frame and Original-tuning counters. Zero differences alone are insufficient.
 

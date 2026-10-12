@@ -1,6 +1,6 @@
 # RC-0011 — selected camera arms isolate named regions, not all state
 
-**Level:** SOURCE_INSPECTED. **Checked:** 2026-10-12, bbhost `566184a74f071166299bb656c4af479e5bbe2771`, selected Linux/SysV offline `decomp_follow_camera` source; no execution or reproduction. Independent review pending.
+**Level:** SOURCE_INSPECTED. **Checked:** 2026-10-12, bbhost `566184a74f071166299bb656c4af479e5bbe2771`, selected Linux/SysV offline `decomp_follow_camera` source; no execution or reproduction. [Independent r1 review](../docs/reviews/BRC-DIFFERENTIAL-VALIDATION-01-REVIEW-r1.md) supports this principal claim; the linked r2 override-control repair is pending same-reviewer affected recheck.
 
 The offline test clones each camera at case start, then runs original A before replacement B for 60 frames with per-frame GSM/shape snapshots and restoration, cleared effect records and re-fed mouse counts/predecessor flag. Character/params/world/image and helper state are shared. A failed camera-or-GSM gate copies only A camera to B; other failures do not resynchronize camera state, and the accumulated failure remains fatal.
 
