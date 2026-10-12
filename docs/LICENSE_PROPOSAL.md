@@ -1,6 +1,6 @@
 # Documentation license — ADOPTED: CC BY 4.0 (proposal and adoption record)
 
-Status (2026-10-12): **adopted** by the owner's explicit approval, relayed by the project parent. The unmodified official legal code is the [LICENSE](../LICENSE) file. The text below is the original proposal, retained, with the adoption record at the end. No rights audit was performed beyond the owner's approval; this is not a legal opinion. Publication itself is still pending (see [PUBLICATION_CHECK.md](PUBLICATION_CHECK.md)).
+Status (2026-10-12): **adopted** by the owner's explicit approval, relayed by the project parent. The unmodified official legal code is the [LICENSE](../LICENSE) file. The text below is the original proposal, retained, with the adoption record at the end. No rights audit was performed beyond the owner's approval; this is not a legal opinion. The repository is published (see [PUBLICATION_CHECK.md](PUBLICATION_CHECK.md)).
 
 ## Proposal
 

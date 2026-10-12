@@ -13,5 +13,5 @@ Evidence-qualified knowledge about Bloodborne engine internals, PC porting, reve
 - [Claim: bbport callgraph](claims/RC-0003-callgraph-limits.md): static scanner scope
 - [Resource lifetime frontier](frontiers/resource-ownership.md): open game-resource questions
 - [Continuation protocol](docs/CONTINUATION.md): how to return a useful investigation
-- [Publication check](docs/PUBLICATION_CHECK.md): owner decision record; publication authorized and pending
+- [Publication check](docs/PUBLICATION_CHECK.md): owner decision and verified publication record
 - [License](LICENSE): CC BY 4.0 for original documentation (adopted); [adoption record](docs/LICENSE_PROPOSAL.md)

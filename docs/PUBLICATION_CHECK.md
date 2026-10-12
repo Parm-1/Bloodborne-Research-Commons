@@ -1,6 +1,6 @@
 # Publication checklist
 
-Status (2026-10-12, licensed release candidate): **PUBLICATION AUTHORIZED, PENDING.** The owner has approved the decisions recorded below. Nothing has been published: this local Git repository has no remote, and creating the hosted repository, pushing and reading it back belong to the project parent. The documentation license is adopted ([LICENSE](../LICENSE), CC BY 4.0).
+Status (2026-10-12): **PUBLISHED AND VERIFIED.** The owner-approved public repository is [Parm-1/Bloodborne-Research-Commons](https://github.com/Parm-1/Bloodborne-Research-Commons). The first publication was read back against the licensed commit and its complete file tree; the details below preserve the distinction between publication and technical review. Original documentation is licensed under CC BY 4.0 ([LICENSE](../LICENSE)).
 
 Before making the first public commit or enabling external contributions:
 
@@ -26,15 +26,15 @@ Candidate-r4 (2026-10-12) corrects two bookkeeping statements in r3 without chan
 
 ## First-publication decision (owner) — decided 2026-10-12
 
-The owner explicitly approved the following, relayed by the project parent. These are the recorded decisions; the hosted repository does not exist yet.
+The owner explicitly approved the following, relayed by the project parent. These are the recorded decisions; the hosted repository was created and verified as recorded below.
 
-1. **Owner and repository name.** `Parm-1/Bloodborne-Research-Commons`. Availability is confirmed only when the parent creates it.
+1. **Owner and repository name.** `Parm-1/Bloodborne-Research-Commons`. The repository was created under this owner and name.
 2. **Visibility.** Public. This publishes the whole Git history.
 3. **Documentation license.** CC BY 4.0 for original documentation, with the official unmodified legal code as [LICENSE](../LICENSE) ([adoption record](LICENSE_PROPOSAL.md#adoption-record-2026-10-12)).
 4. **Contribution intake.** The owner is sole administrator; issues and pull requests are enabled; contributions are accepted under the same license ([CONTRIBUTING.md](../CONTRIBUTING.md)).
 5. **Git author identity.** New commits use the owner's GitHub no-reply identity (repository-local Git configuration). Older commits (the seed and candidates r1 to r4) keep the neutral placeholder author. They are not rewritten, because the frozen review reports, tags and recorded hashes cite those exact commits; rewriting would break that evidence. The placeholder carries no personal address.
 
-**Publication state:** authorized, pending. The parent creates the hosted repository, pushes and reads it back. Until that readback exists, nothing is published.
+**Publication state:** published and verified. The parent created the hosted repository, pushed the licensed commit and preserved tags, and read them back through GitHub.
 
 ## Release-preparation record
 
@@ -45,3 +45,11 @@ The licensed release candidate is the commit tagged `licensed-release-r1`, the s
 Licensing of future original utilities, and the per-file license review that any future import of upstream code would need. Neither applies while the repository contains documentation only.
 
 No code, scripts that execute upstream code, game data, private project state or account details are in the candidate. Upstream maintainers have not been contacted.
+
+## Verified first publication (2026-10-12)
+
+- Initial published commit: `8411dc4c31d4b253302e7122465d9877660c2197`; tree: `55af5832c2803403e3e41c19790e6632d08612af`. GitHub returned those exact identities for `main`.
+- Complete GitHub tree: all 19 file paths and Git blob identities matched the local licensed commit; no truncated response.
+- Six preserved tags (`seed-original`, candidates r1 to r4, and `licensed-release-r1`) matched their local commit identities. Frozen review reports and source-claim bodies remain unchanged.
+- GitHub repository settings: public, default branch `main`, issues enabled. Collaborator readback listed only `Parm-1`, with role `admin`; pull requests remain available. No additional collaborator was granted access.
+- Publication bookkeeping replaces the previously accurate pending status. The final documentation snapshot and archive use the linked `published-r1` tag; the licensed release candidate and its archive remain preserved. Publication is not evidence of gameplay, source execution, or legal review.
