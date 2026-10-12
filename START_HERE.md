@@ -14,4 +14,4 @@ Begin with [AGENTS.md](AGENTS.md) and [docs/CONTINUATION.md](docs/CONTINUATION.m
 
 ## Starter evidence
 
-The seed records describe public artifacts that were source-inspected or author-documented on 2026-10-12. They **do not claim independently reproduced gameplay results**. The source register pins the exact upstream commits.
+The starter records describe public artifacts that were SOURCE_INSPECTED or PROJECT_REPORTED on 2026-10-12, and were checked against the pinned commits as recorded in [docs/SOURCE_REVIEW.md](docs/SOURCE_REVIEW.md). They **do not claim independently reproduced gameplay results**, and none has yet been independently reviewed. The source register pins the exact upstream commits.

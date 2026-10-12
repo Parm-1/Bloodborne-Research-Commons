@@ -1,11 +1,30 @@
 # RC-0002 — bbhost documents original-code differential testing
 
-**Level:** PROJECT_REPORTED + SOURCE_INSPECTED header, 2026-10-12. **Independently reproduced here:** NO.
+**Level:** PROJECT_REPORTED for the method and results in `docs/decomp.md`; SOURCE_INSPECTED for the helper interface in `tests/decomp/eboot_kit.h`. **Independently reproduced here:** NO. **Independently reviewed:** not yet.
 
-At bbhost commit `566184a74f071166299bb656c4af479e5bbe2771`, `docs/decomp.md` describes running original machine code alongside rewritten functions on generated inputs and comparing behavior during game sessions. `tests/decomp/eboot_kit.h` declares a helper for mapping the user's game executable and configuring guest TLS/floating-point state, with missing/incorrect executable skipped via an explicit code.
+**Checked:** 2026-10-12, both files read at the pinned commit; blobs `3ce60ba7f09b1401631f9567dba26e1af028fa6b` (decomp.md) and `3efca4382246527daa6d5d31f5a1d36b41ee1ec6` (eboot_kit.h).
+
+At bbhost commit `566184a74f071166299bb656c4af479e5bbe2771`, `docs/decomp.md` describes two checks of a game function rewritten as C++ (stated target: the game's 1.09 executable):
+
+1. **Offline test:** the test loads the user's executable, runs the original function's own machine code beside the rewrite on generated inputs, and compares them bit for bit.
+2. **In-game compare mode** (`BBHOST_DECOMP_COMPARE=1`): the original and the rewrite are compared while the game runs. The document says a function becomes the default once an in-game session (the document calls it a world session) compares with zero differences. Its tables report per-function case and call counts with zero differences; these are the author's figures, not reproduced here.
+
+`tests/decomp/eboot_kit.h` declares the helper for check 1. It maps the 1.09 executable (SHA-256 checked) at `0x400000`, relocates it, moves its TLS reads, turns every import into a trap that names itself (except the C library memory and string functions, which are the host's), makes the calling thread a guest thread (TLS block, console MXCSR and x87 control word), and does not run the game's static constructors. A test skips with exit code 77 when the executable is missing or is not 1.09. `stub()` and `bind()` replace game functions or imports that a test cannot set up.
 
 **Sources:** [method](https://github.com/droogie/bbhost/blob/566184a74f071166299bb656c4af479e5bbe2771/docs/decomp.md); [helper interface](https://github.com/droogie/bbhost/blob/566184a74f071166299bb656c4af479e5bbe2771/tests/decomp/eboot_kit.h).
 
-**Important limits:** 'Without the game' can still mean *executing user-provided game code* in a fixture. Mocks shared by both versions can conceal missing behavior; same_float accepts NaNs regardless of payload. Neither a source comment nor a CI skip is a game proof. Do not execute proprietary code without actual authorization.
+**Important limits:**
 
-**Next testable question:** For one eligible pure game function, specify matched inputs, state isolation, falsifying wrong-output case and the exact equality rule before reusing a differential runner.
+- "Without the game" means without running a game session. The test still executes the user's own decrypted game code, so it needs a lawfully obtained executable and, under this repository's rules, explicit authorization from the actual project owner.
+- A stub that both versions call can hide missing behavior (the document describes such stubs for param lookups and heap searches).
+- `same_float` treats any two NaNs as equal, whatever the payload; the header gives operand-order differences as the reason.
+- A skipped test (exit 77) establishes no comparison. Neither a source comment nor a skip is a game proof, and zero reported differences cover only the generated inputs and sessions the author ran.
+- The rewrite is applied only when the executable's SHA-256 matches the 1.09 build, so results do not transfer to other builds.
+
+**Reuse disposition:** KNOWLEDGE_REFERENCE for the method. bbhost is declared GPL-3.0-or-later; no code is copied here.
+
+**Next testable question:** For one eligible pure game function, specify matched inputs, state isolation, a falsifying wrong-output case and the exact equality rule before reusing a differential runner.
+
+## Revision notes
+
+- **r1, 2026-10-12** (supersedes the wording of the seed commit; original: `git show seed-original:claims/RC-0002-decomp-compare.md`). The seed's facts were confirmed. Changes: level restated as PROJECT_REPORTED + SOURCE_INSPECTED with the artifacts each applies to; distinguished the offline test from the in-game compare mode instead of one merged description; added the executable-checked, 1.09-only and stub details; removed "CI skip" because the cited sources do not mention CI (replaced by "skipped test, exit 77"); added blob hashes, reuse disposition and review status.

@@ -7,8 +7,8 @@ Can existing publicly described GX registry work help identify a naturally reach
 ## Known public inputs
 
 - [RC-0001](../claims/RC-0001-gx-resources.md) — bbhost declares resource IDs, write sequence and overlap checks.
-- [bbhost rendering architecture](https://github.com/droogie/bbhost/blob/566184a74f071166299bb656c4af479e5bbe2771/docs/rendering.md) — author descriptions of above-GNM draw/resource direction.
-- [bbport research snapshot](../sources/projects.yaml) — separate runtime and cache machinery, not inherently the same identity system.
+- [bbhost rendering architecture](https://github.com/droogie/bbhost/blob/566184a74f071166299bb656c4af479e5bbe2771/docs/rendering.md) — PROJECT_REPORTED: bbhost hooks GX's draw, dispatch, resource-creation and state methods and is moving from decoding GPU packets toward engine-level draw inputs.
+- [bbport research snapshot](../sources/projects.yaml) — a separate runtime that, per its README, uses a renderer derived from shadPS4 with its own texture-set memoization and caches. No bbport equivalent of the bbhost registry was inspected, so whether the two share an identity notion is UNKNOWN.
 
 ## Missing facts
 
@@ -16,4 +16,4 @@ Natural game producer/consumer for a selected operation; coverage of all writes 
 
 ## Small candidate investigation
 
-Compare game-owned resource IDs/generation against the current selected cache object's version in permitted source/review records, then propose one distinct positive and one stale-address/reused-storage contradiction. Do not run a game or create a broad tracer solely from this document. An honest result may be that the current evidence cannot bind the two identifiers.
+Compare the game-owned resource id and write sequence (RC-0001's `id` and `write_seq`) against the current selected cache object's version in permitted source/review records, then propose one distinct positive and one stale-address/reused-storage contradiction. Do not run a game or create a broad tracer solely from this document. An honest result may be that the current evidence cannot bind the two identifiers.

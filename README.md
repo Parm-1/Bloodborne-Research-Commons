@@ -2,7 +2,7 @@
 
 A community-oriented, evidence-qualified reference for Bloodborne PC porting, reverse engineering, decompilation, runtime compatibility, graphics, and verification.
 
-**Status: proposed public seed (2026-10-12).** This is a research index, not a completed reverse engineering corpus or a shipping PC port. All technical claims are scoped to their cited versions and review level.
+**Status: unpublished candidate (2026-10-12).** Claims were checked against their pinned upstream commits by the author ([source review](docs/SOURCE_REVIEW.md)); no independent review has been completed, and no license is in effect. This is a research index, not a completed reverse engineering corpus or a shipping PC port. All technical claims are scoped to their cited versions and review level.
 
 ## The purpose
 
@@ -16,7 +16,7 @@ For first-time readers, open [START_HERE.md](START_HERE.md). For automated agent
 - [bbport](https://github.com/deadinside28/bloodborne_pc) — compatible game runtime, graphics translator, native-host work, and investigation tools.
 - [shadPS4](https://github.com/shadps4-emu/shadPS4) — open-source PS4 system/graphics reference implementation.
 
-Every source is linked to an exact research commit in [sources/projects.yaml](sources/projects.yaml). Upstream authorship and project licenses remain theirs. No endorsement or affiliation is implied.
+Every source is linked to an exact research commit in [sources/projects.yaml](sources/projects.yaml), with the license statements found there. Upstream authorship and project licenses remain theirs. bbport's README states that it is not related to the shadPS4 project. No endorsement or affiliation with any project, Sony Interactive Entertainment or FromSoftware is implied.
 
 ## Important boundaries
 
@@ -28,4 +28,4 @@ Every source is linked to an exact research commit in [sources/projects.yaml](so
 
 ## Publication and licensing
 
-This starter is unpublished scaffolding until a repository has been created and reviewed. Choose a clear license for *original* authored documentation before inviting contributions (proposed: CC BY 4.0 for documentation, separately licensed original utilities if added). Third-party projects keep their own licenses; no external code is included in the seed.
+This starter is unpublished until the owner decides to create and publish a repository. The decisions still pending (owner and repository name, visibility, documentation license, contribution intake) have one home: [docs/PUBLICATION_CHECK.md](docs/PUBLICATION_CHECK.md). The documentation license under consideration is CC BY 4.0, described in the draft [license proposal](docs/LICENSE_PROPOSAL.md); it is a proposal only and grants nothing until the owner adopts it. Third-party projects keep their own licenses; no external code is included.

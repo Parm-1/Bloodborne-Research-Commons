@@ -1,21 +1,33 @@
 # Discovery references. Pinned research commits, NOT adopted runtime revisions.
+# Each commit was fetched and confirmed to resolve on checked_on (see docs/SOURCE_REVIEW.md).
+# license_declared is what the project states about itself; it is not a legal conclusion and
+# not a grant by this repository. No upstream source is copied into this repository.
 checked_on: 2026-10-12
 projects:
   - id: bbhost
     repo: https://github.com/droogie/bbhost
     research_commit: 566184a74f071166299bb656c4af479e5bbe2771
-    research_use: GX resource identities; differential decompilation; draw capture/replay; shader lifting
-    disclaimer: Docs and source checked selectively; claims about runtime performance require qualification.
-    license_note: README advertises GPL-3.0-or-later; verify component and dependency notices before any reuse.
+    commit_date_utc: 2026-10-12T00:20:37Z
+    research_use: GX resource identities (RC-0001); differential decompilation testing (RC-0002); rendering architecture (frontier)
+    disclaimer: Only the files cited by claims and frontiers, plus README and LICENSE, were read; other claims about runtime performance require qualification.
+    license_declared: GPL-3.0-or-later
+    license_evidence: README "License" section states GPL version 3 or later; LICENSE file is the GPL version 3 text.
+    license_caveat: README says third_party/ and src/host/shaders/fsr1/ keep their own licenses and the debug menu font is public domain; none of these was audited. Per-file headers were not checked. README says bbhost is not affiliated with Sony or FromSoftware and contains no game code or data.
   - id: bbport
     repo: https://github.com/deadinside28/bloodborne_pc
     research_commit: 3c57da4198ad62039f63f33bfd205b9916518acf
-    research_use: game runtime and translator; memory/graphics; tools/re; upstream corrections
-    disclaimer: Source lineage and forks are not independent confirmations.
-    license_note: VENDOR.txt identifies GPL-2.0-or-later shadPS4-derived components; audit full destination before importing.
+    commit_date_utc: 2026-10-10T22:57:36Z
+    research_use: tools/re/callgraph.py (RC-0003); description of a separate runtime and shadPS4-derived renderer (frontier)
+    disclaimer: Source lineage and forks are not independent confirmations. Only the cited script, README, LICENSE and gpu/VENDOR.txt were read.
+    license_declared: GPL-2.0-or-later
+    license_evidence: README "Credits and licenses" states GNU GPL v2 or later; LICENSE file is the GPL version 2 text; gpu/VENDOR.txt records the vendored shadPS4 code as GPL-2.0-or-later, taken from shadPS4 commit b4e7ae776071ceb1dd35004577a8719481e1d258 with later backports, which differs from the shadPS4 commit pinned below.
+    license_caveat: README lists third-party components under their own licenses (including MIT components) and says AMD FSR 4 DLLs and model data and the NVIDIA DLSS SDK are not distributed; an NVIDIA DLSS license text is mentioned for the package. Not audited per file. The README says the project is not related to the shadPS4 project and not affiliated with Sony, FromSoftware or AMD.
   - id: shadps4
     repo: https://github.com/shadps4-emu/shadPS4
     research_commit: e0a466753a1aacbc8db8253be685bf7ab4d9daae
-    research_use: PS4 compatibility and GPU semantics; debugging; licensing/provenance references
-    disclaimer: Emulator behavior is not always original-hardware fidelity.
-    license_note: REUSE.toml covers multiple licenses; inspect exact files.
+    commit_date_utc: 2026-10-11T19:52:02Z
+    research_use: Background reference for PS4 emulation and for the licensing and provenance of the code bbport vendors; no claim in this repository depends on its code
+    disclaimer: Emulator behavior is not always original-hardware fidelity. Only README, LICENSE and REUSE.toml were read.
+    license_declared: GPL-2.0-or-later
+    license_evidence: README SPDX header and "License" section state GPL-2.0; LICENSE file is the GPL version 2 text; REUSE.toml annotates listed assets and files as GPL-2.0-or-later.
+    license_caveat: REUSE.toml also annotates third-party paths under BSL-1.0, MIT, BSD-3-Clause, OFL-1.1 and CC0-1.0. Per-file headers were not inspected, so inspect the exact files before any reuse.
