@@ -1,19 +1,11 @@
-# Frontier — engine-owned resource identity and lifetime
+# Frontier — guest allocation lifetime during texture preparation
 
-## Question
+**Review status integrated 2026-10-12, BRC-GX-LIFECYCLE-01 candidate r5.** Source/documentation acceptance follows [r1 source review](../docs/reviews/BRC-GX-LIFECYCLE-01-REVIEW-r1.md), [r2 F1/F2 recheck](../docs/reviews/BRC-GX-LIFECYCLE-01-REVIEW-r2.md), and [r3 refresh-predicate recheck](../docs/reviews/BRC-GX-LIFECYCLE-01-REVIEW-r3.md). The parent accepted completed [fresh-reader validation](../docs/reviews/BRC-GX-LIFECYCLE-01-FRESH-READER-r1.md) at [public r4](https://github.com/Parm-1/Bloodborne-Research-Commons/tree/273043492d41ac1a42cb3a7c069b31b68b974166), with no substantive correction. This frontier's technical body is unchanged. The broader earlier frontier is preserved in Commons `22445011206afa47772461cf4ad35a9cdf8ebc48`. No negative has been converted into a tested success.
 
-Can existing publicly described GX registry work help identify a naturally reached Bloodborne resource's *logical producer, content authority, consumers, and safe retirement point* in another port?
+The [implementation dossier](../knowledge/gx-resource-lifecycle.md) now traces the public registry through ahead creation, bind refresh and fence-delayed object destruction at bbhost `566184a74f071166299bb656c4af479e5bbe2771`. [RC-0001](../claims/RC-0001-gx-resources.md) retains header-only provenance; [RC-0004](../claims/RC-0004-map-observation.md), [RC-0005](../claims/RC-0005-ahead-consumer.md) and [RC-0006](../claims/RC-0006-deferred-retirement.md) are source findings, not game tests. Reuse remains KNOWLEDGE_REFERENCE.
 
-## Known public inputs
+**Selected question:** What producer-side ordering retains the same guest allocation from `upload_surface` assigning `TexturePrep::src/base/total_src` through `run_prep`'s last guest read, including hash-only jobs on the GPU untile route? [Producer](https://github.com/droogie/bbhost/blob/566184a74f071166299bb656c4af479e5bbe2771/src/host/textures.cpp#L1051-L1151); [reader and pool](https://github.com/droogie/bbhost/blob/566184a74f071166299bb656c4af479e5bbe2771/src/host/textures.cpp#L823-L940); [mapping removal](https://github.com/droogie/bbhost/blob/566184a74f071166299bb656c4af479e5bbe2771/src/hle/kernel.cpp#L365-L440).
 
-- [RC-0001](../claims/RC-0001-gx-resources.md) — bbhost declares resource IDs, write sequence and overlap checks.
-- [bbhost rendering architecture](https://github.com/droogie/bbhost/blob/566184a74f071166299bb656c4af479e5bbe2771/docs/rendering.md) — PROJECT_REPORTED: bbhost hooks GX's draw, dispatch, resource-creation and state methods and is moving from decoding GPU packets toward engine-level draw inputs.
-- [bbport research snapshot](../sources/projects.yaml) — a separate runtime that, per its README, uses a renderer derived from shadPS4 with its own texture-set memoization and caches. No bbport equivalent of the bbhost registry was inspected, so whether the two share an identity notion is UNKNOWN.
+**Smallest discriminator:** tie allocation identity, enqueue, last source read and intervening removal/reuse/unmap to an applicable barrier. A demonstrated barrier resolves the gap for that route. An authorized owned-data counterexample in which that allocation changes before a selected read falsifies the proposed retention contract, not game correctness. Absent public producer/barrier evidence, return UNKNOWN with that exact missing premise. CPU staging readiness, an advanced Map sequence, current range presence and a retained shared prep object do not supply the allocation lease.
 
-## Missing facts
-
-Natural game producer/consumer for a selected operation; coverage of all writes and aliases; guest-versus-host version relation; completion and failure; whether data is required after scene transition; chosen hardware, format and build. No source-only header establishes these facts automatically.
-
-## Small candidate investigation
-
-Compare the game-owned resource id and write sequence (RC-0001's `id` and `write_seq`) against the current selected cache object's version in permitted source/review records, then propose one distinct positive and one stale-address/reused-storage contradiction. Do not run a game or create a broad tracer solely from this document. An honest result may be that the current evidence cannot bind the two identifiers.
+Stop when this premise is resolved or its source is unavailable. This frontier grants no execution, instrumentation or acquisition. All-hook coverage, physical aliases, original ABI fidelity, queue-order premises and other-port adaptation remain unqualified; do not extend this into a general registry-replacement campaign.
