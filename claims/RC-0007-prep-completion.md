@@ -1,6 +1,6 @@
 # RC-0007 — CPU batch submission wait does not include GPU hash-only prep
 
-**Level:** SOURCE_INSPECTED. **Subject:** bbhost `566184a74f071166299bb656c4af479e5bbe2771`, texture preparation and Vulkan submission. **Checked:** 2026-10-12. **Reviewer:** pending at BRC-PREP-OWNERSHIP-01 r1 freeze.
+**Level:** SOURCE_INSPECTED. **Subject:** bbhost `566184a74f071166299bb656c4af479e5bbe2771`, texture preparation and Vulkan submission. **Checked:** 2026-10-12. **Independent review:** uninvolved Sol/high `prep_ownership_review`, [r1 source review](../docs/reviews/BRC-PREP-OWNERSHIP-01-REVIEW-r1.md), no actionable finding; parent accepted source/documentation scope. R2 integrates status/report only; technical body unchanged. Fresh-reader validation remains pending.
 
 CPU async upload adds its shared prep to `g_batch_preps`; submission waits every entry to pool state 2 before GPU consumption. GPU-route hash-only upload submits to the same pool and attaches to Surface but does not add to that batch. Its guest hashes complete when that prep's `run_prep` ends and state 2 is published, or an actual wait finishes; a GPU submission/fence alone is not that completion.
 

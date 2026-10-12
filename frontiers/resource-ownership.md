@@ -1,6 +1,6 @@
 # Frontier — original texture owner ordering through host reads
 
-**BRC-PREP-OWNERSHIP-01 r1, 2026-10-12:** source research complete for author review; independent review and fresh-reader validation pending. The accepted [GX dossier](../knowledge/gx-resource-lifecycle.md), claims and frozen reports are unchanged. The previous frontier is preserved in Commons `1008f0b10f132dfe29859e5309a819d3af8150ab`.
+**BRC-PREP-OWNERSHIP-01 r2, 2026-10-12:** source/documentation scope accepted by the parent after the uninvolved [r1 source review](../docs/reviews/BRC-PREP-OWNERSHIP-01-REVIEW-r1.md) found no actionable finding. R2 integrates status/report only; the technical frontier remains unchanged. Fresh-reader validation is pending. The accepted [GX dossier](../knowledge/gx-resource-lifecycle.md), claims and frozen reports are unchanged. The previous frontier is preserved in Commons `1008f0b10f132dfe29859e5309a819d3af8150ab`.
 
 The [focused preparation dossier](../knowledge/texture-prep-source-lifetime.md) resolves the CPU staging submission wait and separates hash-only pool completion from GPU fence completion ([RC-0007](../claims/RC-0007-prep-completion.md)). It follows map locks/unmap/release, GX destructor adapters, reported GX-thread barriers, resource-table reclaim and command-arena markers. Inspected removal does not join prep ([RC-0008](../claims/RC-0008-map-removal-ordering.md)); this conditional adapter result is not a game bug or absence of every external invariant.
 

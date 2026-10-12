@@ -18,4 +18,4 @@ The starter records describe public artifacts that were SOURCE_INSPECTED or PROJ
 
 For the subsequent GX lifecycle investigation, read the [implementation dossier](knowledge/gx-resource-lifecycle.md). Its review status is separate from the starter review above.
 
-For texture preparation, continue with the [focused source-lifetime dossier](knowledge/texture-prep-source-lifetime.md): separate CPU staging, hash-only completion, GPU reads and the original texture-owner ordering still unknown. Its independent review is pending at candidate r1.
+For texture preparation, continue with the [focused source-lifetime dossier](knowledge/texture-prep-source-lifetime.md): separate CPU staging, hash-only completion, GPU reads and the original texture-owner ordering still unknown. Its [independent source review](docs/reviews/BRC-PREP-OWNERSHIP-01-REVIEW-r1.md) is complete and parent-accepted at source/documentation scope; fresh-reader validation remains pending at candidate r2.

@@ -1,6 +1,6 @@
 # RC-0008 — Inspected kernel mapping removal does not join texture preparation
 
-**Level:** SOURCE_INSPECTED. **Subject:** bbhost `566184a74f071166299bb656c4af479e5bbe2771`, kernel/GX removal adapters. **Checked:** 2026-10-12. **Reviewer:** pending at BRC-PREP-OWNERSHIP-01 r1 freeze.
+**Level:** SOURCE_INSPECTED. **Subject:** bbhost `566184a74f071166299bb656c4af479e5bbe2771`, kernel/GX removal adapters. **Checked:** 2026-10-12. **Independent review:** uninvolved Sol/high `prep_ownership_review`, [r1 source review](../docs/reviews/BRC-PREP-OWNERSHIP-01-REVIEW-r1.md), no actionable finding; parent accepted source/documentation scope. R2 integrates status/report only; technical body unchanged. Fresh-reader validation remains pending.
 
 `unmap_range` cuts mapping records under `g_dmem_mu`, notifies watch/GX removal, then host-unmaps the removed pieces outside that lock. Direct release removes physical allocation accounting and invokes unmap on victims. These bodies do not wait for `PrepPool` readers; current mapping coverage and watch arming do not hold the map mutex through their later reads.
 
