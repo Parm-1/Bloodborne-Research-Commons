@@ -10,6 +10,7 @@ Evidence-qualified knowledge about Bloodborne engine internals, PC porting, reve
 - [Source review](docs/SOURCE_REVIEW.md): how the claims and license notes were checked, and what was not
 - [Claim: GX registry](claims/RC-0001-gx-resources.md): public resource identity descriptions
 - [GX lifecycle dossier](knowledge/gx-resource-lifecycle.md): pinned implementation, downstream safeguards, completion distinctions and unresolved guest-source lifetime
+- [Texture preparation lifetime dossier](knowledge/texture-prep-source-lifetime.md): route-specific source completion and original texture-owner ordering limit; independently reviewed source/documentation scope accepted; public r2 reader check completed; r3 post-erase observability repair rechecked and parent-accepted; r4 final source/reader status integrated
 - [Claim: Differential testing](claims/RC-0002-decomp-compare.md): original-code comparison methodology
 - [Claim: bbport callgraph](claims/RC-0003-callgraph-limits.md): static scanner scope
 - [Resource lifetime frontier](frontiers/resource-ownership.md): open game-resource questions
