@@ -17,3 +17,5 @@ Begin with [AGENTS.md](AGENTS.md) and [docs/CONTINUATION.md](docs/CONTINUATION.m
 The starter records describe public artifacts that were SOURCE_INSPECTED or PROJECT_REPORTED on 2026-10-12, and were checked against the pinned commits as recorded in [docs/SOURCE_REVIEW.md](docs/SOURCE_REVIEW.md). They **do not claim independently reproduced gameplay results**, and the independent source and documentation review of the first candidate ([review](docs/reviews/REVIEW-r1.md)) is not a game or runtime qualification; its findings were repaired and rechecked ([recheck](docs/reviews/REVIEW-r2.md)). The source register pins the exact upstream commits.
 
 For the subsequent GX lifecycle investigation, read the [implementation dossier](knowledge/gx-resource-lifecycle.md). Its review status is separate from the starter review above.
+
+For texture preparation, continue with the [focused source-lifetime dossier](knowledge/texture-prep-source-lifetime.md): separate CPU staging, hash-only completion, GPU reads and the original texture-owner ordering still unknown. Its independent review is pending at candidate r1.
