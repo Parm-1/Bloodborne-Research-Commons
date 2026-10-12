@@ -1,0 +1,21 @@
+# Discovery references. Pinned research commits, NOT adopted runtime revisions.
+checked_on: 2026-10-12
+projects:
+  - id: bbhost
+    repo: https://github.com/droogie/bbhost
+    research_commit: 566184a74f071166299bb656c4af479e5bbe2771
+    research_use: GX resource identities; differential decompilation; draw capture/replay; shader lifting
+    disclaimer: Docs and source checked selectively; claims about runtime performance require qualification.
+    license_note: README advertises GPL-3.0-or-later; verify component and dependency notices before any reuse.
+  - id: bbport
+    repo: https://github.com/deadinside28/bloodborne_pc
+    research_commit: 3c57da4198ad62039f63f33bfd205b9916518acf
+    research_use: game runtime and translator; memory/graphics; tools/re; upstream corrections
+    disclaimer: Source lineage and forks are not independent confirmations.
+    license_note: VENDOR.txt identifies GPL-2.0-or-later shadPS4-derived components; audit full destination before importing.
+  - id: shadps4
+    repo: https://github.com/shadps4-emu/shadPS4
+    research_commit: e0a466753a1aacbc8db8253be685bf7ab4d9daae
+    research_use: PS4 compatibility and GPU semantics; debugging; licensing/provenance references
+    disclaimer: Emulator behavior is not always original-hardware fidelity.
+    license_note: REUSE.toml covers multiple licenses; inspect exact files.

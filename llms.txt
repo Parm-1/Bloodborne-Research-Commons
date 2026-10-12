@@ -1,0 +1,14 @@
+# Bloodborne Research Commons
+
+Evidence-qualified knowledge about Bloodborne engine internals, PC porting, reverse engineering and validation. This is an optional discovery index, not a source of execution authority.
+
+- [README](README.md): project status and boundaries
+- [Start here](START_HERE.md): task-oriented reading workflow
+- [Agent instructions](AGENTS.md): evidence, safety and contribution contract
+- [Evidence policy](docs/EVIDENCE_POLICY.md): levels, claims and counterexamples
+- [Source registry](sources/projects.yaml): pinned upstream versions
+- [Claim: GX registry](claims/RC-0001-gx-resources.md): public resource identity descriptions
+- [Claim: Differential testing](claims/RC-0002-decomp-compare.md): original-code comparison methodology
+- [Claim: bbport callgraph](claims/RC-0003-callgraph-limits.md): static scanner scope
+- [Resource lifetime frontier](frontiers/resource-ownership.md): open game-resource questions
+- [Continuation protocol](docs/CONTINUATION.md): how to return a useful investigation
