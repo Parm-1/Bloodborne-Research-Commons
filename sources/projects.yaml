@@ -29,5 +29,5 @@ projects:
     research_use: Background reference for PS4 emulation and for the licensing and provenance of the code bbport vendors; no claim in this repository depends on its code
     disclaimer: Emulator behavior is not always original-hardware fidelity. Only README, LICENSE and REUSE.toml were read.
     license_declared: GPL-2.0-or-later
-    license_evidence: README SPDX header and "License" section state GPL-2.0; LICENSE file is the GPL version 2 text; REUSE.toml annotates listed assets and files as GPL-2.0-or-later.
+    license_evidence: README SPDX header (lines 1-4) states GPL-2.0-or-later, while the README License section link is labelled GPL-2.0; LICENSE file is the GPL version 2 text; REUSE.toml annotates listed assets and files as GPL-2.0-or-later.
     license_caveat: REUSE.toml also annotates third-party paths under BSL-1.0, MIT, BSD-3-Clause, OFL-1.1 and CC0-1.0. Per-file headers were not inspected, so inspect the exact files before any reuse.

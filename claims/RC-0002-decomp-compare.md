@@ -1,13 +1,13 @@
 # RC-0002 — bbhost documents original-code differential testing
 
-**Level:** PROJECT_REPORTED for the method and results in `docs/decomp.md`; SOURCE_INSPECTED for the helper interface in `tests/decomp/eboot_kit.h`. **Independently reproduced here:** NO. **Independently reviewed:** not yet.
+**Level:** PROJECT_REPORTED for the method and results in `docs/decomp.md`; SOURCE_INSPECTED for the helper interface in `tests/decomp/eboot_kit.h`. **Independently reproduced here:** NO. **Independently reviewed:** a bounded source/documentation review of candidate-r1 ([REVIEW-r1](../docs/reviews/REVIEW-r1.md)) found one inaccurate paraphrase in this claim (repaired in r2); recheck of r2 pending. Nothing was reproduced.
 
 **Checked:** 2026-10-12, both files read at the pinned commit; blobs `3ce60ba7f09b1401631f9567dba26e1af028fa6b` (decomp.md) and `3efca4382246527daa6d5d31f5a1d36b41ee1ec6` (eboot_kit.h).
 
 At bbhost commit `566184a74f071166299bb656c4af479e5bbe2771`, `docs/decomp.md` describes two checks of a game function rewritten as C++ (stated target: the game's 1.09 executable):
 
 1. **Offline test:** the test loads the user's executable, runs the original function's own machine code beside the rewrite on generated inputs, and compares them bit for bit.
-2. **In-game compare mode** (`BBHOST_DECOMP_COMPARE=1`): the original and the rewrite are compared while the game runs. The document says a function becomes the default once an in-game session (the document calls it a world session) compares with zero differences. Its tables report per-function case and call counts with zero differences; these are the author's figures, not reproduced here.
+2. **In-game compare mode** (`BBHOST_DECOMP_COMPARE=1`): the original and the rewrite are compared while the game runs. The document says a function becomes the default once an in-game session (the document calls it a world session) compares with zero differences and a session with the replacement in place performs within noise of one without it ([lines 287-289](https://github.com/droogie/bbhost/blob/566184a74f071166299bb656c4af479e5bbe2771/docs/decomp.md#L287-L289)). Its tables report per-function case and call counts with zero differences; these are the author's figures, not reproduced here.
 
 `tests/decomp/eboot_kit.h` declares the helper for check 1. It maps the 1.09 executable (SHA-256 checked) at `0x400000`, relocates it, moves its TLS reads, turns every import into a trap that names itself (except the C library memory and string functions, which are the host's), makes the calling thread a guest thread (TLS block, console MXCSR and x87 control word), and does not run the game's static constructors. A test skips with exit code 77 when the executable is missing or is not 1.09. `stub()` and `bind()` replace game functions or imports that a test cannot set up.
 
@@ -28,3 +28,4 @@ At bbhost commit `566184a74f071166299bb656c4af479e5bbe2771`, `docs/decomp.md` de
 ## Revision notes
 
 - **r1, 2026-10-12** (supersedes the wording of the seed commit; original: `git show seed-original:claims/RC-0002-decomp-compare.md`). The seed's facts were confirmed. Changes: level restated as PROJECT_REPORTED + SOURCE_INSPECTED with the artifacts each applies to; distinguished the offline test from the in-game compare mode instead of one merged description; added the executable-checked, 1.09-only and stub details; removed "CI skip" because the cited sources do not mention CI (replaced by "skipped test, exit 77"); added blob hashes, reuse disposition and review status.
+- **r2, 2026-10-12** (candidate-r2, linked to the reviewed candidate-r1, commit `c517ebd4758ddf1a920c50bda2e72dd580b7d0fa`; review finding 1 in [REVIEW-r1](../docs/reviews/REVIEW-r1.md)). The adoption rule in r1 gave only the zero-difference condition; the pinned document also requires the replacement session to perform within noise of one without it. Both reported conditions are now stated. They are the author's reported rule, not reproduced here.

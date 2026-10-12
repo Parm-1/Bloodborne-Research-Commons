@@ -1,6 +1,6 @@
 # RC-0001 — bbhost exposes a GX resource registry interface
 
-**Level:** SOURCE_INSPECTED for the declared interface (public header). PROJECT_REPORTED for the header comments' statements about the game's own GX internals (object layout, id counter, id reuse), which are the author's reverse-engineering claims and are not checked here. **Game behavior in another port:** UNKNOWN. **Independently reviewed:** not yet.
+**Level:** SOURCE_INSPECTED for the declared interface (public header). PROJECT_REPORTED for the header comments' statements about the game's own GX internals (object layout, id counter, id reuse), which are the author's reverse-engineering claims and are not checked here. **Game behavior in another port:** UNKNOWN. **Independently reviewed:** the declared fields and functions were confirmed against the complete pinned header by a bounded source/documentation review of candidate-r1 ([REVIEW-r1](../docs/reviews/REVIEW-r1.md)); the implementation, hook coverage and game lifetime remain unqualified.
 
 **Checked:** 2026-10-12, header read in full at the pinned commit; blob `f6edcb582e141aabfa30384e381fb79f10e9653c` (git SHA-1 of the file bytes).
 
@@ -25,3 +25,4 @@ The comments state, as author claims, that a resource made over the same memory 
 ## Revision notes
 
 - **r1, 2026-10-12** (supersedes the wording of the seed commit; recover the original with `git show seed-original:claims/RC-0001-gx-resources.md`). The seed's facts were confirmed against the pinned header. Changes: split the level into SOURCE_INSPECTED (interface) and PROJECT_REPORTED (guest-internals comments); listed the declared fields and calls and the header's own coverage gaps; added the build-specific-address and `created_flip` limits; replaced "bbport cache UID" with a generic cache-key caution, since no bbport identifier was inspected; replaced "registry generation" in the next question, because the header has no field named generation (it has `id`, `write_seq` and `created_flip`); added blob hash, reuse disposition and review status.
+- **r2, 2026-10-12** (candidate-r2, linked to the reviewed candidate-r1, commit `c517ebd4758ddf1a920c50bda2e72dd580b7d0fa`). The independent review raised no finding on this claim; its cold-start answer used it as written ('+REV+'). Only the review-status line above changed.

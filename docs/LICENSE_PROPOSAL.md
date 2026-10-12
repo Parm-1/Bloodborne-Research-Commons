@@ -32,7 +32,7 @@ Not covered: third-party projects, code, names, logos and trademarks; the linked
 
 - This repository copies no upstream source or assets. It links to files at pinned commits and paraphrases them; identifiers such as function and field names are cited for reference.
 - Upstream projects keep their own licenses ([declared licenses and evidence](SOURCE_REVIEW.md#license-statements-found)): bbhost GPL-3.0-or-later; bbport and shadPS4 GPL-2.0-or-later, with bundled third-party components under other licenses. CC BY 4.0 on this repository's prose does not relicense, clear or interpret any of them.
-- GPL-3.0-or-later and GPL-2.0-or-later code is generally combinable only under GPL-3.0, and only where every component actually carries the "or later" grant, which has not been audited. This is a caution, not legal advice. Do not combine, import or redistribute upstream code on the strength of this repository.
+- This review makes no determination about combining code from these projects. Do not import, combine or redistribute upstream code on the strength of this repository; any such use needs a per-file review of the exact upstream licenses first, and that review has not been done.
 - Future original utilities need a separate license decision; if they derive from a GPL project they must follow that project's terms.
 - Attribution to upstream authors is preserved through links and the pinned source register. No endorsement or affiliation is implied.
 

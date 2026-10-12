@@ -1,6 +1,6 @@
 # Source review (author check, 2026-10-12)
 
-Status: checked by the candidate's author only. No independent review has been completed. The cold-start exercise in [CONTINUATION.md](CONTINUATION.md) has not yet been run by an uninvolved reader.
+Status (candidate-r2): checked by the author, then reviewed once by an uninvolved reviewer. The bounded source and documentation review of candidate-r1 (commit `c517ebd4758ddf1a920c50bda2e72dd580b7d0fa`) is preserved unchanged as [reviews/REVIEW-r1.md](reviews/REVIEW-r1.md). It independently fetched the 13 hashed files and confirmed the blob hashes, ran the cold-start exercise in [CONTINUATION.md](CONTINUATION.md), and raised five findings, all repaired in candidate-r2. The reviewer's recheck of those repairs is pending. This is not a game, fixture or runtime qualification, and not a legal or rights assessment.
 
 ## Method
 
@@ -39,9 +39,9 @@ These are what each project says about itself. They are not legal conclusions an
 |---|---|---|
 | bbhost | GPL-3.0-or-later | [README License section](https://github.com/droogie/bbhost/blob/566184a74f071166299bb656c4af479e5bbe2771/README.md#L180-L190); [LICENSE](https://github.com/droogie/bbhost/blob/566184a74f071166299bb656c4af479e5bbe2771/LICENSE) is the GPL version 3 text |
 | bbport | GPL-2.0-or-later | [README Credits and licenses](https://github.com/deadinside28/bloodborne_pc/blob/3c57da4198ad62039f63f33bfd205b9916518acf/README.md#L394-L398); [LICENSE](https://github.com/deadinside28/bloodborne_pc/blob/3c57da4198ad62039f63f33bfd205b9916518acf/LICENSE) is the GPL version 2 text; [gpu/VENDOR.txt](https://github.com/deadinside28/bloodborne_pc/blob/3c57da4198ad62039f63f33bfd205b9916518acf/gpu/VENDOR.txt#L1-L5) records vendored shadPS4 code (commit b4e7ae7, not the shadPS4 commit pinned here) |
-| shadPS4 | GPL-2.0-or-later | [README](https://github.com/shadps4-emu/shadPS4/blob/e0a466753a1aacbc8db8253be685bf7ab4d9daae/README.md#L209-L211), [LICENSE](https://github.com/shadps4-emu/shadPS4/blob/e0a466753a1aacbc8db8253be685bf7ab4d9daae/LICENSE) (GPL version 2 text) and [REUSE.toml](https://github.com/shadps4-emu/shadPS4/blob/e0a466753a1aacbc8db8253be685bf7ab4d9daae/REUSE.toml); REUSE.toml also lists BSL-1.0, MIT, BSD-3-Clause, OFL-1.1 and CC0-1.0 paths |
+| shadPS4 | GPL-2.0-or-later | README [SPDX header](https://github.com/shadps4-emu/shadPS4/blob/e0a466753a1aacbc8db8253be685bf7ab4d9daae/README.md#L1-L4) (GPL-2.0-or-later) and [License section](https://github.com/shadps4-emu/shadPS4/blob/e0a466753a1aacbc8db8253be685bf7ab4d9daae/README.md#L209-L211) (link labelled GPL-2.0), [LICENSE](https://github.com/shadps4-emu/shadPS4/blob/e0a466753a1aacbc8db8253be685bf7ab4d9daae/LICENSE) (GPL version 2 text) and [REUSE.toml](https://github.com/shadps4-emu/shadPS4/blob/e0a466753a1aacbc8db8253be685bf7ab4d9daae/REUSE.toml); REUSE.toml also lists BSL-1.0, MIT, BSD-3-Clause, OFL-1.1 and CC0-1.0 paths |
 
-Not audited: per-file headers, `third_party/` and other bundled components, and whether every combined component carries an "or later" grant. Any future import of upstream code needs a per-file review first; see [LICENSE_PROPOSAL.md](LICENSE_PROPOSAL.md) for the dependency caveats.
+Not audited: per-file headers, `third_party/` and other bundled components, and the license of each individual file. This review draws no conclusion about combining code from the projects. Any future import of upstream code needs a per-file review first; see [LICENSE_PROPOSAL.md](LICENSE_PROPOSAL.md) for the dependency caveats.
 
 ## Not established
 
@@ -64,18 +64,22 @@ The checks and results are in the validation record below.
 
 ### Validation record
 
-Run on the frozen working tree before the candidate commit (2026-10-12), by a throwaway script kept outside the repository (the checks are listed so they can be repeated by any equivalent tool; no scaffolding is added here):
+Run for candidate-r2 on the working tree before its commit (2026-10-12), by a throwaway script kept outside the repository (the checks are listed so they can be repeated by any equivalent tool; no scaffolding is added here):
 
 | Check | Result |
 |---|---|
-| Every non-`.git` file decodes as UTF-8, with no BOM, NUL byte or carriage return (a binary would fail) | 16 of 16 files pass |
-| Every relative Markdown link resolves to an existing file, and every `#anchor` to an existing heading | 51 links pass |
-| Every pinned `github.com/.../blob/<commit>/...` URL uses a commit registered in `sources/projects.yaml` for that repository, fetches successfully over HTTPS, and any line range lies within the file | 31 pinned URLs pass; 3 registered pins |
-| Every other distinct URL (repository, license pages) returns success | 36 distinct URLs in total pass |
-| Every 40-hex blob hash written in the documents equals the git blob hash of the fetched pinned file (or is a registered commit, or the vendored shadPS4 commit quoted from `gpu/VENDOR.txt`) | all pass |
+| Every non-`.git` file decodes as UTF-8, with no BOM, NUL byte or carriage return (a binary would fail) | 17 of 17 files pass |
+| Every relative Markdown link resolves to an existing file, and every `#anchor` to an existing heading | 63 links pass |
+| Every pinned `github.com/.../blob/<commit>/...` URL uses a commit registered in `sources/projects.yaml` for that repository, fetches successfully over HTTPS, and any line range lies within the file | 35 pinned URLs pass; 3 registered pins |
+| Every other distinct URL (repository, license pages) returns success | 40 distinct URLs in total pass |
+| Every 40-hex blob hash written in the documents equals the git blob hash of the fetched pinned file (or is a registered commit, a commit of this repository, or the vendored shadPS4 commit quoted from `gpu/VENDOR.txt`) | all pass |
 | Pattern scan for absolute home or drive paths, tilde home paths, key or token prefixes, private-key headers, e-mail addresses, and common credential words | 0 hits |
-| `sources/projects.yaml` shape (key: value lines; no value containing `: ` or ` #`; no PyYAML or Ruby available to parse it) | pass |
+| `sources/projects.yaml` shape (key: value lines; no value containing `: ` or ` #`) | limited line-shape check passes. PyYAML and Ruby are not installed and nothing was installed, so no YAML parser has read the file |
 | Git history author and committer identities | neutral placeholder only |
 | `seed-original` tag | 14 files, 20,099 bytes (the parent-reported size of the original archive) |
 
-A finding in any check blocks delivery. Limits: link checks show a page resolves, not that it still says the same; the blob-hash check binds the fetched bytes to the table, which is the evidence that the cited text was read at the pinned commit.
+The candidate-r1 record had the same checks and outcome with 16 files, 51 links, 31 pinned URLs and 36 distinct URLs. A finding in any check blocks delivery. Limits: link checks show a page resolves, not that it still says the same; the blob-hash check establishes only the identity of the fetched bytes. That the cited text was read is the author's recorded inspection, which the independent reviewer repeated for the 13 hashed files.
+
+## Revision notes
+
+- **r2, 2026-10-12** (candidate-r2, successor to candidate-r1, commit `c517ebd4758ddf1a920c50bda2e72dd580b7d0fa`, which is preserved by its tag). Repairs from [reviews/REVIEW-r1.md](reviews/REVIEW-r1.md): finding 4, the blob-hash check is now described as establishing byte identity only, with reading attributed to the recorded inspection; finding 5, the shadPS4 SPDX header qualifier (GPL-2.0-or-later, README lines 1-4) is kept in the registry and the license table; the cross-project GPL combination sentence in the license proposal is replaced by a no-determination statement and the per-file caution; the status paragraph and validation record are updated. Findings 1 to 3 are repaired in the claims and in [PUBLICATION_CHECK.md](PUBLICATION_CHECK.md). The earlier text is retained in the candidate-r1 Git version.

@@ -14,4 +14,4 @@ Begin with [AGENTS.md](AGENTS.md) and [docs/CONTINUATION.md](docs/CONTINUATION.m
 
 ## Starter evidence
 
-The starter records describe public artifacts that were SOURCE_INSPECTED or PROJECT_REPORTED on 2026-10-12, and were checked against the pinned commits as recorded in [docs/SOURCE_REVIEW.md](docs/SOURCE_REVIEW.md). They **do not claim independently reproduced gameplay results**, and none has yet been independently reviewed. The source register pins the exact upstream commits.
+The starter records describe public artifacts that were SOURCE_INSPECTED or PROJECT_REPORTED on 2026-10-12, and were checked against the pinned commits as recorded in [docs/SOURCE_REVIEW.md](docs/SOURCE_REVIEW.md). They **do not claim independently reproduced gameplay results**, and the independent source and documentation review of the first candidate ([review](docs/reviews/REVIEW-r1.md)) is not a game or runtime qualification; its findings are repaired and await recheck. The source register pins the exact upstream commits.

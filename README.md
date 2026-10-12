@@ -2,7 +2,7 @@
 
 A community-oriented, evidence-qualified reference for Bloodborne PC porting, reverse engineering, decompilation, runtime compatibility, graphics, and verification.
 
-**Status: unpublished candidate (2026-10-12).** Claims were checked against their pinned upstream commits by the author ([source review](docs/SOURCE_REVIEW.md)); no independent review has been completed, and no license is in effect. This is a research index, not a completed reverse engineering corpus or a shipping PC port. All technical claims are scoped to their cited versions and review level.
+**Status: unpublished candidate (2026-10-12).** Claims were checked against their pinned upstream commits by the author ([source review](docs/SOURCE_REVIEW.md)); an independent bounded review of candidate-r1 found five corrections, repaired in candidate-r2 and awaiting recheck ([review](docs/reviews/REVIEW-r1.md)); no license is in effect. This is a research index, not a completed reverse engineering corpus or a shipping PC port. All technical claims are scoped to their cited versions and review level.
 
 ## The purpose
 
