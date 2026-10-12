@@ -1,11 +1,11 @@
 # Publication checklist
 
-Status (2026-10-12, candidate-r4): **unpublished candidate.** Nothing has been published, no remote exists, no GitHub or other hosted repository has been created (only this local Git repository exists) and no license has been granted. Public visibility and code-license permission are separate decisions.
+Status (2026-10-12, licensed release candidate): **PUBLICATION AUTHORIZED, PENDING.** The owner has approved the decisions recorded below. Nothing has been published: this local Git repository has no remote, and creating the hosted repository, pushing and reading it back belong to the project parent. The documentation license is adopted ([LICENSE](../LICENSE), CC BY 4.0).
 
 Before making the first public commit or enabling external contributions:
 
-- [ ] Confirm repository ownership/name, visibility, and who can write or administer it. *Owner decision; see below.*
-- [ ] Approve a clear license for original documentation. Do not auto-relicense upstream material. *Owner decision; CC BY 4.0 is drafted in [LICENSE_PROPOSAL.md](LICENSE_PROPOSAL.md), not adopted.*
+- [x] Confirm repository ownership/name, visibility, and who can write or administer it. *Decided; see below. Name availability is confirmed only when the hosted repository is created.*
+- [x] Approve a clear license for original documentation. Do not auto-relicense upstream material. *CC BY 4.0 adopted; see [LICENSE_PROPOSAL.md](LICENSE_PROPOSAL.md#adoption-record-2026-10-12).*
 - [x] Review every included file for game bytes/assets, personal/private records, credentials, unapproved captures and unpublished third-party material. *Author static scan and the independent review of candidate-r1 found none; see [SOURCE_REVIEW.md](SOURCE_REVIEW.md) and [REVIEW-r1](reviews/REVIEW-r1.md).*
 - [x] Check that citations resolve to pinned public commits. Confirm claims are scoped and do not fabricate runtime validation. *Author check done; the independent review of candidate-r1 raised five findings, all repaired in candidate-r2 and confirmed by the same reviewer's recheck ([REVIEW-r2](reviews/REVIEW-r2.md)).*
 - [x] Preserve upstream authorship and trademark/non-affiliation statements. *README and source register carry them.*
@@ -24,15 +24,21 @@ Local checks run for r3: 18 tracked text files decode as UTF-8 with no BOM, NUL 
 
 Candidate-r4 (2026-10-12) corrects two bookkeeping statements in r3 without changing any claim body, level, pin, exclusion or report: RC-0001's r3 note wrongly said its review-status line had been updated (that line is unchanged from r2), and the statement above about earlier revision notes ignored the named RC-0001 correction. It also clarifies that "no repository has been created" means no hosted repository. Reports, tags and the 80-link and source-inventory checks of r3 are carried unchanged; no check was rerun.
 
-## First-publication decision (owner)
+## First-publication decision (owner) — decided 2026-10-12
 
-This is the single home for the actions that remain reserved to the owner. Nothing below has been decided.
+The owner explicitly approved the following, relayed by the project parent. These are the recorded decisions; the hosted repository does not exist yet.
 
-1. **Owner and repository name.** Proposed name: `Bloodborne-Research-Commons`. Availability under the chosen owner is not confirmed; a public 404 does not prove the name is free.
-2. **Visibility.** Private until the other items are decided, or public. Making it public publishes the whole Git history.
-3. **Documentation license.** Approve or change CC BY 4.0 and confirm the rights to license the original prose ([proposal](LICENSE_PROPOSAL.md)). Until then, no LICENSE file.
-4. **Contribution intake.** Whether to enable issues and pull requests, who administers, and the inbound-license statement.
-5. **Git author identity.** Local commits use a neutral placeholder author. The owner chooses the identity (for example a platform no-reply address) before the history is pushed, so a personal address is not published; changing it rewrites the history.
+1. **Owner and repository name.** `Parm-1/Bloodborne-Research-Commons`. Availability is confirmed only when the parent creates it.
+2. **Visibility.** Public. This publishes the whole Git history.
+3. **Documentation license.** CC BY 4.0 for original documentation, with the official unmodified legal code as [LICENSE](../LICENSE) ([adoption record](LICENSE_PROPOSAL.md#adoption-record-2026-10-12)).
+4. **Contribution intake.** The owner is sole administrator; issues and pull requests are enabled; contributions are accepted under the same license ([CONTRIBUTING.md](../CONTRIBUTING.md)).
+5. **Git author identity.** New commits use the owner's GitHub no-reply identity (repository-local Git configuration). Older commits (the seed and candidates r1 to r4) keep the neutral placeholder author. They are not rewritten, because the frozen review reports, tags and recorded hashes cite those exact commits; rewriting would break that evidence. The placeholder carries no personal address.
+
+**Publication state:** authorized, pending. The parent creates the hosted repository, pushes and reads it back. Until that readback exists, nothing is published.
+
+## Release-preparation record
+
+The licensed release candidate is the commit tagged `licensed-release-r1`, the successor of candidate-r4 (`2090f57cdd611a62d8a124aa1bdb81fc2d1d5ee5`). It adds the LICENSE file, the notices above and the decision records. Claim bodies, evidence levels, source pins, exclusions and the frozen reports are unchanged. The earlier "pending owner decision" wording in this file, the README, CONTRIBUTING and `llms.txt` was replaced by the decisions above. Static checks for this commit and the release archive are in [SOURCE_REVIEW.md](SOURCE_REVIEW.md#revision-notes); the source, hash and URL inventory from r2 and r3 is carried unchanged and was not refetched.
 
 ## Not required for the first release
 

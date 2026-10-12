@@ -6,6 +6,4 @@ Submit a small pull request that identifies a specific claim or open question, e
 
 Do not submit copyrighted game binaries, asset dumps, unlicensed source copies, private saves/captures/databases, credentials or content for which publication is not authorized. Links to publicly published source are preferred over copying it. Do not infer authors' motives from publication choices.
 
-Before broad community contributions, the owner must decide the license for original prose; see [docs/PUBLICATION_CHECK.md](docs/PUBLICATION_CHECK.md) and the draft [license proposal](docs/LICENSE_PROPOSAL.md). Until then this repository has no license grant, and no external contributions should be accepted. The starter has no blanket license grant over upstream code or assets.
-
-Suggested pull-request review: verify citation resolves at pinned commit, confirm claim wording agrees with source, examine a consequential negative case, document exact platform/build and distinguish actual execution from synthetic/source-only inspection.
+Inbound license: by submitting a contribution you confirm you have the right to submit it and agree that your original text is licensed under [CC BY 4.0](LICENSE), like the rest of this repository's original documentation. Do not submit anything you cannot license that way; upstream material stays under its own license and is linked, not copied. The starter has no blanket license grant over upstream code or assets. Decision record: [docs/PUBLICATION_CHECK.md](docs/PUBLICATION_CHECK.md).

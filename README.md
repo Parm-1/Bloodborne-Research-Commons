@@ -2,7 +2,7 @@
 
 A community-oriented, evidence-qualified reference for Bloodborne PC porting, reverse engineering, decompilation, runtime compatibility, graphics, and verification.
 
-**Status: unpublished candidate (2026-10-12).** Claims were checked against their pinned upstream commits by the author ([source review](docs/SOURCE_REVIEW.md)); an independent bounded review of candidate-r1 found five corrections, repaired in candidate-r2, and the same reviewer's recheck found no remaining finding ([review](docs/reviews/REVIEW-r1.md), [recheck](docs/reviews/REVIEW-r2.md)); no license is in effect. This is a research index, not a completed reverse engineering corpus or a shipping PC port. All technical claims are scoped to their cited versions and review level.
+**Status: licensed release candidate, publication authorized and pending (2026-10-12).** Claims were checked against their pinned upstream commits by the author ([source review](docs/SOURCE_REVIEW.md)); an independent bounded review of candidate-r1 found five corrections, repaired in candidate-r2, and the same reviewer's recheck found no remaining finding ([review](docs/reviews/REVIEW-r1.md), [recheck](docs/reviews/REVIEW-r2.md)). Original documentation is licensed under CC BY 4.0 ([LICENSE](LICENSE)). This is a research index, not a completed reverse engineering corpus or a shipping PC port. All technical claims are scoped to their cited versions and review level.
 
 ## The purpose
 
@@ -28,4 +28,4 @@ Every source is linked to an exact research commit in [sources/projects.yaml](so
 
 ## Publication and licensing
 
-This starter is unpublished until the owner decides to create and publish a repository. The decisions still pending (owner and repository name, visibility, documentation license, contribution intake) have one home: [docs/PUBLICATION_CHECK.md](docs/PUBLICATION_CHECK.md). The documentation license under consideration is CC BY 4.0, described in the draft [license proposal](docs/LICENSE_PROPOSAL.md); it is a proposal only and grants nothing until the owner adopts it. Third-party projects keep their own licenses; no external code is included.
+Original documentation in this repository is licensed under [CC BY 4.0](LICENSE) (adopted 2026-10-12; scope and caveats in [docs/LICENSE_PROPOSAL.md](docs/LICENSE_PROPOSAL.md)). Suggested attribution: "Bloodborne Research Commons, Parm-1 and contributors, licensed under CC BY 4.0." The license does not cover third-party projects, code, names or trademarks, and grants nothing over them. Third-party projects keep their own licenses; no external code is included. Publication is authorized by the owner and pending; the decision record is in [docs/PUBLICATION_CHECK.md](docs/PUBLICATION_CHECK.md).

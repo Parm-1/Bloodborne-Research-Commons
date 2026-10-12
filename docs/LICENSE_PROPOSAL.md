@@ -1,6 +1,6 @@
-# Documentation license proposal — DRAFT, not in effect
+# Documentation license — ADOPTED: CC BY 4.0 (proposal and adoption record)
 
-Status: proposal for the owner's decision. This repository currently has no license grant. Nothing in this file licenses anything. The owner must approve the license and confirm the rights described below before any LICENSE file or license notice is added (see [PUBLICATION_CHECK.md](PUBLICATION_CHECK.md)).
+Status (2026-10-12): **adopted** by the owner's explicit approval, relayed by the project parent. The unmodified official legal code is the [LICENSE](../LICENSE) file. The text below is the original proposal, retained, with the adoption record at the end. No rights audit was performed beyond the owner's approval; this is not a legal opinion. Publication itself is still pending (see [PUBLICATION_CHECK.md](PUBLICATION_CHECK.md)).
 
 ## Proposal
 
@@ -18,11 +18,11 @@ Not covered: third-party projects, code, names, logos and trademarks; the linked
 - Patent and trademark rights are not licensed, and moral rights are not licensed beyond the limited waiver in Section 2(b).
 - Because the grant cannot be withdrawn for compliant users, adopting it is a lasting decision for the text published under it.
 
-## Suggested attribution wording (owner to complete)
+## Attribution wording
 
-> Bloodborne Research Commons, <owner or project name>, licensed under CC BY 4.0.
+> Bloodborne Research Commons, Parm-1 and contributors, licensed under CC BY 4.0.
 
-## Owner confirmations needed before adoption
+## Owner confirmations (as proposed; resolved in the adoption record)
 
 1. The owner has, or can grant, the rights to license the original prose. A license cannot add rights the licensor does not hold; the owner should decide whether anything in the text needs further provenance (for example any AI-assisted drafting) before granting.
 2. Whether inbound contributions are accepted under the same license (a pull-request checkbox is the simplest mechanism) or under a different arrangement.
@@ -36,8 +36,10 @@ Not covered: third-party projects, code, names, logos and trademarks; the linked
 - Future original utilities need a separate license decision; if they derive from a GPL project they must follow that project's terms.
 - Attribution to upstream authors is preserved through links and the pinned source register. No endorsement or affiliation is implied.
 
-## If the owner adopts it
+## Adoption record (2026-10-12)
 
-1. Add the official CC BY 4.0 legal code as `LICENSE` (unmodified) and a one-line notice to the README.
-2. Update [CONTRIBUTING.md](../CONTRIBUTING.md) and the pull-request template with the inbound-license statement.
-3. Mark this file as adopted with the date, and update the decision record in [PUBLICATION_CHECK.md](PUBLICATION_CHECK.md).
+- **LICENSE:** the official plain-text legal code fetched over HTTPS from <https://creativecommons.org/licenses/by/4.0/legalcode.txt>, stored byte for byte (18,657 bytes, SHA-256 `9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411`; the same size as the copy read for the proposal).
+- **Scope:** as proposed above (Markdown documents, `llms.txt`, the pull-request template, and the original wording and structure of `sources/projects.yaml`). The preserved review reports under `docs/reviews/` are repository documentation written for this project and unchanged; the owner's approval covers the repository's original documentation, and the upstream material they quote or link stays under its own licenses.
+- **Confirmations:** the owner approved CC BY 4.0 for original documentation (confirmation 1 and 3), and inbound contributions under the same license (confirmation 2).
+- **Notices added:** README, CONTRIBUTING (inbound-license statement) and a pull-request template checkbox.
+- **Unchanged:** upstream licenses, the dependency caveats above and the no-determination statement on combining upstream code.

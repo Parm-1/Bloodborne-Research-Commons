@@ -20,3 +20,4 @@ What observation would make this claim false? What is still not qualified?
 - [ ] No credentials or personal paths
 - [ ] Third-party code not copied without license review
 - [ ] No claims of gameplay performance without actual matching evidence
+- [ ] My original text may be licensed under CC BY 4.0 (see CONTRIBUTING.md)
