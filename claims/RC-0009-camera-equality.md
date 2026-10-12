@@ -1,0 +1,25 @@
+# RC-0009 — selected camera equality is quantity-specific
+
+**Level:** SOURCE_INSPECTED. **Checked:** 2026-10-12, bbhost `566184a74f071166299bb656c4af479e5bbe2771`, selected Linux/SysV offline `decomp_follow_camera` source; no execution or reproduction. The [independent r1 review](../docs/reviews/BRC-DIFFERENTIAL-VALIDATION-01-REVIEW-r1.md) found F1, repaired in linked r2; the [same-reviewer affected recheck](../docs/reviews/BRC-DIFFERENTIAL-VALIDATION-01-REVIEW-r2.md) resolved it with no remaining actionable finding in affected scope. Parent accepted the repaired source/documentation contract; the [public fresh-reader result](../docs/reviews/BRC-DIFFERENTIAL-VALIDATION-01-FRESH-READER-r1.md) is complete and parent-accepted at reading scope, without execution evidence.
+
+The offline follow-camera test applies identical-bit-or-two-NaN equality to every four-byte camera, submitted-matrix and shape word; cast records canonicalize float NaNs before ordered field equality; GSM uses raw byte comparison. There is no finite-value tolerance. Signed-zero and opposite-infinity encodings differ; NaN payload identity is excluded only in the applicable word/cast comparators, not in GSM.
+
+**Primary sources:** [tests/decomp/follow_camera_test.cpp](https://github.com/droogie/bbhost/blob/566184a74f071166299bb656c4af479e5bbe2771/tests/decomp/follow_camera_test.cpp#L75-L117); [tests/decomp/follow_camera_test.cpp](https://github.com/droogie/bbhost/blob/566184a74f071166299bb656c4af479e5bbe2771/tests/decomp/follow_camera_test.cpp#L355-L365); [tests/decomp/follow_camera_test.cpp](https://github.com/droogie/bbhost/blob/566184a74f071166299bb656c4af479e5bbe2771/tests/decomp/follow_camera_test.cpp#L543-L558); [tests/decomp/eboot_kit.h](https://github.com/droogie/bbhost/blob/566184a74f071166299bb656c4af479e5bbe2771/tests/decomp/eboot_kit.h#L105-L112). Full inspected bounds and source blobs: [dossier](../knowledge/original-code-differential-validation.md#inspected-source-bounds-and-identities).
+
+**Meaningful negative (prospective, not executed):** A finite camera output bit difference, missing cast or changed override byte must fail its applicable gate. For omitted consumption, require a non-sentinel +0x14 pre-arm value and original-arm post-state demonstrating -1 consumption, then leave B's bytes unchanged; already-sentinel pre-state is non-discriminating for this omission. A NaN payload-only camera word difference is intentionally accepted; the same raw GSM change is not.
+
+**Exclusions:** Source control flow does not establish successful environment setup, path reachability, original-world collision behavior, library fidelity, game coverage or a runtime/adoption result. Exact equality and state limits belong to the [selected-pair contract](../knowledge/original-code-differential-validation.md#validation-contract--this-selected-pair); upstream game comments and run counts remain PROJECT_REPORTED.
+
+**Ownership/reuse:** bbhost authors retain their source and declared GPL-3.0-or-later at the [existing registry scope](../sources/projects.yaml). KNOWLEDGE_REFERENCE; no third-party code copied. New claim; supplements RC-0002 without replacing its historical prefix.
+
+## Revision r2 — 2026-10-12
+
+Repairs F1 from the [independent r1 review](../docs/reviews/BRC-DIFFERENTIAL-VALIDATION-01-REVIEW-r1.md), preserving frozen r1 (`229e3158b10764c671580a90a1c6a8296d6b5297`). [Generator +0x14](https://github.com/droogie/bbhost/blob/566184a74f071166299bb656c4af479e5bbe2771/tests/decomp/follow_camera_test.cpp#L301-L302) is already -1 with probability 0.9; [replacement consumption](https://github.com/droogie/bbhost/blob/566184a74f071166299bb656c4af479e5bbe2771/src/decomp/camera/follow_camera.cpp#L536-L549) writes the sentinel. An omission control requires distinct pre-bytes plus original-arm consumption evidence. This is a prospective source-derived prerequisite, not an executed result or a change to `memcmp`.
+
+## Integration r3 — 2026-10-12
+
+Review-status integration after parent acceptance of frozen r2 (`0ff4736d06cc895381c846767e8849bcb350fcd6`). Technical claim, prospective negative, exclusions and pins are unchanged; fresh-reader validation is pending.
+
+## Final integration r4 — 2026-10-12
+
+Status-only successor to frozen r3 (`097fee0f7a2df451d7cddd1a4499eaf727564e5a`); technical claim, controls, exclusions, source pins and prior revision notes are unchanged. Reader acceptance is public source reading only.
