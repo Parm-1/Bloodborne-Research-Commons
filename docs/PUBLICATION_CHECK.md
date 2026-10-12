@@ -1,6 +1,6 @@
 # Publication checklist
 
-Status (2026-10-12, candidate-r3): **unpublished candidate.** Nothing has been published, no remote exists, no repository has been created and no license has been granted. Public visibility and code-license permission are separate decisions.
+Status (2026-10-12, candidate-r4): **unpublished candidate.** Nothing has been published, no remote exists, no GitHub or other hosted repository has been created (only this local Git repository exists) and no license has been granted. Public visibility and code-license permission are separate decisions.
 
 Before making the first public commit or enabling external contributions:
 
@@ -18,9 +18,11 @@ Routine technical acceptance belongs to the project's parent integrator, not to 
 
 ## Final integration record
 
-Candidate-r3 (2026-10-12) is the mechanical integration of that acceptance: the unchanged recheck report added as `reviews/REVIEW-r2.md`, review-status lines changed from pending to completed, and one leftover template fragment in RC-0001's r2 note replaced by its link. Claim bodies, levels, source pins, exclusions and the earlier revision notes are unchanged. Checks were limited to the changed prose and local links; the full source, hash and URL inventory was not repeated (see the r3 note in [SOURCE_REVIEW.md](SOURCE_REVIEW.md#revision-notes)). Candidates r1 and r2 and the seed are preserved by Git tags.
+Candidate-r3 (2026-10-12) is the mechanical integration of that acceptance: the unchanged recheck report added as `reviews/REVIEW-r2.md`, review-status lines changed from pending to completed, and one leftover template fragment in RC-0001's r2 note replaced by its link. Claim bodies, levels, source pins and exclusions are unchanged; the only edit to an earlier revision note is the named replacement of the leftover template fragment in RC-0001's r2 note. Checks were limited to the changed prose and local links; the full source, hash and URL inventory was not repeated (see the r3 note in [SOURCE_REVIEW.md](SOURCE_REVIEW.md#revision-notes)). Candidates r1 and r2 and the seed are preserved by Git tags.
 
 Local checks run for r3: 18 tracked text files decode as UTF-8 with no BOM, NUL or carriage return; 80 relative Markdown links and anchors resolve; a scan for private paths, credential prefixes and e-mail addresses found 0 hits. The template fragment now appears only inside the unchanged recheck report, which quotes it. Carried unchanged from the candidate-r2 record, not rerun: the 13 source-file hashes, 35 pinned and 40 distinct URLs reachable, the limited YAML line-shape check (no YAML parser was used), and the seed-original inventory of 14 files and 20,099 bytes.
+
+Candidate-r4 (2026-10-12) corrects two bookkeeping statements in r3 without changing any claim body, level, pin, exclusion or report: RC-0001's r3 note wrongly said its review-status line had been updated (that line is unchanged from r2), and the statement above about earlier revision notes ignored the named RC-0001 correction. It also clarifies that "no repository has been created" means no hosted repository. Reports, tags and the 80-link and source-inventory checks of r3 are carried unchanged; no check was rerun.
 
 ## First-publication decision (owner)
 
