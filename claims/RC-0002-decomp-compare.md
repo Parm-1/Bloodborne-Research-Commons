@@ -44,3 +44,7 @@ The frozen r1 prefix above is preserved. [Independent r1 review](../docs/reviews
 ## Implementation integration r3, 2026-10-12
 
 The entire r2 prefix above is preserved. The [same-reviewer affected recheck](../docs/reviews/BRC-DIFFERENTIAL-VALIDATION-01-REVIEW-r2.md) resolved F1 with no remaining actionable finding in affected scope, and parent accepted the repaired source/documentation contract. [Author r3 integration](../docs/reviews/BRC-DIFFERENTIAL-VALIDATION-01-AUTHOR-r3.md) preserves the technical bodies, controls, source pins and frozen reports. Fresh-reader validation is pending; no historical PROJECT_REPORTED/SOURCE_INSPECTED scope is rewritten and no execution claim is advanced.
+
+## Implementation final integration r4, 2026-10-12
+
+The entire r3 prefix above is preserved. Parent accepted the [public-only fresh-reader result](../docs/reviews/BRC-DIFFERENTIAL-VALIDATION-01-FRESH-READER-r1.md) at frozen r3 (`097fee0f7a2df451d7cddd1a4499eaf727564e5a`): selected observations, shared-world/math limits, NaN exceptions versus raw GSM and conditional falsifiers were read correctly, with no material navigation or unsupported-inference finding. [Final integration receipt](../docs/reviews/BRC-DIFFERENTIAL-VALIDATION-01-AUTHOR-r4.md) records the verbatim report/status integration. Technical contract, controls, source identities and earlier reports are unchanged. This is reading validation, not a reproduced comparison, runtime adoption or game result.

@@ -1,6 +1,6 @@
 # RC-0009 — selected camera equality is quantity-specific
 
-**Level:** SOURCE_INSPECTED. **Checked:** 2026-10-12, bbhost `566184a74f071166299bb656c4af479e5bbe2771`, selected Linux/SysV offline `decomp_follow_camera` source; no execution or reproduction. The [independent r1 review](../docs/reviews/BRC-DIFFERENTIAL-VALIDATION-01-REVIEW-r1.md) found F1, repaired in linked r2; the [same-reviewer affected recheck](../docs/reviews/BRC-DIFFERENTIAL-VALIDATION-01-REVIEW-r2.md) resolved it with no remaining actionable finding in affected scope. Parent accepted the repaired source/documentation contract; fresh-reader validation is pending.
+**Level:** SOURCE_INSPECTED. **Checked:** 2026-10-12, bbhost `566184a74f071166299bb656c4af479e5bbe2771`, selected Linux/SysV offline `decomp_follow_camera` source; no execution or reproduction. The [independent r1 review](../docs/reviews/BRC-DIFFERENTIAL-VALIDATION-01-REVIEW-r1.md) found F1, repaired in linked r2; the [same-reviewer affected recheck](../docs/reviews/BRC-DIFFERENTIAL-VALIDATION-01-REVIEW-r2.md) resolved it with no remaining actionable finding in affected scope. Parent accepted the repaired source/documentation contract; the [public fresh-reader result](../docs/reviews/BRC-DIFFERENTIAL-VALIDATION-01-FRESH-READER-r1.md) is complete and parent-accepted at reading scope, without execution evidence.
 
 The offline follow-camera test applies identical-bit-or-two-NaN equality to every four-byte camera, submitted-matrix and shape word; cast records canonicalize float NaNs before ordered field equality; GSM uses raw byte comparison. There is no finite-value tolerance. Signed-zero and opposite-infinity encodings differ; NaN payload identity is excluded only in the applicable word/cast comparators, not in GSM.
 
@@ -19,3 +19,7 @@ Repairs F1 from the [independent r1 review](../docs/reviews/BRC-DIFFERENTIAL-VAL
 ## Integration r3 — 2026-10-12
 
 Review-status integration after parent acceptance of frozen r2 (`0ff4736d06cc895381c846767e8849bcb350fcd6`). Technical claim, prospective negative, exclusions and pins are unchanged; fresh-reader validation is pending.
+
+## Final integration r4 — 2026-10-12
+
+Status-only successor to frozen r3 (`097fee0f7a2df451d7cddd1a4499eaf727564e5a`); technical claim, controls, exclusions, source pins and prior revision notes are unchanged. Reader acceptance is public source reading only.

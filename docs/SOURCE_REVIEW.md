@@ -98,3 +98,7 @@ The selected stateful follow-camera pair is traced through actual kit, loader/TL
 ### Differential integration r3 — 2026-10-12
 
 [Same-reviewer affected r2 recheck](reviews/BRC-DIFFERENTIAL-VALIDATION-01-REVIEW-r2.md) is copied verbatim, SHA-256 `7596a3ef10a343cf767ea42efd949a0ced978dc82eb9208a796ec44f279ff019`. F1 is resolved with no remaining actionable finding in affected scope; parent accepted the repaired source/documentation contract. [Author r3 receipt](reviews/BRC-DIFFERENTIAL-VALIDATION-01-AUTHOR-r3.md) records mechanical status/report integration with technical bodies, controls, source identities and prior reports preserved. Earlier inspection/static receipts retain their exact scopes. Fresh-reader validation is pending; no execution evidence or authority is added.
+
+### Differential final integration r4 — 2026-10-12
+
+[Public-only fresh-reader report](reviews/BRC-DIFFERENTIAL-VALIDATION-01-FRESH-READER-r1.md), bound to PR 6 head `097fee0f7a2df451d7cddd1a4499eaf727564e5a`, is copied verbatim, SHA-256 `0ddf10b5ecf349b89ca1cc61a5aea96769bec11b9ff52b8068fea261b558ca99`. Parent accepted the reading result: no material navigation or unsupported-inference finding; summaries retain the reviewed NaN exceptions versus raw GSM. [Author r4 receipt](reviews/BRC-DIFFERENTIAL-VALIDATION-01-AUTHOR-r4.md) records focused final status/report checks and unchanged technical bodies, controls, source rows and prior reports. Source review, affected recheck and fresh-reader work are complete at their stated scopes; no execution claim or authority is added.
