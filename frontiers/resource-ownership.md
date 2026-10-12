@@ -1,6 +1,6 @@
 # Frontier — guest allocation lifetime during texture preparation
 
-**Revised 2026-10-12, BRC-GX-LIFECYCLE-01 candidate r1; independent review pending.** The broader earlier frontier is preserved in Commons `22445011206afa47772461cf4ad35a9cdf8ebc48`. No negative has been converted into a tested success.
+**Review status integrated 2026-10-12, BRC-GX-LIFECYCLE-01 candidate r3.** This unchanged frontier is supported within [exact candidate r2](https://github.com/Parm-1/Bloodborne-Research-Commons/tree/9f67163b468ffdc71ada998acb2b0843c0160f68) by [r1 source review](../docs/reviews/BRC-GX-LIFECYCLE-01-REVIEW-r1.md) and the [same-reviewer affected recheck](../docs/reviews/BRC-GX-LIFECYCLE-01-REVIEW-r2.md), accepted by the parent at implementation-source/documentation scope. Fresh-reader validation remains pending. The broader earlier frontier is preserved in Commons `22445011206afa47772461cf4ad35a9cdf8ebc48`. No negative has been converted into a tested success.
 
 The [implementation dossier](../knowledge/gx-resource-lifecycle.md) now traces the public registry through ahead creation, bind refresh and fence-delayed object destruction at bbhost `566184a74f071166299bb656c4af479e5bbe2771`. [RC-0001](../claims/RC-0001-gx-resources.md) retains header-only provenance; [RC-0004](../claims/RC-0004-map-observation.md), [RC-0005](../claims/RC-0005-ahead-consumer.md) and [RC-0006](../claims/RC-0006-deferred-retirement.md) are source findings, not game tests. Reuse remains KNOWLEDGE_REFERENCE.
 

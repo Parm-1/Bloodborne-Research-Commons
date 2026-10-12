@@ -1,6 +1,6 @@
 # RC-0005 — Ahead creation refuses an existing surface at the decoded base
 
-**Level:** SOURCE_INSPECTED. **Subject:** bbhost `566184a74f071166299bb656c4af479e5bbe2771`, Vulkan texture consumer. **Checked:** 2026-10-12. **Independent review:** pending, candidate r1.
+**Level:** SOURCE_INSPECTED. **Subject:** bbhost `566184a74f071166299bb656c4af479e5bbe2771`, Vulkan texture consumer. **Checked:** 2026-10-12. **Independent review:** [r1 source review](../docs/reviews/BRC-GX-LIFECYCLE-01-REVIEW-r1.md) and [same-reviewer affected recheck](../docs/reviews/BRC-GX-LIFECYCLE-01-REVIEW-r2.md) support this unchanged claim in [exact candidate r2](https://github.com/Parm-1/Bloodborne-Research-Commons/tree/9f67163b468ffdc71ada998acb2b0843c0160f68), accepted by the parent at source/documentation scope. R3 integrates review status only; fresh-reader validation remains pending.
 
 After the registry worker's current-range check, the host adapter locks `g.mu`. `textures_create_ahead_locked` refuses ahead creation when `g_surfaces` already contains the decoded base. This is a downstream safeguard against an older queued job creating over an existing Surface; it is not an original-resource token comparison.
 
