@@ -40,3 +40,7 @@ Implementation-specific qualification of the earlier header paraphrase: the kit'
 ## Implementation extension r2, 2026-10-12
 
 The frozen r1 prefix above is preserved. [Independent r1 review](../docs/reviews/BRC-DIFFERENTIAL-VALIDATION-01-REVIEW-r1.md) supports the principal equality/state/outcome assessment and found one prospective override-omission prerequisite gap. Linked r2 requires non-sentinel pre-arm +0x14 bytes and original-arm consumption evidence; an already-sentinel case is non-discriminating. [Author r2](../docs/reviews/BRC-DIFFERENTIAL-VALIDATION-01-AUTHOR-r2.md) records the repair; same-reviewer affected recheck and fresh-reader work are pending. No historical evidence level or execution claim changes.
+
+## Implementation integration r3, 2026-10-12
+
+The entire r2 prefix above is preserved. The [same-reviewer affected recheck](../docs/reviews/BRC-DIFFERENTIAL-VALIDATION-01-REVIEW-r2.md) resolved F1 with no remaining actionable finding in affected scope, and parent accepted the repaired source/documentation contract. [Author r3 integration](../docs/reviews/BRC-DIFFERENTIAL-VALIDATION-01-AUTHOR-r3.md) preserves the technical bodies, controls, source pins and frozen reports. Fresh-reader validation is pending; no historical PROJECT_REPORTED/SOURCE_INSPECTED scope is rewritten and no execution claim is advanced.

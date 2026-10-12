@@ -94,3 +94,7 @@ The selected stateful follow-camera pair is traced through actual kit, loader/TL
 ### Differential linked r2 — 2026-10-12
 
 [Independent r1 review](reviews/BRC-DIFFERENTIAL-VALIDATION-01-REVIEW-r1.md) is integrated verbatim and hash-checked. Its F1 prospective-control prerequisite is repaired in the matrix/control, RC-0009 and frontier: non-sentinel pre-arm +0x14 and original-arm consumption evidence are required; already-sentinel omission is non-discriminating. Principal source findings, the 20 source pins and original static receipts are reused unchanged. [Author r2 repair receipt](reviews/BRC-DIFFERENTIAL-VALIDATION-01-AUTHOR-r2.md) records affected static validation; same-reviewer recheck and separate reader work remain pending.
+
+### Differential integration r3 — 2026-10-12
+
+[Same-reviewer affected r2 recheck](reviews/BRC-DIFFERENTIAL-VALIDATION-01-REVIEW-r2.md) is copied verbatim, SHA-256 `7596a3ef10a343cf767ea42efd949a0ced978dc82eb9208a796ec44f279ff019`. F1 is resolved with no remaining actionable finding in affected scope; parent accepted the repaired source/documentation contract. [Author r3 receipt](reviews/BRC-DIFFERENTIAL-VALIDATION-01-AUTHOR-r3.md) records mechanical status/report integration with technical bodies, controls, source identities and prior reports preserved. Earlier inspection/static receipts retain their exact scopes. Fresh-reader validation is pending; no execution evidence or authority is added.

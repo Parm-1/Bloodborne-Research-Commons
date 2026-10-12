@@ -1,6 +1,6 @@
 # RC-0010 — skip, setup failure and selected comparison success are separate
 
-**Level:** SOURCE_INSPECTED. **Checked:** 2026-10-12, bbhost `566184a74f071166299bb656c4af479e5bbe2771`, selected Linux/SysV offline `decomp_follow_camera` source; no execution or reproduction. [Independent r1 review](../docs/reviews/BRC-DIFFERENTIAL-VALIDATION-01-REVIEW-r1.md) supports this principal claim; the linked r2 override-control repair is pending same-reviewer affected recheck.
+**Level:** SOURCE_INSPECTED. **Checked:** 2026-10-12, bbhost `566184a74f071166299bb656c4af479e5bbe2771`, selected Linux/SysV offline `decomp_follow_camera` source; no execution or reproduction. [Independent r1 review](../docs/reviews/BRC-DIFFERENTIAL-VALIDATION-01-REVIEW-r1.md) supports this principal claim; the [affected r2 recheck](../docs/reviews/BRC-DIFFERENTIAL-VALIDATION-01-REVIEW-r2.md) resolved the linked override-control finding with no remaining actionable finding in affected scope. Parent accepted the source/documentation contract; fresh-reader validation is pending.
 
 The kit exits 77 before selected comparison for missing/unreadable or wrong-hash input; CMake marks 77 as a skipped test. Loading/eligibility/binding rejection exits 1; a reached unbound function import aborts. The selected test returns zero only with no failed frames and nonzero mouse-turn, held-frame and Original-tuning counters. Zero differences alone are insufficient.
 
@@ -11,3 +11,7 @@ The kit exits 77 before selected comparison for missing/unreadable or wrong-hash
 **Exclusions:** Source control flow does not establish successful environment setup, path reachability, original-world collision behavior, library fidelity, game coverage or a runtime/adoption result. Exact equality and state limits belong to the [selected-pair contract](../knowledge/original-code-differential-validation.md#validation-contract--this-selected-pair); upstream game comments and run counts remain PROJECT_REPORTED.
 
 **Ownership/reuse:** bbhost authors retain their source and declared GPL-3.0-or-later at the [existing registry scope](../sources/projects.yaml). KNOWLEDGE_REFERENCE; no third-party code copied. New claim; supplements RC-0002 without replacing its historical prefix.
+
+## Integration r3 — 2026-10-12
+
+Status-only successor to frozen r2 (`0ff4736d06cc895381c846767e8849bcb350fcd6`); technical claim, negative, exclusions and pins are unchanged.

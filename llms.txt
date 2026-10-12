@@ -11,7 +11,7 @@ Evidence-qualified knowledge about Bloodborne engine internals, PC porting, reve
 - [Claim: GX registry](claims/RC-0001-gx-resources.md): public resource identity descriptions
 - [GX lifecycle dossier](knowledge/gx-resource-lifecycle.md): pinned implementation, downstream safeguards, completion distinctions and unresolved guest-source lifetime
 - [Texture preparation lifetime dossier](knowledge/texture-prep-source-lifetime.md): route-specific source completion and original texture-owner ordering limit; independently reviewed source/documentation scope accepted; public r2 reader check completed; r3 post-erase observability repair rechecked and parent-accepted; r4 final source/reader status integrated
-- [Selected camera differential contract](knowledge/original-code-differential-validation.md): source-only equality/state/substitution limits and prospective falsifiers; independent r1 review completed, r2 override-control repair awaiting affected recheck; reader check pending
+- [Selected camera differential contract](knowledge/original-code-differential-validation.md): source-only equality/state/substitution limits and prospective falsifiers; independent r1 review and affected r2 recheck complete, repaired source/documentation contract parent-accepted; r3 status integrated, reader check pending
 - [Validation frontier](frontiers/differential-validation.md): one consumer decision after this bounded contract
 - [Claim: Differential testing](claims/RC-0002-decomp-compare.md): original-code comparison methodology
 - [Claim: bbport callgraph](claims/RC-0003-callgraph-limits.md): static scanner scope
