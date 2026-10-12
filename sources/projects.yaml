@@ -8,8 +8,26 @@ projects:
     repo: https://github.com/droogie/bbhost
     research_commit: 566184a74f071166299bb656c4af479e5bbe2771
     commit_date_utc: 2026-10-12T00:20:37Z
-    research_use: GX resource identities (RC-0001); differential decompilation testing (RC-0002); rendering architecture (frontier)
-    disclaimer: Only the files cited by claims and frontiers, plus README and LICENSE, were read; other claims about runtime performance require qualification.
+    research_use: GX resource interface (RC-0001); lifecycle implementation (RC-0004 to RC-0006 and knowledge/gx-resource-lifecycle.md); differential decompilation testing (RC-0002)
+    disclaimer: Cited files plus README and LICENSE were read. Lifecycle inspection covers complete GX registry/header and relevant downstream function bodies/callers, not all renderer files or game behavior. Original ABI and performance comments remain project reports.
+    lifecycle_inspected_paths:
+      - src/engine/gx_resources.cpp
+      - src/engine/gx_resources.h
+      - src/engine/addr.h
+      - src/engine/graphics_patch.cpp
+      - src/guest_abi.h
+      - src/core/thunk.cpp
+      - src/core/write_watch.cpp
+      - src/hle/runtime.cpp
+      - src/hle/gx_trace.cpp
+      - src/hle/kernel.cpp
+      - src/hle/video.cpp
+      - src/hle/gnm_exec.cpp
+      - src/host/textures.cpp
+      - src/host/gpu.cpp
+      - src/host/gpu_internal.h
+      - src/host/recorder.cpp
+      - src/host/render.cpp
     license_declared: GPL-3.0-or-later
     license_evidence: README "License" section states GPL version 3 or later; LICENSE file is the GPL version 3 text.
     license_caveat: README says third_party/ and src/host/shaders/fsr1/ keep their own licenses and the debug menu font is public domain; none of these was audited. Per-file headers were not checked. README says bbhost is not affiliated with Sony or FromSoftware and contains no game code or data.

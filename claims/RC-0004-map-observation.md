@@ -1,0 +1,11 @@
+# RC-0004 — A found-holder Map advances an event sequence
+
+**Level:** SOURCE_INSPECTED. **Subject:** bbhost `566184a74f071166299bb656c4af479e5bbe2771`, x86-64 hook implementation. **Checked:** 2026-10-12. **Independent review:** pending, candidate r1.
+
+At intercepted non-ring Map return, `gx_res_after` calls `note_map` without gating on the result. `note_map` increments `write_seq` when the holder is found, independently of byte comparison and Map type; a changed nonzero reread memory pointer reindexes that entry. This records an observed Map event, not proof of completed byte mutation.
+
+**Source/method:** inspected producer branches and actual upload census consumer: [gx_resources.cpp:419–438](https://github.com/droogie/bbhost/blob/566184a74f071166299bb656c4af479e5bbe2771/src/engine/gx_resources.cpp#L419-L438), [613–625](https://github.com/droogie/bbhost/blob/566184a74f071166299bb656c4af479e5bbe2771/src/engine/gx_resources.cpp#L613-L625); [textures.cpp:1623–1675](https://github.com/droogie/bbhost/blob/566184a74f071166299bb656c4af479e5bbe2771/src/host/textures.cpp#L1623-L1675). The latter compares the sequence to attribute an upload already selected by refresh policy; it does not make a Map event into a byte snapshot. Original field/Map semantics in comments remain PROJECT_REPORTED.
+
+**Meaningful negative:** a known-holder Map returning with the same pointer and no subsequent byte write still takes the increment branch. An unknown holder takes the unknown-counter branch without creating a record. These are source branch deductions, not executed tests.
+
+**Exclusions/unknowns:** natural hook coverage, byte coherence, allocation retention, original ID uniqueness and game reachability. The [dossier](../knowledge/gx-resource-lifecycle.md) traces refresh and queue consequences and preserves the missing lifetime premise. **Reuse:** KNOWLEDGE_REFERENCE; upstream droogie/bbhost, declared GPL-3.0-or-later ([registry](../sources/projects.yaml)); no source copied. **History:** new r1 finding; does not supersede RC-0001's header provenance.
