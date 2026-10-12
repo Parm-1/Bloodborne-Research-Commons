@@ -1,6 +1,6 @@
 # RC-0002 — bbhost documents original-code differential testing
 
-**Level:** PROJECT_REPORTED for the method and results in `docs/decomp.md`; SOURCE_INSPECTED for the helper interface in `tests/decomp/eboot_kit.h`. **Independently reproduced here:** NO. **Independently reviewed:** a bounded source/documentation review of candidate-r1 ([REVIEW-r1](../docs/reviews/REVIEW-r1.md)) found one inaccurate paraphrase in this claim (repaired in r2); recheck of r2 pending. Nothing was reproduced.
+**Level:** PROJECT_REPORTED for the method and results in `docs/decomp.md`; SOURCE_INSPECTED for the helper interface in `tests/decomp/eboot_kit.h`. **Independently reproduced here:** NO. **Independently reviewed:** a bounded source/documentation review of candidate-r1 ([REVIEW-r1](../docs/reviews/REVIEW-r1.md)) found one inaccurate paraphrase in this claim (repaired in r2); the same reviewer rechecked the repair and found no remaining finding ([REVIEW-r2](../docs/reviews/REVIEW-r2.md)). Nothing was reproduced.
 
 **Checked:** 2026-10-12, both files read at the pinned commit; blobs `3ce60ba7f09b1401631f9567dba26e1af028fa6b` (decomp.md) and `3efca4382246527daa6d5d31f5a1d36b41ee1ec6` (eboot_kit.h).
 
@@ -29,3 +29,4 @@ At bbhost commit `566184a74f071166299bb656c4af479e5bbe2771`, `docs/decomp.md` de
 
 - **r1, 2026-10-12** (supersedes the wording of the seed commit; original: `git show seed-original:claims/RC-0002-decomp-compare.md`). The seed's facts were confirmed. Changes: level restated as PROJECT_REPORTED + SOURCE_INSPECTED with the artifacts each applies to; distinguished the offline test from the in-game compare mode instead of one merged description; added the executable-checked, 1.09-only and stub details; removed "CI skip" because the cited sources do not mention CI (replaced by "skipped test, exit 77"); added blob hashes, reuse disposition and review status.
 - **r2, 2026-10-12** (candidate-r2, linked to the reviewed candidate-r1, commit `c517ebd4758ddf1a920c50bda2e72dd580b7d0fa`; review finding 1 in [REVIEW-r1](../docs/reviews/REVIEW-r1.md)). The adoption rule in r1 gave only the zero-difference condition; the pinned document also requires the replacement session to perform within noise of one without it. Both reported conditions are now stated. They are the author's reported rule, not reproduced here.
+- **r3, 2026-10-12** (candidate-r3, final integration). Review-status line updated to the completed affected recheck ([REVIEW-r2](../docs/reviews/REVIEW-r2.md)); the claim body, level, pins and exclusions are unchanged from r2.

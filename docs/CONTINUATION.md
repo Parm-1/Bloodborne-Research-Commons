@@ -15,4 +15,4 @@ Without access to any private project or conversation, answer: "What does bbhost
 
 ## Status of the first exercise
 
-An uninvolved reviewer ran this exercise from the public repository alone on candidate-r1. The answer and the review are preserved unchanged in [reviews/REVIEW-r1.md](reviews/REVIEW-r1.md#independent-cold-start-answer). The exercise is answerable without private material. It led to five corrections, made in candidate-r2; the reviewer's recheck of those corrections is pending. The exercise names a falsifier and an observation to gather; no game run was performed or is required for this repository.
+An uninvolved reviewer ran this exercise from the public repository alone on candidate-r1. The answer and the review are preserved unchanged in [reviews/REVIEW-r1.md](reviews/REVIEW-r1.md#independent-cold-start-answer). The exercise is answerable without private material. It led to five corrections, made in candidate-r2 and confirmed by the same reviewer's affected recheck ([reviews/REVIEW-r2.md](reviews/REVIEW-r2.md)). The exercise names a falsifier and an observation to gather; no game run was performed or is required for this repository.
