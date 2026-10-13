@@ -74,10 +74,10 @@ projects:
     repo: https://github.com/deadinside28/bloodborne_pc
     research_commit: 3c57da4198ad62039f63f33bfd205b9916518acf
     commit_date_utc: 2026-10-10T22:57:36Z
-    research_use: tools/re/callgraph.py (RC-0003 plus correspondence extension, RC-0012 and RC-0013); description of a separate runtime and shadPS4-derived renderer (frontier); proposed BUFFER_LOAD_DWORD source trace (RC-0014, RC-0015 and knowledge/buffer-load-dword-translation.md)
-    disclaimer: Source lineage and forks are not independent confirmations. The earlier scope read only the cited script, README, LICENSE and gpu/VENDOR.txt. The separately dated shader extension below reads bounded producer/pass/descriptor/emitter/binding source; no intended-ISA, runtime or game correctness is established.
+    research_use: tools/re/callgraph.py (RC-0003 plus correspondence extension, RC-0012 and RC-0013); description of a separate runtime and shadPS4-derived renderer (frontier); proposed BUFFER_LOAD_DWORD source trace (RC-0014, RC-0015 and knowledge/buffer-load-dword-translation.md); proposed shader pipeline cache applicability source inspection (RC-0016, RC-0017 and knowledge/shader-pipeline-cache-applicability.md)
+    disclaimer: Source lineage and forks are not independent confirmations. The earlier scope read only the cited script, README, LICENSE and gpu/VENDOR.txt. The separately dated shader and cache extensions below read bounded source; no intended-ISA, runtime, cache-selection or game correctness is established.
     shader_extension_checked_on: 2026-10-13
-    shader_extension_status: Source-reviewed proposed topic; r1 repair and r2 affected recheck complete; conditional source/documentation contract accepted for public PR delivery; human editorial acceptance pending and unmerged
+    shader_extension_status: Source-reviewed topic; r1 repair and r2 affected recheck complete; conditional source/documentation contract accepted in Issue #12 on 2026-10-13; merged to main through PR #13 at 1963c6d623747753fa90c2cbe92e0903cd539f01
     shader_inspected_paths:
       - gpu/VENDOR.txt
       - gpu/shadps4/shader_recompiler/frontend/decode.cpp
@@ -118,6 +118,30 @@ projects:
       - gpu/shadps4/video_core/buffer_cache/buffer_cache.cpp
       - gpu/shadps4/shader_recompiler/backend/spirv/spirv_emit_context.h
     shader_scope: BUFFER_LOAD_DWORD only; exact selected text bounds and whole-file blobs in the dossier. Decoder host layout, stage rewrite, branch-specific U32 arithmetic, descriptor discovery, raw SPIR-V bound/paged consumers and selected Vulkan binding/profile paths, including the sparse block-size producer and shift caller. No whole-framework audit, source import, execution, intended-ISA fidelity or cache applicability qualification.
+    cache_inspection_checked_on: 2026-10-13
+    cache_inspection_use: BRC-CACHE-APPLICABILITY-01; knowledge/shader-pipeline-cache-applicability.md and RC-0016/RC-0017, independently source-reviewed at e27ff4dcc140a9e26f51de7506285ac4d13999e5 and accepted for source/documentation scope in Issue #12 on 2026-10-13
+    cache_inspection_scope: Selected program/hash, directional specialization, live descriptor/compiler influence, graphics key/consumer, per-cache profile, replacement and renderer persistence boundaries; precise text bounds and whole-file blobs in the dossier. Public source only, no execution/import, no full renderer audit, no driver/game qualification. This extension does not expand the historical inspection disclaimer above or change existing pins/license fields.
+    cache_inspected_paths:
+      - gpu/shadps4/video_core/renderer_vulkan/vk_pipeline_cache.cpp
+      - gpu/shadps4/video_core/renderer_vulkan/vk_pipeline_cache.h
+      - gpu/shadps4/shader_recompiler/specialization.h
+      - gpu/shadps4/video_core/amdgpu/regs_shader.h
+      - gpu/shadps4/video_core/amdgpu/resource.h
+      - gpu/shadps4/shader_recompiler/resource.h
+      - gpu/shadps4/shader_recompiler/info.h
+      - gpu/shadps4/shader_recompiler/runtime_info.h
+      - gpu/shadps4/shader_recompiler/profile.h
+      - gpu/shadps4/shader_recompiler/backend/bindings.h
+      - gpu/shadps4/shader_recompiler/recompiler.cpp
+      - gpu/shadps4/shader_recompiler/ir/passes/resource_patching_pass.cpp
+      - gpu/shadps4/video_core/renderer_vulkan/vk_graphics_pipeline.h
+      - gpu/shadps4/video_core/renderer_vulkan/vk_graphics_pipeline.cpp
+      - gpu/shadps4/video_core/renderer_vulkan/vk_compute_pipeline.h
+      - gpu/shadps4/video_core/renderer_vulkan/vk_pipeline_serialization.cpp
+      - gpu/shadps4/video_core/cache_storage.cpp
+      - gpu/shadps4/common/hash.h
+      - gpu/shadps4/shader_recompiler/params.h
+      - gpu/shadps4/video_core/renderer_vulkan/vk_rasterizer.cpp
     license_declared: GPL-2.0-or-later
     license_evidence: README "Credits and licenses" states GNU GPL v2 or later; LICENSE file is the GPL version 2 text; gpu/VENDOR.txt records the vendored shadPS4 code as GPL-2.0-or-later, taken from shadPS4 commit b4e7ae776071ceb1dd35004577a8719481e1d258 with later backports, which differs from the shadPS4 commit pinned below.
     license_caveat: README lists third-party components under their own licenses (including MIT components) and says AMD FSR 4 DLLs and model data and the NVIDIA DLSS SDK are not distributed; an NVIDIA DLSS license text is mentioned for the package. Not audited per file. The README says the project is not related to the shadPS4 project and not affiliated with Sony, FromSoftware or AMD.
