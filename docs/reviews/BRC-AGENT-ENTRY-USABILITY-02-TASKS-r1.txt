@@ -1,0 +1,53 @@
+BRC-AGENT-ENTRY-USABILITY-02 — four public-reading questions
+
+Use the public Commons entry at commit 4dcb72ff2531d116fec68986eff03fb75150cca3 (tree 5946a03af18354781ad0b2a0c497cbee2a01c128). Answer all four questions using the pertinent allowed entry, claims, dossiers, frontiers and pinned public primary source. Cite the decisive sources. A common scope statement may bind several answers; repeat a pin only when scope changes or would otherwise be ambiguous. The registry's bbhost research pin is 566184a74f071166299bb656c4af479e5bbe2771; its bbport pin is 3c57da4198ad62039f63f33bfd205b9916518acf. These identify studied source, not an installed runtime.
+
+All records and projects described below are SUPPLIED HYPOTHETICAL PREMISES for interpretation. They are not reports of an actual consumer, defect, experiment or run. Accept supplied premises within each scenario; separate them from cited implementation facts and from evidence a real future action would still need. The only actual work requested is public reading and written advice. Commons supplies no authority for private access, protected inputs, execution, host mutation, spending, publication or upstream action. Do not perform any of those actions.
+
+For each question give the supported positive, the missing or contrary premise and its consequence, the applicable version/platform/configuration and evidence scope, a small meaningful falsifier, and one useful next action or precise blocker. Do not turn source facts into game or general fidelity claims.
+
+1. Closing two readers after a discarded texture record
+
+A developer wants to explain when the guest-source reads of one upload have ended. Assume bbhost at its research pin, Linux x86-64 with Vulkan, GPU untile mode 1 and the device-local scratch route actually selected. The upload's GPU submission contains its guest-to-scratch fetch. Its Surface is later erased. This scenario concerns only that upload's CPU preparation and GPU source reads, not other uploads or arbitrary renderer activity.
+
+Case A: an independently retained, attributable record names the original upload's exact hash-only prep job and records its published state 2; another attributable record names that upload's submission and its successfully completed fence. Assume both attributions are correct, even though the Surface handle has since gone. No original allocation-owner or writer-ordering rule is supplied.
+
+Case B: the same submission fence completed, but the old job's record is absent. A new Surface at the same guest virtual address has a different prep in state 2.
+
+Case C: the same submission fence completed, and an attributable observation of the original job instead records state 1 at the decision point.
+
+For each case, what can the developer conclude about each source reader? Does Surface erase or the ordinary pre-submit staging wait fill any gap? What would remain necessary before a real allocation owner could justify its release/reuse rule? Give the smallest source-only continuation and a counter-observation that would falsify a claim that all of this upload's source reads have ended.
+
+2. Interpreting constructed comparison data, then planning a real check
+
+A developer is considering the pinned bbhost offline follow-camera comparison on Linux x86-64 AVX/SysV with the default GS configuration. They supply constructed post-frame A/B records for the selected comparator, with all otherwise applicable quantities equal:
+
+Case A: one camera four-byte word has IEEE-754 encodings 0x7fc00110 and 0xffc00420 (both NaNs); the first 0x20 GSM bytes are identical.
+
+Case B: all camera words are identical; inside the first 0x20 GSM bytes, one four-byte slot instead contains those two different encodings. The rest of GSM is identical. Suppose a later frame's records agree after the test's camera resynchronization.
+
+Case C: someone offers only the phrase “zero differences” without a final outcome, phase diagnostics or participation evidence.
+
+Interpret the supported outcome for the applicable comparison in A and B and what C cannot establish. Would A establish byte identity, or would later agreement erase B's earlier failure? Keep the supplied data, the pinned code's rules and real future observations distinct.
+
+The only actual permission here is to draft a public-reading plan. No eligible executable, stable input identity, successful environment/setup record or execution permission has been supplied. Outline the smallest prospective check that could challenge these interpretations if a real consumer later authorizes it. Name the input/identity, eligibility/environment and phase/non-skipped observations that would have to exist; include a source-faithful positive and a contradictory raw-field negative. Do not acquire inputs or execute a comparator.
+
+3. Routing a practical question outside the accepted topics
+
+A hypothetical consumer is planning, rather than debugging, a spatial-audio occlusion adapter. Its stated target is bbport at 3c57da4198ad62039f63f33bfd205b9916518acf on Linux x86-64. Its decision is whether to reuse an existing producer/consumer contract for how an occlusion result reaches the audio mix. Its local owner has authorized only reading public text and writing an advisory answer in this conversation. No actual audio source path, observation or accepted audio contract is supplied.
+
+What can this Commons entry usefully establish for that decision? Identify whether any accepted dossier or recorded frontier answers the audio contract, distinguish adjacent knowledge from established coverage, and propose one narrowly scoped next reading question and an observation that could settle or falsify the desired reuse conclusion. Do not interpret absence of an accepted topic as absence of audio code or private research, invent an accepted frontier, or launch a new campaign.
+
+Now remove the stated target/version and the consumer decision: a second requester supplies only “make occlusion better.” What is the smallest essential clarification before a dependent recommendation? Which public-reading planning work remains useful with the sufficient premises in the first scenario, even though real implementation and execution are not authorized?
+
+4. Configuration-specific completion and a weak deployment identity
+
+For a source reasoning exercise, assume the exact bbhost research pin and Linux x86-64/Vulkan. The process initialized BBHOST_GPU_UNTILE=2, selected the GPU branch of upload_surface, and returned normally from the preparation call. Consider two separate uploads:
+
+Case A: its CPU comparison staging allocation succeeded, run_prep ran inline on the caller and returned normally; that prep's pool state remains 0. No GPU-completion observation is supplied.
+
+Case B: its CPU comparison allocation failed, so upload_surface queued a hash-only prep; its same-job state remains 0 at the decision point. No same-job wait or GPU-completion observation is supplied.
+
+Does state 0 have the same meaning for source-read completion in both cases? Which CPU and GPU obligations remain, and could either the batch submission wait or “mode 2” alone establish that every reader is finished? State what is supported without demanding an inapplicable pool receipt for an inline call.
+
+Separately, a real deployment description says only “r2-development, textures.cpp identical to the research copy.” It supplies no resolved repository commit, actual startup configuration, dependency/caller comparison or runtime observation. Explain how far the pinned findings apply to that description, whether unchanged selected file bytes identify its commit, and the minimal existing project records/comparison needed before making a target-specific conclusion. Do not resolve a moving upstream ref or conduct a freshness survey during this reading exercise.
