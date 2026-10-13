@@ -2,7 +2,9 @@
 
 This repository connects public Bloodborne engineering research to its exact source versions and evidence limits. Start from [START_HERE.md](START_HERE.md) and choose the task closest to yours. The four dossiers are implementation-source studies; none is a game, native-runtime or GPU result.
 
-**Current status:** partial editorial acceptance of the source and documentation, with the fixed fresh-agent usability criterion not met and the usability gate open. Read the [current entry status](docs/CORPUS_CHECKPOINT.md#current-entry-status-brc-agent-entry-01-2026-10-13) before relying on this entry for a task.
+**Publication status:** source-reviewed entry documentation is published through merged [PR #10](https://github.com/Parm-1/Bloodborne-Research-Commons/pull/10). The [historical cross-topic assessment](docs/reviews/BRC-AGENT-ENTRY-01-USABILITY-REVIEW-r3.md) and the separately commissioned [USABILITY-02 result](docs/reviews/BRC-AGENT-ENTRY-USABILITY-02-RESULT-r1.md) both remain **NOT MET**. [Issue #9](https://github.com/Parm-1/Bloodborne-Research-Commons/issues/9) stays open; independently reliable autonomous continuation is not qualified. See the [current entry status](docs/CORPUS_CHECKPOINT.md#current-entry-status-brc-agent-entry-01-2026-10-13) for the evaluated and published versions.
+
+Use this as a source-reviewed reference: verify task relevance, exact evidence scope and consequential conclusions against the cited producer and consumer. The entry supplies no execution guarantee.
 
 | If your task is… | Start with | Existing mechanism that helps | Applicability limit | Unanswered question |
 |---|---|---|---|---|
