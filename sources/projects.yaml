@@ -180,7 +180,7 @@ projects:
       - gpu/layer/bblayer_gpu_memory.cpp
       - gpu/layer/bblayer_gpu_memory.h
     audio_submission_extension_checked_on: 2026-10-13
-    audio_submission_extension_use: BRC-AUDIO-SUBMISSION-01; Batch 02 Issue 16 item 2; proposed knowledge/audio-submission.md and RC-0022/RC-0023; independent review and editorial acceptance pending
+    audio_submission_extension_use: BRC-AUDIO-SUBMISSION-01; Batch 02 Issue 16 item 2; proposed knowledge/audio-submission.md and RC-0022/RC-0023; independent review r1 complete with no actionable source/documentation defect at ff13fcf439568f868f0bf2de5c11a8a99cb5e83d; root accepts one PR delivery only; human editorial acceptance/consolidation/merge pending, audio remains peer-reviewed proposed
     audio_submission_extension_scope: Complete selected runtime_audio.c plus bounded native ABI, exact audio import lookup and relocation consumer, build SDL dependency setup and license declaration. Exact bounds/blobs in dossier. Public source and separate official SDL3 API descriptions only; no source import, code execution, build, fixture, runtime, device, original/game input, codec/AJM or whole-framework audit. Existing fields, pins, licenses, peer memory and seven accepted topics preserved.
     audio_submission_additional_inspected_paths:
       - src/runtime_audio.c
