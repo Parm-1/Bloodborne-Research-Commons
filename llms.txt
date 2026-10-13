@@ -15,3 +15,5 @@ This is a public, evidence-scoped research index. Choose a task at [START_HERE](
 - [Publication and original-documentation license](docs/PUBLICATION_CHECK.md), [CC BY 4.0](LICENSE), and [license scope](docs/LICENSE_PROPOSAL.md)
 
 No full-corpus, production-readiness or general graphics/shader coverage claim is made.
+
+- **Proposed, pending review/editorial acceptance:** [Shader/pipeline cache applicability](knowledge/shader-pipeline-cache-applicability.md); [RC-0016](claims/RC-0016-module-compatibility.md), [RC-0017](claims/RC-0017-cache-domains.md); [cache applicability frontier](frontiers/cache-applicability.md). Independent of other unmerged topics; source only.

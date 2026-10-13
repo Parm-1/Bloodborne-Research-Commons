@@ -1,6 +1,6 @@
 # Start here
 
-Choose the task route in the [README](README.md). It links each task to its accepted dossier and claim in one step. A dossier is a focused account of what selected public source paths show, what they do not show, and where the remaining question belongs.
+Choose the task route in the [README](README.md). It links accepted tasks to their dossier and claim in one step; proposed topic routes are explicitly marked pending review/editorial acceptance. A dossier is a focused account of what selected public source paths show, what they do not show, and where the remaining question belongs.
 
 **Publication status:** source-reviewed entry documentation is published through merged [PR #10](https://github.com/Parm-1/Bloodborne-Research-Commons/pull/10). The [historical cross-topic assessment](docs/reviews/BRC-AGENT-ENTRY-01-USABILITY-REVIEW-r3.md) and the separately commissioned [USABILITY-02 result](docs/reviews/BRC-AGENT-ENTRY-USABILITY-02-RESULT-r1.md) both remain **NOT MET**. [Issue #9](https://github.com/Parm-1/Bloodborne-Research-Commons/issues/9) stays open; independently reliable autonomous continuation is not qualified. See the [current entry status](docs/CORPUS_CHECKPOINT.md#current-entry-status-brc-agent-entry-01-2026-10-13) for the evaluated and published versions.
 
