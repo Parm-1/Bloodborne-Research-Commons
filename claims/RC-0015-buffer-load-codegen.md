@@ -17,3 +17,7 @@
 **Reviewer:** pending uninvolved technical review; editorial acceptance pending. No fresh-reader test requested; Issue #9 unchanged. [Author r1](../docs/reviews/BRC-SHADER-BUFFER-LOAD-01-AUTHOR-r1.md).
 
 **Supersession:** none; new proposed claim in [batch Issue #12](https://github.com/Parm-1/Bloodborne-Research-Commons/issues/12). Existing claims and history unchanged.
+
+## Linked author repair r2 — 2026-10-13
+
+Successor to frozen candidate r1 `54a8e20e41b0b9210ef44766aaa63e74d8fcdff5`. Independent r1 review found one producer-applicability defect in the paged worked positive. The [dossier's corrected positive](../knowledge/buffer-load-dword-translation.md#original-worked-examples-and-discriminators) now supplies the actual block-size producer/caller constraint, a feasible sparse alignment, matched descriptor/record/table-span/binding premises and corrected page/address/target arithmetic. The atomic load claim, U32 result, meaningful negatives and exclusions are unchanged. [Author r2](../docs/reviews/BRC-SHADER-BUFFER-LOAD-01-AUTHOR-r2.md) records affected checks; same-reviewer recheck and editorial acceptance are pending. R1 receipt/history remain immutable.
