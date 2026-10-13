@@ -203,7 +203,7 @@ projects:
         - https://wiki.libsdl.org/SDL3/SDL_DestroyAudioStream
         - https://wiki.libsdl.org/SDL3/SDL_AudioSpec
     pad_sampling_extension_checked_on: 2026-10-13
-    pad_sampling_extension_use: BRC-PAD-SAMPLING-01; Batch 02 Issue 16 item 3; proposed knowledge/pad-sampling.md and RC-0024/RC-0025; source-only candidate, independent review and human editorial acceptance/consolidation/merge pending
+    pad_sampling_extension_use: BRC-PAD-SAMPLING-01; Batch 02 Issue 16 item 3; proposed knowledge/pad-sampling.md and RC-0024/RC-0025; independent review r1 and same-reviewer affected recheck r2 complete, F1 resolved at 6e1a1128a67282460c81ee40b1e5003f7743f04d; root accepts repaired source/documentation contract and reviewed cumulative integration for one PR delivery only; human consolidated editorial acceptance/merge pending, unmerged/proposed
     pad_sampling_extension_scope: Selected pad layout/lookup/device selection/composite producer/call/lifecycle/capability branches plus decisive SDL window-event/mouse/configuration and exact resolver/relocation dependencies. Fifteen public source blobs and exact bounds in dossier; sixteen conditional source/model reasoning rows, not fixtures. No source import, execution, build, original/device/game input, full SDL/input/UI/framework audit or installed-library/ABI qualification. All earlier fields/pins/licenses, accepted routes and proposed memory/audio unchanged.
     pad_sampling_additional_inspected_paths:
       - src/runtime_pad.c
