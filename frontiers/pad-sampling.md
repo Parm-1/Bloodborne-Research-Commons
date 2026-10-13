@@ -1,0 +1,13 @@
+# One pad acquisition attribution question
+
+Consumer: input maintainer deciding whether one sampled result can certify a particular device incarnation and newly acquired input. Proposed BRC-PAD-SAMPLING-01 / Batch02 [Issue #16](https://github.com/Parm-1/Bloodborne-Research-Commons/issues/16) item3. [Dossier](../knowledge/pad-sampling.md), [RC-0024](../claims/RC-0024-pad-sampling.md), [RC-0025](../claims/RC-0025-pad-capabilities.md); independent review and human editorial acceptance/merge pending. SOURCE_INSPECTED only.
+
+**One missing fact:** for one consumer transition, what attributable SDL device-instance/state-update record preceded the exact ReadState output, with the branch/configuration and synthetic/overlay contributions bound to that call? No such execution record exists in this study. Fixed handle1, connected1, uint8 opening counter, zero unique fields and local timestamp cannot supply it. Motion/vibration guards similarly lack device-capability/effect evidence. Bind the exact target/ABI/compiler/library and eligible initialization/event thread before any permitted execution; public source does not grant that permission.
+
+The smallest future discriminator, only if the actual target separately authorizes it, is a matched pair of one known keyboard-only transition and one selected-controller transition after a single processed input update, each with call/output, actual SDL instance/query result, event-update ordering and all override/capture settings attributed. Preserve the supplied setup and record source failures as failures rather than inferring from output fields. This is a finite observation proposal, not logging framework implementation or a commissioned device/game test.
+
+- Attributable matching instance/update plus bound contribution shows that conditional producer chain for those calls only; it does not establish original-hardware fidelity, sensor or physical rumble behavior.
+- The same connected/count/timestamp pattern with keyboard-only, suppressed or stale SDL state falsifies using those fields alone for identity/freshness. Use composite host controls and separate provenance.
+- Missing eligibility, dependency identity, branch/order or attribution leaves the question UNKNOWN; do not convert neutral controls or API guard0 into successful hardware evidence.
+
+Stop after that pair or a missing prerequisite; do not retry until provenance becomes attributable or expand into a whole input/SDL/game/UI survey. This package stops at reviewed source/documentation PR delivery; next runtime action requires the target's own existing authority. Seven accepted routes, peer proposed memory/audio, both usability NOT MET and Issue #9 OPEN remain unchanged.
