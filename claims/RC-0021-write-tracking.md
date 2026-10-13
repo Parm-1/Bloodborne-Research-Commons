@@ -1,0 +1,13 @@
+# RC-0021 — Host write notifications depend on route, raw fields and phase
+
+**Level:** SOURCE_INSPECTED, 2026-10-13; public bbport `3c57da4198ad62039f63f33bfd205b9916518acf`, selected Linux source. Proposed BRC-MEMORY-MAPPING-01 / Batch 02 Issue #16 item 1. Independent review and acceptance pending. No runtime, native fixture, device or game observation.
+
+For selected libc wrappers, prepare_cpu_write checks trap reasons before the store and note_cpu_write checks watched-page bits after a returning store, each conditionally announcing the full virtual range to OnCpuWrite. File-read note_write instead clips at most eight eligible non-reserved VMAs with GPU protection bits, and requires the invalidate hook even when an asset hook exists. Callback dispatch, rasterizer coverage, changed bytes and reader completion are distinct.
+
+**Primary sources:** [runtime mapping/protection/removal](https://github.com/deadinside28/bloodborne_pc/blob/3c57da4198ad62039f63f33bfd205b9916518acf/src/runtime_memory.c#L280-L641); [runtime hooks/write/traps/lookup](https://github.com/deadinside28/bloodborne_pc/blob/3c57da4198ad62039f63f33bfd205b9916518acf/src/runtime_memory.c#L725-L1034); [installed shim consumer](https://github.com/deadinside28/bloodborne_pc/blob/3c57da4198ad62039f63f33bfd205b9916518acf/gpu/shim/bbgpu.cpp#L94-L198); [rasterizer notification and coverage](https://github.com/deadinside28/bloodborne_pc/blob/3c57da4198ad62039f63f33bfd205b9916518acf/gpu/shadps4/video_core/renderer_vulkan/vk_rasterizer.cpp#L4191-L4306). Exact bounds/blobs, conditional worked controls and additional decisive dependencies are in the [dossier](../knowledge/guest-memory-mapping.md).
+
+**Meaningful contrary cases:** No trap suppresses preparation independently of watched bits; no watched bit suppresses post-note independently of traps; a watched alias does not mark another alias; a ninth eligible span is omitted; counters precede whole rasterizer coverage validation.
+
+**Exclusions/unknowns:** no actual source import, build, serialized input, execution, host coherence, cross-alias notification completeness, stable byte snapshot, universal failure rollback, retained map/read lease or target allocator behavior. Stored rights, trap/watch state and counters cannot substitute for the missing phase/reader evidence. Source comments describing game observations remain PROJECT_REPORTED, not reproduced here.
+
+**Ownership/reuse:** declared GPL v2 or later and vendored shadPS4 lineage; [registry](../sources/projects.yaml) caveats remain. KNOWLEDGE_REFERENCE; DEFER code/runtime reuse until exact consumer prerequisites are established. [Frontier](../frontiers/memory-mapping.md); [author r1](../docs/reviews/BRC-MEMORY-MAPPING-01-AUTHOR-r1.md). No older claim superseded.

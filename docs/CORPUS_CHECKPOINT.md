@@ -74,3 +74,9 @@ The proposed [import-resolution dossier](../knowledge/import-resolution.md), RC-
 ## Batch 01 source-scope status — 2026-10-13
 
 The [Issue #12 handoff](https://github.com/Parm-1/Bloodborne-Research-Commons/issues/12#issuecomment-6139226514) is the current source-scope disposition for the Batch 01 topics listed above. The dated sections keep their stage-specific wording as history. Acceptance covers source and documentation only; it is not runtime, GPU, game or intended-behavior evidence, and Issue #9 stays OPEN / NOT MET.
+
+## Proposed Batch 02 memory topic — 2026-10-13
+
+[BRC-MEMORY-MAPPING-01 dossier](../knowledge/guest-memory-mapping.md), [RC-0020](../claims/RC-0020-memory-mapping.md), [RC-0021](../claims/RC-0021-write-tracking.md) and [frontier](../frontiers/memory-mapping.md) address Batch 02 [Issue #16](https://github.com/Parm-1/Bloodborne-Research-Commons/issues/16) item 1. This is a proposed SOURCE_INSPECTED Linux contract, independent review and acceptance pending; [author r1](reviews/BRC-MEMORY-MAPPING-01-AUTHOR-r1.md) is the frozen source/documentation checkpoint. VMA coverage, physical aliasing, cache notification and reader completion are distinct; the next consumer must supply its exact ordering/alias/endpoint. No native/game/device/fixture or autonomous-continuation result is added.
+
+All seven earlier technical routes and the dated [Batch 01 Issue #12 acceptance](https://github.com/Parm-1/Bloodborne-Research-Commons/issues/12#issuecomment-6139226514) are preserved. Historical pending-stage text is retained as history. Both usability results remain NOT MET and Issue #9 remains OPEN; no fresh reader, new rubric, source import or runtime campaign is commissioned.

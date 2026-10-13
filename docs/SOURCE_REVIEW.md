@@ -192,3 +192,9 @@ This [status-only r3](reviews/BRC-IMPORT-RESOLUTION-01-AUTHOR-r3.md) supersedes 
 ## Batch 01 source-scope status — 2026-10-13
 
 The current source-scope disposition for the Batch 01 inspections above is the [Issue #12 handoff](https://github.com/Parm-1/Bloodborne-Research-Commons/issues/12#issuecomment-6139226514). The dated pins, bounds and review stages above remain history. Acceptance covers source and documentation only and adds no runtime, GPU, game or usability evidence.
+
+## Proposed memory source contract — BRC-MEMORY-MAPPING-01, 2026-10-13
+
+Batch 02 [Issue #16](https://github.com/Parm-1/Bloodborne-Research-Commons/issues/16) item 1 adds the [memory dossier](../knowledge/guest-memory-mapping.md), [RC-0020](../claims/RC-0020-memory-mapping.md), [RC-0021](../claims/RC-0021-write-tracking.md) and [frontier](../frontiers/memory-mapping.md). The dossier pins 16 public bbport files at `3c57da4198ad62039f63f33bfd205b9916518acf` with exact inspected bounds. Fifteen conditional source reasoning rows distinguish mapped coverage/backing, reserve/prot/traps, failure/hook phases, pre/post write predicates and aliases. They are not executed fixtures or original-behavior expectations. [Author r1](reviews/BRC-MEMORY-MAPPING-01-AUTHOR-r1.md) freezes the candidate for independent review; review/acceptance pending.
+
+The seven earlier technical studies remain accepted at their existing source/documentation scope. Earlier stage records, source/license pins, both NOT MET usability results and Issue #9 OPEN remain unchanged. No private/original/game material, upstream code/script execution, runtime/native/GPU fixture, source import, reader evaluation, build or external publication/contact was involved in author work.
