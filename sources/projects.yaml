@@ -77,7 +77,7 @@ projects:
     research_use: tools/re/callgraph.py (RC-0003 plus correspondence extension, RC-0012 and RC-0013); description of a separate runtime and shadPS4-derived renderer (frontier); proposed BUFFER_LOAD_DWORD source trace (RC-0014, RC-0015 and knowledge/buffer-load-dword-translation.md)
     disclaimer: Source lineage and forks are not independent confirmations. The earlier scope read only the cited script, README, LICENSE and gpu/VENDOR.txt. The separately dated shader extension below reads bounded producer/pass/descriptor/emitter/binding source; no intended-ISA, runtime or game correctness is established.
     shader_extension_checked_on: 2026-10-13
-    shader_extension_status: Proposed source-only topic; r1 positive-applicability repair in linked r2; affected recheck and editorial acceptance pending
+    shader_extension_status: Source-reviewed proposed topic; r1 repair and r2 affected recheck complete; conditional source/documentation contract accepted for public PR delivery; human editorial acceptance pending and unmerged
     shader_inspected_paths:
       - gpu/VENDOR.txt
       - gpu/shadps4/shader_recompiler/frontend/decode.cpp

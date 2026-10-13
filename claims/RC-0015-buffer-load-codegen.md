@@ -14,10 +14,14 @@
 
 **Upstream ownership/license/reuse:** original bbport/shadPS4 authors; declared GPL-2.0-or-later lineage in the [registry](../sources/projects.yaml), reference-only with no source import or combination assurance. KNOWLEDGE_REFERENCE.
 
-**Reviewer:** pending uninvolved technical review; editorial acceptance pending. No fresh-reader test requested; Issue #9 unchanged. [Author r1](../docs/reviews/BRC-SHADER-BUFFER-LOAD-01-AUTHOR-r1.md).
+**Reviewer:** INDEPENDENTLY_REVIEWED at source/documentation scope: [independent r1 review](../docs/reviews/BRC-SHADER-BUFFER-LOAD-01-REVIEW-r1.md) and [same-reviewer affected r2 recheck](../docs/reviews/BRC-SHADER-BUFFER-LOAD-01-REVIEW-r2.md). F1 is resolved with no remaining actionable finding; parent accepted the conditional source/documentation contract for public PR delivery. Human editorial acceptance remains pending and unmerged; no reader test or execution qualification. [Author r1](../docs/reviews/BRC-SHADER-BUFFER-LOAD-01-AUTHOR-r1.md) and [final integration r3](../docs/reviews/BRC-SHADER-BUFFER-LOAD-01-AUTHOR-r3.md).
 
 **Supersession:** none; new proposed claim in [batch Issue #12](https://github.com/Parm-1/Bloodborne-Research-Commons/issues/12). Existing claims and history unchanged.
 
 ## Linked author repair r2 — 2026-10-13
 
 Successor to frozen candidate r1 `54a8e20e41b0b9210ef44766aaa63e74d8fcdff5`. Independent r1 review found one producer-applicability defect in the paged worked positive. The [dossier's corrected positive](../knowledge/buffer-load-dword-translation.md#original-worked-examples-and-discriminators) now supplies the actual block-size producer/caller constraint, a feasible sparse alignment, matched descriptor/record/table-span/binding premises and corrected page/address/target arithmetic. The atomic load claim, U32 result, meaningful negatives and exclusions are unchanged. [Author r2](../docs/reviews/BRC-SHADER-BUFFER-LOAD-01-AUTHOR-r2.md) records affected checks; same-reviewer recheck and editorial acceptance are pending. R1 receipt/history remain immutable.
+
+## Final integration r3 — 2026-10-13
+
+Status/report integration after the frozen r2 candidate `377d21d1f9ef4a76a3b89f59d2bef3c39a3b0270` and its same-reviewer affected recheck. Source findings, formulas, examples, field/configuration premises, source identities and exclusions remain unchanged. Earlier dated pending statements describe their original stages; current review status is the Reviewer field above. [Author r3](../docs/reviews/BRC-SHADER-BUFFER-LOAD-01-AUTHOR-r3.md) records verbatim report integration and focused preservation/reference checks. Human editorial acceptance remains pending; no reader or execution result is added.
