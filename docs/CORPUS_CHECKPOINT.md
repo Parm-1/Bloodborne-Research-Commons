@@ -13,7 +13,13 @@ Other graphics and shader topics are outside these inspected scopes; this checkp
 
 ## Current entry status (BRC-AGENT-ENTRY-01, 2026-10-13)
 
-**Partial editorial acceptance; the usability gate is open.** The owner's [PR #10 review](https://github.com/Parm-1/Bloodborne-Research-Commons/pull/10#pullrequestreview-5497980388) supports the task-first documentation and the preserved negative reading result at source and documentation scope. It does not accept the adequate-usability checkpoint. [Issue #9](https://github.com/Parm-1/Bloodborne-Research-Commons/issues/9) and PR #10 remain open, and this checkpoint does not claim that the broader goal is complete.
+**Published source-reviewed documentation; the usability criterion remains NOT MET.** [BRC-PRO-20261012-012](https://github.com/Parm-1/Bloodborne-Research-Commons/pull/10#pullrequestreview-5498555564) accepts documentation-only incorporation and the delivered negative evaluation. [PR #10](https://github.com/Parm-1/Bloodborne-Research-Commons/pull/10) merged on 2026-10-13; [Issue #9](https://github.com/Parm-1/Bloodborne-Research-Commons/issues/9) remains open with its adequate-usability objective unmet. Publication does not qualify independently reliable autonomous continuation or complete the broader research project.
+
+The published PR #10 merge is `30a4a4b2d4e2285ddea1745ddb80d89ab0c7791d`, tree `ab73bd4bf3eac6e378ac205c7a4ded31d2f4228a`. Its delivered evidence packet is `900bd44e5a8e30c9cefc8126a62b8ad84d66154c`, with that same tree. The USABILITY-02 reader evaluated `4dcb72ff2531d116fec68986eff03fb75150cca3`, tree `5946a03af18354781ad0b2a0c497cbee2a01c128`. This status successor changes current entry prose; it does not replace either evaluated subject or alter frozen records.
+
+Both unmet results are directly available: the [historical cross-topic assessment](reviews/BRC-AGENT-ENTRY-01-USABILITY-REVIEW-r3.md), retaining its original and same-reader stages, and the separately commissioned [USABILITY-02 result](reviews/BRC-AGENT-ENTRY-USABILITY-02-RESULT-r1.md), with [original answers](reviews/BRC-AGENT-ENTRY-USABILITY-02-ANSWER-r1.md), [observations](reviews/BRC-AGENT-ENTRY-USABILITY-02-OBSERVATIONS-r1.md) and [independent grades](reviews/BRC-AGENT-ENTRY-USABILITY-02-GRADES-r1.md). The two criteria remain unmet; no grade is changed. Requested configuration and self-reported reading counts are not independently verified served-model identity or complete access logs.
+
+Use the published material as a source-reviewed reference. Verify task relevance, exact evidence scope and consequential conclusions against the cited producer and consumer; the entry supplies no execution guarantee.
 
 The fresh-reader records stay separate, and no grade is changed:
 
@@ -23,8 +29,8 @@ The fresh-reader records stay separate, and no grade is changed:
 
 These are reader reasoning and completeness results. They are not new source claims and change no accepted technical record. Reader retries have stopped, and the original and repair answers remain preserved verbatim in the review copies.
 
-No stage passed. The fixed whole criterion remains not met. Questions 1 and 4 have their adequate statuses only from the affected check.
+No historical stage passed. That fixed whole criterion remains not met. Questions 1 and 4 have their adequate statuses only from the affected historical check.
 
 Continuation r6 adds a source-linked explanation of overlapping upload readers and a rule for labelling premises, in [CONTINUATION](CONTINUATION.md#texture-upload-readers-that-overlap). This is documentation for future answers. It is not a new usability result, and this checkpoint commissions no reader.
 
-No new substantive topic or evaluation is commissioned. The shader-translation question from the elicited Q4 task was a hypothetical scenario supplied for the reading exercise. It is not independent consumer demand, and it is not selected research. Active work is this bounded documentation revision and a prospective evaluation design, which is not executed. No owner-supplied shader defect is requested. The usability checkpoint and Issue #9 remain open regardless of source-document acceptance.
+PRO011 separately commissioned USABILITY-02 under [prospective design r2](reviews/BRC-AGENT-ENTRY-01-PROSPECTIVE-EVALUATION-r2.md); that one attempt and its independent grading are complete, with the criterion NOT MET. The design and original evaluation artifacts remain frozen. The shader-translation question from the historical Q4 task was a hypothetical scenario, not independent consumer demand or selected research. This publication closeout selects no new reader, model change, rubric revision, substantive topic or runtime campaign. The usability objective and Issue #9 remain open regardless of documentation acceptance.
