@@ -1,6 +1,6 @@
 # RC-0016 — program identity alone does not select a shader module
 
-**Level:** SOURCE_INSPECTED, 2026-10-13. Proposed topic BRC-CACHE-APPLICABILITY-01; independent review pending. Target: bbport `3c57da4198ad62039f63f33bfd205b9916518acf`, selected regular Vulkan renderer path.
+**Level:** SOURCE_INSPECTED, 2026-10-13. Proposed topic BRC-CACHE-APPLICABILITY-01; [independent source review r1](../docs/reviews/BRC-CACHE-APPLICABILITY-01-REVIEW-r1.md) complete with no actionable defect. Target: bbport `3c57da4198ad62039f63f33bfd205b9916518acf`, selected regular Vulkan renderer path.
 
 After a program-cache hit, the implementation refreshes current user data and uses the stored specialization as the left operand of a directional compatibility predicate before reusing a module. A truthy current buffer's changed stride rejects an otherwise matching stored module; the selected unformatted raw-load format fields are conditionally ignored. A compatible module hit reuses its ordinal and advances bindings. These are source selection outcomes, not execution correctness.
 
@@ -10,4 +10,4 @@ After a program-cache hit, the implementation refreshes current user data and us
 
 **Exclusions:** no equal-code proof from hash values; no arbitrary-layout, invalid-record, cross-device, ISA, native, GPU, game, allocation lifetime or concurrency qualification. No assertion that every omitted field is safe or that an omitted field proves a bug. Compilation success and real target occurrence are unobserved.
 
-**Ownership/reuse:** ALREADY_PRESENT for the selected implementation; KNOWLEDGE_REFERENCE elsewhere. Source authors retain declared GPL lineage; [registry](../sources/projects.yaml) retains licensing and pins. Original prose only; no source import or code-combination decision. [Author r1](../docs/reviews/BRC-CACHE-APPLICABILITY-01-AUTHOR-r1.md); acceptance and publication are pending parent/editorial decisions.
+**Ownership/reuse:** ALREADY_PRESENT for the selected implementation; KNOWLEDGE_REFERENCE elsewhere. Source authors retain declared GPL lineage; [registry](../sources/projects.yaml) retains licensing and pins. Original prose only; no source import or code-combination decision. [Author r1](../docs/reviews/BRC-CACHE-APPLICABILITY-01-AUTHOR-r1.md); parent accepted the conditional source/documentation contract for PR delivery. [Author r2](../docs/reviews/BRC-CACHE-APPLICABILITY-01-AUTHOR-r2.md) records status-only integration; publication and human editorial acceptance remain pending.

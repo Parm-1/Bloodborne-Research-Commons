@@ -1,6 +1,6 @@
 # RC-0017 — module compatibility, render keys and disk gates are separate cache decisions
 
-**Level:** SOURCE_INSPECTED, 2026-10-13. Proposed topic BRC-CACHE-APPLICABILITY-01; independent review pending. Target: bbport `3c57da4198ad62039f63f33bfd205b9916518acf`, selected Vulkan cache producers/consumers.
+**Level:** SOURCE_INSPECTED, 2026-10-13. Proposed topic BRC-CACHE-APPLICABILITY-01; [independent source review r1](../docs/reviews/BRC-CACHE-APPLICABILITY-01-REVIEW-r1.md) complete with no actionable defect. Target: bbport `3c57da4198ad62039f63f33bfd205b9916518acf`, selected Vulkan cache producers/consumers.
 
 The selected implementation separates metadata-valued programs, module permutations, byte-compared graphics keys, a driver pipeline-cache handle, and renderer disk records. Graphics-map lookup follows stage/key refresh; matching stage values alone do not imply equal graphics keys. Warmup gates renderer records using explicit format versions and the per-cache device/compiler profile before recreating modules/pipelines; a clear request is not proof of successful disk invalidation, particularly because archived-mode Clear returns without deleting entries.
 
@@ -10,4 +10,4 @@ The selected implementation separates metadata-valued programs, module permutati
 
 **Exclusions:** no driver-blob portability/UUID proof, disk flush/readback receipt, input/image identity, hash-collision absence, cross-ABI persistence, patch invalidation guarantee or in-flight lifetime qualification. No runtime, game or hardware observation.
 
-**Ownership/reuse:** ALREADY_PRESENT for the selected layered mechanism; KNOWLEDGE_REFERENCE for another renderer. Source authors retain declared GPL lineage; [registry](../sources/projects.yaml) is reference-only. [Author r1](../docs/reviews/BRC-CACHE-APPLICABILITY-01-AUTHOR-r1.md); parent acceptance/publication and human editorial merge remain pending.
+**Ownership/reuse:** ALREADY_PRESENT for the selected layered mechanism; KNOWLEDGE_REFERENCE for another renderer. Source authors retain declared GPL lineage; [registry](../sources/projects.yaml) is reference-only. [Author r1](../docs/reviews/BRC-CACHE-APPLICABILITY-01-AUTHOR-r1.md); parent accepted the conditional source/documentation contract for PR delivery. [Author r2](../docs/reviews/BRC-CACHE-APPLICABILITY-01-AUTHOR-r2.md) records status-only integration; publication and human editorial merge remain pending.
