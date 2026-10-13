@@ -1,0 +1,19 @@
+# RC-0015 — a surviving raw dword load has conditional bound and paged consumers
+
+**Atomic claim:** pinned bbport emits one U32 storage-buffer array load for the selected ordinary BUFFER_LOAD_DWORD; a paging-selected descriptor instead produces an aligned physical-pointer load with a range/nonzero-entry guard and selects zero after a trash load when the guard fails. This guarantees only the selected source operation under matched translation/binding and valid-resource premises.
+
+**Subject/version/platform:** bbport `3c57da4198ad62039f63f33bfd205b9916518acf`, vendored recompiler and Vulkan consumer; surviving raw load, supported host decoder layout, matching stage/descriptor/profile, emitted unpatched code. Hardware Geometry with glc=slc=1 rewrites to an attribute bitcast before buffer resource discovery and is outside the ordinary load claim.
+
+**Evidence level/date/method:** SOURCE_INSPECTED, 2026-10-13. Decode-to-IR-to-resource-to-emitter and record/binding consumers inspected; worked cases are hypothetical MODEL/source reasoning. No decoded fixture, SPIR-V binary, module creation, native/GPU or game result.
+
+**Primary pinned source:** [ordinary emitter](https://github.com/deadinside28/bloodborne_pc/blob/3c57da4198ad62039f63f33bfd205b9916518acf/gpu/shadps4/shader_recompiler/backend/spirv/emit_spirv_context_get_set.cpp#L405-L456), [paged pointer](https://github.com/deadinside28/bloodborne_pc/blob/3c57da4198ad62039f63f33bfd205b9916518acf/gpu/shadps4/shader_recompiler/backend/spirv/spirv_emit_context.cpp#L1338-L1379), [binding](https://github.com/deadinside28/bloodborne_pc/blob/3c57da4198ad62039f63f33bfd205b9916518acf/gpu/shadps4/video_core/renderer_vulkan/vk_rasterizer.cpp#L3100-L3185), [geometry alternative](https://github.com/deadinside28/bloodborne_pc/blob/3c57da4198ad62039f63f33bfd205b9916518acf/gpu/shadps4/shader_recompiler/ir/passes/ring_access_elimination.cpp#L91-L127). Complete conditional guarantee, field/configuration premises, failures, exact bounds/blobs and module/patch consumer are in the [dossier](../knowledge/buffer-load-dword-translation.md#generated-load-and-actual-binding-consumer).
+
+**Meaningful negative:** a failed paged guard still emits a trash-pointer load; a bound load has no emitter-level range comparison; J=0x40000000 becomes U32 byte offset zero on the paged path. Geometry+both coherency flags reads attributes. Nonzero omitted addr64/lds/tfe bits and successful createShaderModule alone cannot establish the claimed applicability or execution. [Worked cases](../knowledge/buffer-load-dword-translation.md#original-worked-examples-and-discriminators).
+
+**Exclusions/unresolved:** device capability/result, physical table/trash lifetime and publication, backing-span validity, shader execution, synchronization, patched module identity, cache applicability, original hardware semantics and game fidelity remain UNKNOWN. Robustness features requested by the source are not an observed range result or qualification of physical-pointer access. No intended-ISA source comparison occurred.
+
+**Upstream ownership/license/reuse:** original bbport/shadPS4 authors; declared GPL-2.0-or-later lineage in the [registry](../sources/projects.yaml), reference-only with no source import or combination assurance. KNOWLEDGE_REFERENCE.
+
+**Reviewer:** pending uninvolved technical review; editorial acceptance pending. No fresh-reader test requested; Issue #9 unchanged. [Author r1](../docs/reviews/BRC-SHADER-BUFFER-LOAD-01-AUTHOR-r1.md).
+
+**Supersession:** none; new proposed claim in [batch Issue #12](https://github.com/Parm-1/Bloodborne-Research-Commons/issues/12). Existing claims and history unchanged.
