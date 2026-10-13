@@ -1,0 +1,23 @@
+# BRC-IMPORT-RESOLUTION-01 — author delivery r1
+
+Date: 2026-10-13. Candidate tag: `brc-import-resolution-candidate-r1`. Accepted Commons baseline: `09dd0306e7c19365e4ad6a2a92107d3d2fb038de`. Exact candidate commit/tree and report SHA256 are returned after the commit; this report belongs to that frozen tree and avoids a circular self-identity.
+
+## Outcome and bounded contract
+
+One proposed [dossier](../../knowledge/import-resolution.md), [selection claim RC-0018](../../claims/RC-0018-import-selection.md), [outcome claim RC-0019](../../claims/RC-0019-import-outcomes.md) and [consumer frontier](../../frontiers/import-resolution.md). Primary evidence is the exact public bbport commit `3c57da4198ad62039f63f33bfd205b9916518acf`; local HEAD, git objects and read-only working bytes agree, and its configured origin is the public deadinside28/bloodborne_pc repository. The dossier binds 18 public-file blobs and selected bounds, including existing README/LICENSE/vendor lineage. No claims depend on other unmerged proposals.
+
+Host resolution precedes enabled linked fallback. Strict mode neutralizes the effective capability and linked use, but does not bypass raw metadata validation or eagerly execute traps. Exact scope, mapped diagnostic names and GPU NID-prefix selection differ. Linked producer identities include versions, with a unique same-NID internal-libc exception; the probe trusts serialized identity after kind/range checks. Selected callable bodies distinguish substantive copy work, ignored-browser success, offline socket errors, AppContent prerequisites and module refcount-only reporting. Pointer binding, call dispatch, feature success and correctness are distinct. Pre-entry text/flags and printed verified-RET language do not demonstrate actual image validation or guest instructions.
+
+## Author checks and limits
+
+Documentation/static source inspection only. Eleven conditional reasoning rows pair source-faithful positive paths with contradictory names, raw kinds, capabilities, strict settings, binding kinds/ranges or prerequisite state. They are not executed fixtures, trials, source-model execution or independent expectations of original/game behavior. No upstream script, runtime, build, original image, serialized fixture, game, source import, reader evaluation, private project record, paid API or external publication/contact was involved.
+
+The focused document check verifies UTF-8 without BOM/NUL/CR; relative link targets/anchors; pinned source line bounds; 18 dossier source blobs against commit objects and current read-only bytes; allowed paths; unchanged baseline bytes; append-only prefixes for SOURCE_REVIEW and CORPUS_CHECKPOINT; bounded private-path/credential-prefix scan; and git whitespace. Source bounds are mechanical checks, not semantic proof. Source-registry extension indentation/list placement was manually inspected; no YAML parser was available, so parser validation is not claimed.
+
+Final check: 9 changed/added texts; 147 relative references with 8 anchors; 82 pinned source citation occurrences at 44 distinct locations; 18 matching source blobs; 11 source reasoning rows; zero reported errors. Counts cover the changed texts, including preserved historical sections in append-only documents, and are not new-only citation counts. All 86 unchanged baseline files are protected byte-for-byte, including prior claims/dossiers/frontiers, frozen author/reviewer/reader records, original answers and grades. The four accepted-topic checkpoint table, existing publication status and Issue #9 OPEN/NOT MET remain. Review and human acceptance are pending; the README route explicitly identifies this as a proposal, not an accepted fifth topic.
+
+## Resources, consumer and stop rule
+
+All tool commands completed synchronously; no live process/shell handle, child, native/game/GPU resource or upstream working-tree edit was created. One author owns this checkout through ordinary repairs and affected recheck; parent owns independent reviewer dispatch, acceptance and publication. Use a linked r2 or later for any change after ready delivery; preserve this report and frozen candidate. Verbatim reviewer integration is within the grant after review.
+
+The next consumer question is one exact import/configuration and observation phase. Stop at the frozen source checkpoint unless affected review finds a defect or that consumer supplies a decision-changing public-source question. Execution remains dependent on actual target records and authorization. Author usage, token/cost, served-model identity and elapsed-time telemetry are unavailable/unmeasured; no billing, model-equivalence or efficiency inference is made. No ledger or framework was added.
