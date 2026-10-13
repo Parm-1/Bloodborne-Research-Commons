@@ -74,10 +74,52 @@ projects:
     repo: https://github.com/deadinside28/bloodborne_pc
     research_commit: 3c57da4198ad62039f63f33bfd205b9916518acf
     commit_date_utc: 2026-10-10T22:57:36Z
-    research_use: tools/re/callgraph.py (RC-0003 plus correspondence extension, RC-0012 and RC-0013); description of a separate runtime and shadPS4-derived renderer (frontier)
-    disclaimer: Source lineage and forks are not independent confirmations. Only the cited script, README, LICENSE and gpu/VENDOR.txt were read.
+    research_use: tools/re/callgraph.py (RC-0003 plus correspondence extension, RC-0012 and RC-0013); description of a separate runtime and shadPS4-derived renderer (frontier); proposed BUFFER_LOAD_DWORD source trace (RC-0014, RC-0015 and knowledge/buffer-load-dword-translation.md); proposed shader pipeline cache applicability source inspection (RC-0016, RC-0017 and knowledge/shader-pipeline-cache-applicability.md)
+    disclaimer: Source lineage and forks are not independent confirmations. The earlier scope read only the cited script, README, LICENSE and gpu/VENDOR.txt. The separately dated shader and cache extensions below read bounded source; no intended-ISA, runtime, cache-selection or game correctness is established.
+    shader_extension_checked_on: 2026-10-13
+    shader_extension_status: Source-reviewed topic; r1 repair and r2 affected recheck complete; conditional source/documentation contract accepted in Issue #12 on 2026-10-13; merged to main through PR #13 at 1963c6d623747753fa90c2cbe92e0903cd539f01
+    shader_inspected_paths:
+      - gpu/VENDOR.txt
+      - gpu/shadps4/shader_recompiler/frontend/decode.cpp
+      - gpu/shadps4/shader_recompiler/frontend/decode.h
+      - gpu/shadps4/shader_recompiler/frontend/instruction.h
+      - gpu/shadps4/shader_recompiler/frontend/opcodes.h
+      - gpu/shadps4/shader_recompiler/frontend/format.cpp
+      - gpu/shadps4/shader_recompiler/frontend/translate/vector_memory.cpp
+      - gpu/shadps4/shader_recompiler/frontend/translate/translate.h
+      - gpu/shadps4/shader_recompiler/frontend/translate/translate.cpp
+      - gpu/shadps4/shader_recompiler/recompiler.cpp
+      - gpu/shadps4/shader_recompiler/ir/ir_emitter.cpp
+      - gpu/shadps4/shader_recompiler/ir/ir_emitter.h
+      - gpu/shadps4/shader_recompiler/ir/reg.h
+      - gpu/shadps4/shader_recompiler/ir/opcodes.inc
+      - gpu/shadps4/shader_recompiler/ir/operand_helper.h
+      - gpu/shadps4/shader_recompiler/ir/passes/resource_discover_pass.cpp
+      - gpu/shadps4/shader_recompiler/ir/passes/resource_patching_pass.cpp
+      - gpu/shadps4/shader_recompiler/ir/passes/ring_access_elimination.cpp
+      - gpu/shadps4/shader_recompiler/ir/passes/flatten_extended_userdata_pass.cpp
+      - gpu/shadps4/shader_recompiler/ir/passes/lower_wave64_pass.cpp
+      - gpu/shadps4/shader_recompiler/ir/passes/shader_info_collection_pass.cpp
+      - gpu/shadps4/shader_recompiler/resource.h
+      - gpu/shadps4/shader_recompiler/info.h
+      - gpu/shadps4/shader_recompiler/specialization.h
+      - gpu/shadps4/video_core/amdgpu/resource.h
+      - gpu/shadps4/shader_recompiler/backend/spirv/emit_spirv.cpp
+      - gpu/shadps4/shader_recompiler/backend/spirv/spirv_emit_context.cpp
+      - gpu/shadps4/shader_recompiler/backend/spirv/emit_spirv_context_get_set.cpp
+      - gpu/shadps4/shader_recompiler/backend/spirv/emit_spirv_integer.cpp
+      - gpu/shadps4/shader_recompiler/backend/spirv/emit_spirv_warp.cpp
+      - gpu/shadps4/video_core/renderer_vulkan/vk_pipeline_cache.cpp
+      - gpu/shadps4/video_core/renderer_vulkan/vk_rasterizer.cpp
+      - gpu/shadps4/video_core/renderer_vulkan/vk_instance.cpp
+      - gpu/shadps4/video_core/renderer_vulkan/vk_shader_util.cpp
+      - gpu/shadps4/video_core/buffer_cache/buffer_cache_layer.cpp
+      - gpu/shadps4/video_core/buffer_cache/buffer_cache.h
+      - gpu/shadps4/video_core/buffer_cache/buffer_cache.cpp
+      - gpu/shadps4/shader_recompiler/backend/spirv/spirv_emit_context.h
+    shader_scope: BUFFER_LOAD_DWORD only; exact selected text bounds and whole-file blobs in the dossier. Decoder host layout, stage rewrite, branch-specific U32 arithmetic, descriptor discovery, raw SPIR-V bound/paged consumers and selected Vulkan binding/profile paths, including the sparse block-size producer and shift caller. No whole-framework audit, source import, execution, intended-ISA fidelity or cache applicability qualification.
     cache_inspection_checked_on: 2026-10-13
-    cache_inspection_use: BRC-CACHE-APPLICABILITY-01; proposed knowledge/shader-pipeline-cache-applicability.md and RC-0016/RC-0017, independently source-reviewed at e27ff4dcc140a9e26f51de7506285ac4d13999e5, parent-accepted for PR delivery, pending editorial acceptance
+    cache_inspection_use: BRC-CACHE-APPLICABILITY-01; knowledge/shader-pipeline-cache-applicability.md and RC-0016/RC-0017, independently source-reviewed at e27ff4dcc140a9e26f51de7506285ac4d13999e5 and accepted for source/documentation scope in Issue #12 on 2026-10-13
     cache_inspection_scope: Selected program/hash, directional specialization, live descriptor/compiler influence, graphics key/consumer, per-cache profile, replacement and renderer persistence boundaries; precise text bounds and whole-file blobs in the dossier. Public source only, no execution/import, no full renderer audit, no driver/game qualification. This extension does not expand the historical inspection disclaimer above or change existing pins/license fields.
     cache_inspected_paths:
       - gpu/shadps4/video_core/renderer_vulkan/vk_pipeline_cache.cpp
