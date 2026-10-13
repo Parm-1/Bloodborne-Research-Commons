@@ -1,0 +1,13 @@
+# Audio submission frontier
+
+Proposed BRC-AUDIO-SUBMISSION-01 / Batch02 [Issue #16](https://github.com/Parm-1/Bloodborne-Research-Commons/issues/16) item2; source inspection only, independent review and editorial acceptance pending. Read [dossier](../knowledge/audio-submission.md), [RC-0022](../claims/RC-0022-audio-submission.md) and [RC-0023](../claims/RC-0023-audio-completion.md). Public bbport pin `3c57da4198ad62039f63f33bfd205b9916518acf`; official SDL3 descriptions checked2026-10-13, installed artifact unknown.
+
+**One consumer question:** for one identified non-null Output invocation, does the maintainer need to reuse its input after synchronous conversion, account for accepted SDL bytes, or wait for actual played completion, and what exact compatible SDL artifact plus attributed endpoint supports that selected decision?
+
+Existing source supports input read closure at normal return under correct interface/span, stable writer ordering and serial open-slot premises. It does not propagate Put/Resume results. Timer return, synthetic queue-control low, raw count, type-derived state and last-time cannot establish acceptance/playback. Queue0 is an input queue sample, not a played endpoint. No source/API/target record here supplies actual playback completion.
+
+The smallest counterexample to a return-as-acceptance/playback claim is the source-valid timer route with length256/S16 stereo: normal return512 after1024-byte conversion, no SDL Put. A supplied same-call Put=false is the stream-route counterexample. The smallest false-timestamp control is NULL output: nonzero last-time, no read/wait/submission. These are conditional source checks, not executed observations.
+
+A future authorized consumer must first bind exact invocation/import, stable port incarnation, format/span/writer order and SDL artifact/API compatibility. Outcomes: normal return closes this call's synchronous reads under those premises; attributable Put=true supports copied input acceptance; Put=false/timer supports no acceptance conclusion; neither result supports played completion without a separately established attributable endpoint. Concurrent close/reopen or invalid input fails setup. Stop if that premise or endpoint is absent; do not extend this into codec/AJM/framework research merely to fill it.
+
+Reuse: KNOWLEDGE_REFERENCE now; DEFER runtime/code/completion-sensitive reuse. No source import, execution, audio/device/UI test, original/private/game input, build/install or upstream contact is granted. Peer proposed memory remains independently reviewed/unmerged, not corroboration or an eighth accepted topic. Seven accepted topics and both NOT MET usability records/Issue #9 OPEN remain.
