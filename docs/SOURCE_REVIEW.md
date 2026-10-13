@@ -118,3 +118,23 @@ The [public reader r1](reviews/BRC-FUNCTION-CORRESPONDENCE-01-FRESH-READER-r1.md
 ## Entry-layer review history, 2026-10-13
 
 [Independent source and editorial review r1](reviews/BRC-AGENT-ENTRY-01-REVIEW-r1.md), SHA-256 `fe4ec0c48035c779f6f4d35ed3dcb6cc9ba2a1fd1456f42e3da18a015bb47046`, is copied verbatim. Its finding F1, that the address route required a runtime load base for every join, and its evidence-precision item R1 led to [candidate r2](reviews/BRC-AGENT-ENTRY-01-AUTHOR-r2.md). The [affected recheck r2](reviews/BRC-AGENT-ENTRY-01-REVIEW-r2.md), SHA-256 `75f1202a77891dc271d2d81fa3a6e6936e7ce62aa03853387614fc8f775f5006`, is copied verbatim and reports no remaining actionable finding in affected scope. [Author r3 receipt](reviews/BRC-AGENT-ENTRY-01-AUTHOR-r3.md) records this integration. The cross-topic fresh-reader usability result is pending. The entry layer adds no runtime, game, native or GPU claim.
+
+## Entry-layer final integration, 2026-10-13
+
+The frozen records of the entry-stage usability check are copied verbatim into `docs/reviews`. Each source hash was checked before copying, and each copy was checked byte-for-byte against its source.
+
+| Record | SHA-256 |
+|---|---|
+| [Source recheck r4](reviews/BRC-AGENT-ENTRY-01-REVIEW-r4.md) | `fb4db6b1954ca98791544e425da2514715d6e61d4e459b91407e68503e6d01de` |
+| [Usability protocol r1](reviews/BRC-AGENT-ENTRY-01-USABILITY-PROTOCOL-r1.md) | `0863c3ae933ef0911bc6592347946676408c73cd8eceb6ea6370cf9ebd16bbef` |
+| [Usability questions r1](reviews/BRC-AGENT-ENTRY-01-USABILITY-QUESTIONS-r1.txt) | `cdce023fe73f3d74b551e014aa3493d4b785096c94ddf76c8b5a5daaecb554aa` |
+| [Fresh reader r1](reviews/BRC-AGENT-ENTRY-01-FRESH-AGENT-r1.md) | `937e14eeaecdd1071ccdd2bb211307c8af6705cf587685aa0efcad28e5aa9479` |
+| [Fresh reader r2](reviews/BRC-AGENT-ENTRY-01-FRESH-AGENT-r2.md) | `8352cb54950e6ed21d1a19c1e20c8b1942dade449936fc41f9854c7a87747283` |
+| [Fresh reader r3](reviews/BRC-AGENT-ENTRY-01-FRESH-AGENT-r3.md) | `8faa6fc581de8b116d60643aa0f957e7e95412b4bd8e5042576cd9dc0cb77bb0` |
+| [Usability assessment r1](reviews/BRC-AGENT-ENTRY-01-USABILITY-REVIEW-r1.md) | `b46d37f24345e5e5cc9d49141c0de2cc05f2712dcae7540bc704052c2bcdc8b4` |
+| [Usability assessment r2](reviews/BRC-AGENT-ENTRY-01-USABILITY-REVIEW-r2.md) | `9e74400bdf64272c2f6643f13e90f1c070717c55013ee4cd4dcaba14c2852998` |
+| [Usability assessment r3](reviews/BRC-AGENT-ENTRY-01-USABILITY-REVIEW-r3.md) | `f2fecc2229bfb93a6484a2d75d292fc9f540404c5f6b3d0a1edbc755fb311495` |
+
+The entry is accepted as a source-and-documentation entry at its reviewed scope. The source-review pull request decision is pending a Research Director editorial decision. The fixed whole usability criterion is not met. The original reading and each same-reader repair stage are kept separate, and the transport-corrected check permitted public continuation and validation contracts to be read without changing the criterion. The reviewer found no remaining source or entry defect. Reader retries have stopped.
+
+The pending wording in the entry-layer history above is historical. This section and [CORPUS_CHECKPOINT.md](CORPUS_CHECKPOINT.md#current-entry-status-brc-agent-entry-01-2026-10-13) supersede it. The Question 2 reasoning failure and the Question 3 partials are reader reasoning findings, not new source claims. Accepted technical claims, dossiers, frontiers and the source registry are unchanged.
