@@ -1,6 +1,6 @@
 # One import's binding versus feature outcome
 
-Proposed source-only topic, 2026-10-13; independent review and human acceptance pending. Read the [dossier](../knowledge/import-resolution.md), [selection claim RC-0018](../claims/RC-0018-import-selection.md) and [outcome claim RC-0019](../claims/RC-0019-import-outcomes.md) at public bbport `3c57da4198ad62039f63f33bfd205b9916518acf`.
+Proposed source-only topic, 2026-10-13; independent review and [affected recheck](../docs/reviews/BRC-IMPORT-RESOLUTION-01-REVIEW-r2.md) complete, F1 closed. Parent accepts source/documentation PR delivery only; human editorial acceptance and merge remain pending. Read the [dossier](../knowledge/import-resolution.md), [selection claim RC-0018](../claims/RC-0018-import-selection.md) and [outcome claim RC-0019](../claims/RC-0019-import-outcomes.md) at public bbport `3c57da4198ad62039f63f33bfd205b9916518acf`.
 
 Consumer question: for which **one exact scoped import** does a runtime maintainer need to distinguish host selection, linked fallback, a callable placeholder, feature-disabled behavior or failure? Supply the target revision/platform, boot format, raw name/kind/index/addend, serialized and effective capability/strict setting, applicable binding/table setup and the observation phase. Until supplied these are UNKNOWN. The Commons source pin is not an actual image or build identity.
 

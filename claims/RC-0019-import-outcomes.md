@@ -1,6 +1,6 @@
 # RC-0019 — binding and success labels do not establish feature implementation or execution correctness
 
-**Level:** SOURCE_INSPECTED, 2026-10-13. bbport `3c57da4198ad62039f63f33bfd205b9916518acf`, selected Linux call bodies and probe phases. Independent review and human acceptance pending.
+**Level:** SOURCE_INSPECTED, 2026-10-13. bbport `3c57da4198ad62039f63f33bfd205b9916518acf`, selected Linux call bodies and probe phases. Independent [source review r1](../docs/reviews/BRC-IMPORT-RESOLUTION-01-REVIEW-r1.md) and the same reviewer's [affected recheck r2](../docs/reviews/BRC-IMPORT-RESOLUTION-01-REVIEW-r2.md) are complete; F1 is closed with no actionable affected defect. Parent accepts the source/documentation contract for PR delivery only; human editorial acceptance and merge remain pending. No runtime, ABI or game qualification is added.
 
 A selected callable address may lead to substantive host work, an intentional placeholder, an unavailable-feature error or a prerequisite stop. The inspected examples distinguish host memcpy, an ignored offline browser request returning zero, offline socket error, AppContent configuration/load/init requirements and system-module refcount tracking. Unsupported function imports remain callable stopping trampolines until reached; unsupported data imports use inaccessible pages. Relocation completion and pre-entry text/flags do not prove implementation dispatch, guest instructions or gameplay.
 
@@ -11,3 +11,7 @@ A selected callable address may lead to substantive host work, an intentional pl
 **Exclusions/unknowns:** the table's implementation labels and logs do not independently establish original ABI fidelity, all exports, execution correctness, online-module behavior, data-object extent, actual images, native fixtures or game behavior. No operation was executed.
 
 **Ownership/reuse:** KNOWLEDGE_REFERENCE for interpreting one selected import's observation phase and prerequisites; defer execution qualification. Upstream GPL lineage and [registry](../sources/projects.yaml) caveats remain. [Author r1](../docs/reviews/BRC-IMPORT-RESOLUTION-01-AUTHOR-r1.md); no supersession of older claims.
+
+## Status integration r3 — 2026-10-13
+
+Technical claim, negatives, exclusions and source pins are unchanged from frozen r2. [Author integration r3](../docs/reviews/BRC-IMPORT-RESOLUTION-01-AUTHOR-r3.md) integrates the same reviewer's affected recheck; source/documentation PR delivery is parent-accepted, while human editorial acceptance and merge remain pending. Prior four accepted topics and Issue #9 status remain.

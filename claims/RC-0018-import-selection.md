@@ -1,6 +1,6 @@
 # RC-0018 — selected import pointers follow host-first, configuration-dependent matching
 
-**Level:** SOURCE_INSPECTED, 2026-10-13. bbport `3c57da4198ad62039f63f33bfd205b9916518acf`, selected Linux build and source branches. Independent review and human acceptance pending.
+**Level:** SOURCE_INSPECTED, 2026-10-13. bbport `3c57da4198ad62039f63f33bfd205b9916518acf`, selected Linux build and source branches. Independent [source review r1](../docs/reviews/BRC-IMPORT-RESOLUTION-01-REVIEW-r1.md) and the same reviewer's [affected recheck r2](../docs/reviews/BRC-IMPORT-RESOLUTION-01-REVIEW-r2.md) are complete; F1 is closed with no actionable affected defect. Parent accepts the source/documentation contract for PR delivery only; human editorial acceptance and merge remain pending. No runtime, ABI or game qualification is added.
 
 For an import relocation processed by the inspected probe, a nonzero `runtime_resolve` result wins over a serialized linked binding. Both host resolution and linked fallback require effective capability bit 0 and are disabled by strict mode. Exact scoped-string and decoded-name runtime matching differ from GPU fallback's NID-prefix-only match. BBPROBE5's producer normally matches full NID/library/module identities including versions; its unique same-NID libc fallback for libSceLibcInternal is an explicit exception. The probe validates serialized binding kind/range without repeating that identity match.
 
@@ -11,3 +11,7 @@ For an import relocation processed by the inspected probe, a nonzero `runtime_re
 **Exclusions/unknowns:** no actual input, serialization, build, pointer selection, ABI equivalence, duplicate-table audit, library execution or game observation. A recognized name or binding count is not call dispatch. Producer flags and reported RET text are not probe-side image authentication.
 
 **Ownership/reuse:** upstream authors retain declared GPL lineage; [source registry](../sources/projects.yaml) license caveats remain. KNOWLEDGE_REFERENCE; no code copied. [Author r1](../docs/reviews/BRC-IMPORT-RESOLUTION-01-AUTHOR-r1.md); no supersession of an older claim.
+
+## Status integration r3 — 2026-10-13
+
+Technical claim, negatives, exclusions and source pins are unchanged from frozen r2. [Author integration r3](../docs/reviews/BRC-IMPORT-RESOLUTION-01-AUTHOR-r3.md) integrates the same reviewer's affected recheck; source/documentation PR delivery is parent-accepted, while human editorial acceptance and merge remain pending. Prior four accepted topics and Issue #9 status remain.

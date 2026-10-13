@@ -95,7 +95,7 @@ projects:
       - gpu/shim/core/libraries/libs.h
       - gpu/shadps4/core/libraries/kernel/equeue.cpp
       - build.sh
-    import_resolution_extension_scope: BRC-IMPORT-RESOLUTION-01 proposed source-only selection and selected callable-outcome study (RC-0018, RC-0019); independent review and human acceptance pending; prior pins and license scope unchanged.
+    import_resolution_extension_scope: BRC-IMPORT-RESOLUTION-01 proposed source-only selection and selected callable-outcome study (RC-0018, RC-0019); independent review and affected recheck complete, parent accepts PR delivery only, human editorial acceptance/merge pending; prior pins and license scope unchanged.
   - id: shadps4
     repo: https://github.com/shadps4-emu/shadPS4
     research_commit: e0a466753a1aacbc8db8253be685bf7ab4d9daae
