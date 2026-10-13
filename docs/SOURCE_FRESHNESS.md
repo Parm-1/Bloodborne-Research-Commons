@@ -15,6 +15,17 @@ For a task that may depend on later source changes:
 
 If revisions differ, keep the old pin and assess applicability. Do not silently replace the registry pin, infer a new source meaning, or use a recent date as a “current” badge. A changed source may leave a bounded claim unaffected, but that conclusion requires checking its actual producer and decisive consumer/dependency/configuration scope. No comparison here establishes runtime, native, GPU or game behavior.
 
+## Commit identity and selected blobs
+
+Two predicates are recorded separately, and only the first uses the phrase “same commit as pin”:
+
+- **Same commit as pin:** the freshly resolved commit equals that repository's accepted pin. Only this identity lets the whole inspected snapshot be treated as the pinned one, within the stated scope.
+- **Selected paths unchanged at another commit:** the resolved commit differs, but each named path in that repository's scope has the same blob identity as at its pin. This supports only “checked at another revision, selected paths unchanged” for those named paths. Build options, other paths and runtime behavior stay outside it.
+
+Group comparisons by repository. Each commit is compared with that repository's own accepted pin, and each selected path is compared only within its own repository. A list that contains paths from two repositories has no single pin: a bbport path is never compared with the bbhost pin, or the reverse.
+
+Hypothetical example, not a recorded observation: a bbhost branch resolves to a commit other than `566184a74f071166299bb656c4af479e5bbe2771`, but its selected bbhost paths have the same blob identities as at that pin. The entry would read “checked at another revision; selected bbhost paths unchanged for the scope”, not “same commit as pin”. If one bbport path differed from `3c57da4198ad62039f63f33bfd205b9916518acf`, the bbport group would be “affected by an unreviewed change” while the bbhost group could still be unchanged.
+
 ## Bounded worked check: RC-0012/0013
 
 **Question and scope.** Do the selected public producers and consumer used for the address-coordinate and unwind-provenance claims differ at the current default branch refs? The comparison concerns bbport's scanner and bbhost's selected kit/parser, coordinate helpers, loader, address-report consumer and relevant test configuration. It does not ask whether either tool is correct for another image or whether its report is complete.
