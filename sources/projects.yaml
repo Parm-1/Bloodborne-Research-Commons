@@ -79,6 +79,23 @@ projects:
     license_declared: GPL-2.0-or-later
     license_evidence: README "Credits and licenses" states GNU GPL v2 or later; LICENSE file is the GPL version 2 text; gpu/VENDOR.txt records the vendored shadPS4 code as GPL-2.0-or-later, taken from shadPS4 commit b4e7ae776071ceb1dd35004577a8719481e1d258 with later backports, which differs from the shadPS4 commit pinned below.
     license_caveat: README lists third-party components under their own licenses (including MIT components) and says AMD FSR 4 DLLs and model data and the NVIDIA DLSS SDK are not distributed; an NVIDIA DLSS license text is mentioned for the package. Not audited per file. The README says the project is not related to the shadPS4 project and not affiliated with Sony, FromSoftware or AMD.
+    import_resolution_additional_inspected_paths:
+      - src/runtime.c
+      - src/runtime.h
+      - src/probe.c
+      - src/import_names.inc
+      - scripts/prepare.py
+      - scripts/link_libc.py
+      - scripts/link_modules.py
+      - src/runtime_content.c
+      - src/runtime_services.c
+      - src/runtime_net.c
+      - gpu/bbgpu.h
+      - gpu/shim/bbgpu.cpp
+      - gpu/shim/core/libraries/libs.h
+      - gpu/shadps4/core/libraries/kernel/equeue.cpp
+      - build.sh
+    import_resolution_extension_scope: BRC-IMPORT-RESOLUTION-01 proposed source-only selection and selected callable-outcome study (RC-0018, RC-0019); independent review and human acceptance pending; prior pins and license scope unchanged.
   - id: shadps4
     repo: https://github.com/shadps4-emu/shadPS4
     research_commit: e0a466753a1aacbc8db8253be685bf7ab4d9daae
