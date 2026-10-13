@@ -1,0 +1,30 @@
+# Accepted corpus checkpoint
+
+The Commons currently has four accepted implementation-source dossiers. Each is bound to the commits in the [source registry](../sources/projects.yaml); source review and reader review have separate scopes. Review reports are linked from each dossier and remain the evidence records. None of the topics is game-observed or a native/GPU qualification.
+
+| Accepted topic | Source inspected | Accepted finding | Still not established |
+|---|---|---|---|
+| GX resource lifecycle | bbhost `566184a74f071166299bb656c4af479e5bbe2771`; registry/header plus selected hook, lookup, renderer, upload, retirement and Vulkan-fence paths listed under `lifecycle_inspected_paths` | [Dossier](../knowledge/gx-resource-lifecycle.md); [RC-0001](../claims/RC-0001-gx-resources.md), [RC-0004](../claims/RC-0004-map-observation.md), [RC-0005](../claims/RC-0005-ahead-consumer.md), [RC-0006](../claims/RC-0006-deferred-retirement.md) | The original producer's memory ownership/writer order through all reads; game-reached consumer behavior. The selected source paths are not all renderer files. |
+| Texture preparation/source lifetime | bbhost `566184a74f071166299bb656c4af479e5bbe2771`; selected pool, mapping/removal, import, allocator, upload and GPU read paths listed under `prep_additional_inspected_paths` and the lifecycle list | [Dossier](../knowledge/texture-prep-source-lifetime.md); [RC-0007](../claims/RC-0007-prep-completion.md), [RC-0008](../claims/RC-0008-map-removal-ordering.md) | The original texture allocator's rule preventing release/reuse and ordering permitted writers until relevant host CPU/GPU readers finish. |
+| Selected follow-camera differential contract | bbhost `566184a74f071166299bb656c4af479e5bbe2771`; selected kit, test, replacement, helpers, loader/TLS, memory and build paths in `differential_additional_inspected_paths` and the dossier's 20 source pins | [Dossier](../knowledge/original-code-differential-validation.md); [RC-0002](../claims/RC-0002-decomp-compare.md), [RC-0009](../claims/RC-0009-camera-equality.md), [RC-0010](../claims/RC-0010-differential-outcomes.md), [RC-0011](../claims/RC-0011-camera-state.md) | No comparison was executed. Equality rules, shared substitutions, camera-only scope and setup/skip/failure gates do not establish general original-versus-replacement fidelity. |
+| Cross-tool function/address correspondence | bbport `3c57da4198ad62039f63f33bfd205b9916518acf` and bbhost `566184a74f071166299bb656c4af479e5bbe2771`; selected scanner, kit, loader, address helpers, memory mapping and one instruction-test consumer | [Guide](../knowledge/function-address-correspondence.md); [RC-0003](../claims/RC-0003-callgraph-limits.md), [RC-0012](../claims/RC-0012-address-coordinates.md), [RC-0013](../claims/RC-0013-unwind-provenance.md) | No original image identity was acquired, no report/tool was executed, and no complete extent/routine/reachability inventory or game graph was established. The correspondence needs consumer-supplied identity and mapping premises. |
+
+Other graphics and shader topics are outside these inspected scopes; this checkpoint assigns them no answer or coverage status.
+
+## Current entry status (BRC-AGENT-ENTRY-01, 2026-10-13)
+
+**Partial editorial acceptance; the usability gate is open.** The owner's [PR #10 review](https://github.com/Parm-1/Bloodborne-Research-Commons/pull/10#pullrequestreview-5497980388) supports the task-first documentation and the preserved negative reading result at source and documentation scope. It does not accept the adequate-usability checkpoint. [Issue #9](https://github.com/Parm-1/Bloodborne-Research-Commons/issues/9) and PR #10 remain open, and this checkpoint does not claim that the broader goal is complete.
+
+The fresh-reader records stay separate, and no grade is changed:
+
+- **Original reading** ([reader r1](reviews/BRC-AGENT-ENTRY-01-FRESH-AGENT-r1.md); [assessment r1](reviews/BRC-AGENT-ENTRY-01-USABILITY-REVIEW-r1.md)): the fixed whole criterion was not met. Question 4 inferred a commit identity from unchanged selected paths and compared a list that mixed two repositories.
+- **Same-reader repair check** ([reader r2](reviews/BRC-AGENT-ENTRY-01-FRESH-AGENT-r2.md); [assessment r2](reviews/BRC-AGENT-ENTRY-01-USABILITY-REVIEW-r2.md)): Questions 1 and 4 were adequate in this check. Questions 2 and 3 remained partial, for the classification of supplied route facts and for the attribution and prospective-check prerequisites.
+- **Transport-corrected check of Questions 2 and 3** ([reader r3](reviews/BRC-AGENT-ENTRY-01-FRESH-AGENT-r3.md); [assessment r3](reviews/BRC-AGENT-ENTRY-01-USABILITY-REVIEW-r3.md)): Question 2 had a reasoning failure, a route-wide statement that the hash-only route has no GPU read of guest bytes, which contradicts the accepted preparation dossier's route description. Question 3 remained partial on the treatment of the supplied attribution and on the prospective-check prerequisites.
+
+These are reader reasoning and completeness results. They are not new source claims and change no accepted technical record. Reader retries have stopped, and the original and repair answers remain preserved verbatim in the review copies.
+
+No stage passed. The fixed whole criterion remains not met. Questions 1 and 4 have their adequate statuses only from the affected check.
+
+Continuation r6 adds a source-linked explanation of overlapping upload readers and a rule for labelling premises, in [CONTINUATION](CONTINUATION.md#texture-upload-readers-that-overlap). This is documentation for future answers. It is not a new usability result, and this checkpoint commissions no reader.
+
+No new substantive topic or evaluation is commissioned. The shader-translation question from the elicited Q4 task was a hypothetical scenario supplied for the reading exercise. It is not independent consumer demand, and it is not selected research. Active work is this bounded documentation revision and a prospective evaluation design, which is not executed. No owner-supplied shader defect is requested. The usability checkpoint and Issue #9 remain open regardless of source-document acceptance.
