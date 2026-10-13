@@ -2,6 +2,8 @@
 
 This repository connects public Bloodborne engineering research to its exact source versions and evidence limits. Start from [START_HERE.md](START_HERE.md) and choose the task closest to yours. The four dossiers are implementation-source studies; none is a game, native-runtime or GPU result.
 
+**Current status:** partial editorial acceptance of the source and documentation, with the fixed fresh-agent usability criterion not met and the usability gate open. Read the [current entry status](docs/CORPUS_CHECKPOINT.md#current-entry-status-brc-agent-entry-01-2026-10-13) before relying on this entry for a task.
+
 | If your task is… | Start with | Existing mechanism that helps | Applicability limit | Unanswered question |
 |---|---|---|---|---|
 | GX resource identity, upload or retirement | [GX lifecycle dossier](knowledge/gx-resource-lifecycle.md); [RC-0004](claims/RC-0004-map-observation.md), [RC-0005](claims/RC-0005-ahead-consumer.md), [RC-0006](claims/RC-0006-deferred-retirement.md) | GX is the game's graphics-resource interface. bbhost records selected create/Map observations, queues eligible uploads, checks current range coverage and defers destruction until submitted graphics work completes | Registry lookups do not retain a guest-memory lease or identify an old queued resource generation; source inspected, no game observation | [Resource ownership question](frontiers/resource-ownership.md): what game-reached ownership/order protects source bytes through every reader? |
