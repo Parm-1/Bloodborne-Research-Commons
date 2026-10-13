@@ -1,6 +1,6 @@
 # RC-0012 — selected kit and scanner have conditional address-point correspondence
 
-**Level:** SOURCE_INSPECTED, 2026-10-12. bbport `3c57da4198ad62039f63f33bfd205b9916518acf` and bbhost `566184a74f071166299bb656c4af479e5bbe2771`; source read only. Independent source review and fresh-reader check pending.
+**Level:** SOURCE_INSPECTED, 2026-10-12. bbport `3c57da4198ad62039f63f33bfd205b9916518acf` and bbhost `566184a74f071166299bb656c4af479e5bbe2771`; source read only. [Independent source review](../docs/reviews/BRC-FUNCTION-CORRESPONDENCE-01-REVIEW-r1.md) found no actionable finding; parent accepted the source/documentation contract. Fresh-reader check pending.
 
 bbport scanner reports ELF VAs without image identity checks. The selected bbhost kit adds `0x400000` to ELF starts, subtracts it for first-containing file-backed PT_LOAD lookup, and requires that actual loaded slide for `at()` to address loaded bytes. The general address helpers/allocator use actual runtime slide; a preferred base is not universal. Same-image point correspondence requires consumer-supplied original digest/build/view and reversible unambiguous segment mapping. Original-file bytes and relocated/patched/runtime views are distinct.
 
@@ -10,4 +10,8 @@ bbport scanner reports ELF VAs without image identity checks. The selected bbhos
 
 **Exclusions:** Not a logical-routine, extent-completeness, decoded-edge, reachability or replacement/runtime-equivalence result. No tool/image execution; hypothetical examples are not OWNED_TESTED. No supersession of prior findings.
 
-**Ownership/reuse:** original authors retain declared GPL-lineage source; [existing registry/license scope](../sources/projects.yaml) unchanged. KNOWLEDGE_REFERENCE, no code copying. [Author r1](../docs/reviews/BRC-FUNCTION-CORRESPONDENCE-01-AUTHOR-r1.md); reviewer pending.
+**Ownership/reuse:** original authors retain declared GPL-lineage source; [existing registry/license scope](../sources/projects.yaml) unchanged. KNOWLEDGE_REFERENCE, no code copying. [Author r1](../docs/reviews/BRC-FUNCTION-CORRESPONDENCE-01-AUTHOR-r1.md); [independent review](../docs/reviews/BRC-FUNCTION-CORRESPONDENCE-01-REVIEW-r1.md) complete at source/documentation scope.
+
+## Linked integration r2 — 2026-10-12
+
+Status-only successor to frozen r1 (`6810b6704b5ae75d0c4108521c949d41dbb22e49`); technical claim, negatives, exclusions and source pins are unchanged. [Author r2 receipt](../docs/reviews/BRC-FUNCTION-CORRESPONDENCE-01-AUTHOR-r2.md). Fresh-reader work remains pending.

@@ -1,6 +1,6 @@
 # RC-0013 — selected unwind producers differ in validation and do not resolve routine identity
 
-**Level:** SOURCE_INSPECTED, 2026-10-12. bbport `3c57da4198ad62039f63f33bfd205b9916518acf` and bbhost `566184a74f071166299bb656c4af479e5bbe2771`; source read only. Independent source review and fresh-reader check pending.
+**Level:** SOURCE_INSPECTED, 2026-10-12. bbport `3c57da4198ad62039f63f33bfd205b9916518acf` and bbhost `566184a74f071166299bb656c4af479e5bbe2771`; source read only. [Independent source review](../docs/reviews/BRC-FUNCTION-CORRESPONDENCE-01-REVIEW-r1.md) found no actionable finding; parent accepted the source/documentation contract. Fresh-reader check pending.
 
 The scanner assumes fixed header/FDE layout and maps FDEs through its first executable segment, then sorts `(start,size)` tuples. The kit uses file-backed PT_LOAD lookup, checks selected header encodings and FDE begin agreement, and retains table order. Neither validates all extents or resolves duplicate/overlap identity. Their range signedness differs (scanner signed 32-bit, kit unsigned 32-bit). A compatible unwind extent is narrower than a logical routine or complete function inventory.
 
@@ -10,4 +10,8 @@ The scanner assumes fixed header/FDE layout and maps FDEs through its first exec
 
 **Exclusions:** Kit count/completeness comments remain PROJECT_REPORTED. No general malformed-ELF qualification, decoded coverage, decompilation percentage, game observation or upstream repair. No tool/image execution; examples are hypothetical source/arithmetic reasoning.
 
-**Ownership/reuse:** original authors retain declared GPL-lineage source; [registry](../sources/projects.yaml) unchanged in license scope. KNOWLEDGE_REFERENCE; no code copied, prior findings preserved. [Author r1](../docs/reviews/BRC-FUNCTION-CORRESPONDENCE-01-AUTHOR-r1.md); reviewer pending.
+**Ownership/reuse:** original authors retain declared GPL-lineage source; [registry](../sources/projects.yaml) unchanged in license scope. KNOWLEDGE_REFERENCE; no code copied, prior findings preserved. [Author r1](../docs/reviews/BRC-FUNCTION-CORRESPONDENCE-01-AUTHOR-r1.md); [independent review](../docs/reviews/BRC-FUNCTION-CORRESPONDENCE-01-REVIEW-r1.md) complete at source/documentation scope.
+
+## Linked integration r2 — 2026-10-12
+
+Status-only successor to frozen r1 (`6810b6704b5ae75d0c4108521c949d41dbb22e49`); technical claim, negatives, exclusions and source pins are unchanged. [Author r2 receipt](../docs/reviews/BRC-FUNCTION-CORRESPONDENCE-01-AUTHOR-r2.md). Fresh-reader work remains pending.

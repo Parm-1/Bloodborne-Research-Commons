@@ -20,5 +20,5 @@ Evidence-qualified knowledge about Bloodborne engine internals, PC porting, reve
 - [Publication check](docs/PUBLICATION_CHECK.md): owner decision and verified publication record
 - [License](LICENSE): CC BY 4.0 for original documentation (adopted); [adoption record](docs/LICENSE_PROPOSAL.md)
 
-- [Function-address correspondence](knowledge/function-address-correspondence.md): two pinned producers, conditional point/extent joins, candidate callgraph limits and original hypothetical examples; author source checkpoint, independent review pending
+- [Function-address correspondence](knowledge/function-address-correspondence.md): two pinned producers, conditional point/extent joins, candidate callgraph limits and original hypothetical examples; [independent source review](docs/reviews/BRC-FUNCTION-CORRESPONDENCE-01-REVIEW-r1.md) complete and parent-accepted at source/documentation scope; [r2 status receipt](docs/reviews/BRC-FUNCTION-CORRESPONDENCE-01-AUTHOR-r2.md), fresh-reader validation pending
 - [Function correspondence frontier](frontiers/function-correspondence.md): one consumer address-report decision
