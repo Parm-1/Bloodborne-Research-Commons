@@ -19,7 +19,7 @@ If revisions differ, keep the old pin and assess applicability. Do not silently 
 
 **Question and scope.** Do the selected public producers and consumer used for the address-coordinate and unwind-provenance claims differ at the current default branch refs? The comparison concerns bbport's scanner and bbhost's selected kit/parser, coordinate helpers, loader, address-report consumer and relevant test configuration. It does not ask whether either tool is correct for another image or whether its report is complete.
 
-**One ref read.** At `2026-10-13T00:52:47Z`, one `git ls-remote --symref ... HEAD` read per public repository returned:
+**One ref read.** One `/usr/bin/git ls-remote --symref <repository> HEAD` read per public repository returned the refs below. The clock `2026-10-13T00:52:47Z` is the `date -u` result from the same parallel command batch, not a timestamp in either ref response; the verbatim commands and outputs are in [author r2](reviews/BRC-AGENT-ENTRY-01-AUTHOR-r2.md#verbatim-freshness-observation):
 
 | Repository | Ref name returned | Commit returned | Accepted registry pin |
 |---|---|---|---|
