@@ -8,7 +8,7 @@ projects:
     repo: https://github.com/droogie/bbhost
     research_commit: 566184a74f071166299bb656c4af479e5bbe2771
     commit_date_utc: 2026-10-12T00:20:37Z
-    research_use: GX resource interface (RC-0001); lifecycle implementation (RC-0004 to RC-0006 and knowledge/gx-resource-lifecycle.md); texture preparation ordering (RC-0007, RC-0008 and knowledge/texture-prep-source-lifetime.md); differential decompilation testing (RC-0002, RC-0009 to RC-0011 and knowledge/original-code-differential-validation.md)
+    research_use: GX resource interface (RC-0001); lifecycle implementation (RC-0004 to RC-0006 and knowledge/gx-resource-lifecycle.md); texture preparation ordering (RC-0007, RC-0008 and knowledge/texture-prep-source-lifetime.md); differential decompilation testing (RC-0002, RC-0009 to RC-0011 and knowledge/original-code-differential-validation.md); selected function/address producers (RC-0012, RC-0013 and knowledge/function-address-correspondence.md)
     disclaimer: Cited files plus README and LICENSE were read. Lifecycle inspection covers complete GX registry/header and relevant downstream function bodies/callers, not all renderer files or game behavior. Preparation inspection follows relevant pool, map/removal, import and separate allocator/barrier bodies; original texture-owner ordering remains unknown. Original ABI and performance comments remain project reports.
     lifecycle_inspected_paths:
       - src/engine/gx_resources.cpp
@@ -58,6 +58,15 @@ projects:
       - src/log.h
       - CMakeLists.txt
     differential_scope: Complete selected test/replacement/kit and inline helper bodies; selected CMake and PLT table sections, not all targets/imports. Dossier states exact bounds and shared substitutions; source is not executed, and original-game descriptions/counts remain project reports.
+    correspondence_inspected_paths:
+      - tests/decomp/eboot_kit.h
+      - tests/decomp/eboot_kit.cpp
+      - src/engine/addr.h
+      - src/core/elf.cpp
+      - src/core/memory.cpp
+      - src/core/memory.h
+      - tests/decomp/insn_eboot_test.cpp
+    correspondence_scope: Selected parsing/conversion/load bounds and one full consumer; exact bounds and blobs in the correspondence guide. No upstream execution or original-image identity acquisition; kit comments about counts remain project reports.
     license_declared: GPL-3.0-or-later
     license_evidence: README "License" section states GPL version 3 or later; LICENSE file is the GPL version 3 text.
     license_caveat: README says third_party/ and src/host/shaders/fsr1/ keep their own licenses and the debug menu font is public domain; none of these was audited. Per-file headers were not checked. README says bbhost is not affiliated with Sony or FromSoftware and contains no game code or data.
@@ -65,7 +74,7 @@ projects:
     repo: https://github.com/deadinside28/bloodborne_pc
     research_commit: 3c57da4198ad62039f63f33bfd205b9916518acf
     commit_date_utc: 2026-10-10T22:57:36Z
-    research_use: tools/re/callgraph.py (RC-0003); description of a separate runtime and shadPS4-derived renderer (frontier)
+    research_use: tools/re/callgraph.py (RC-0003 plus correspondence extension, RC-0012 and RC-0013); description of a separate runtime and shadPS4-derived renderer (frontier)
     disclaimer: Source lineage and forks are not independent confirmations. Only the cited script, README, LICENSE and gpu/VENDOR.txt were read.
     license_declared: GPL-2.0-or-later
     license_evidence: README "Credits and licenses" states GNU GPL v2 or later; LICENSE file is the GPL version 2 text; gpu/VENDOR.txt records the vendored shadPS4 code as GPL-2.0-or-later, taken from shadPS4 commit b4e7ae776071ceb1dd35004577a8719481e1d258 with later backports, which differs from the shadPS4 commit pinned below.
