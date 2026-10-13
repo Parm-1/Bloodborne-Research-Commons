@@ -35,6 +35,34 @@ Continuation r6 adds a source-linked explanation of overlapping upload readers a
 
 PRO011 separately commissioned USABILITY-02 under [prospective design r2](reviews/BRC-AGENT-ENTRY-01-PROSPECTIVE-EVALUATION-r2.md); that one attempt and its independent grading are complete, with the criterion NOT MET. The design and original evaluation artifacts remain frozen. The shader-translation question from the historical Q4 task was a hypothetical scenario, not independent consumer demand or selected research. This publication closeout selects no new reader, model change, rubric revision, substantive topic or runtime campaign. The usability objective and Issue #9 remain open regardless of documentation acceptance.
 
+## Proposed shader topic — BRC-SHADER-BUFFER-LOAD-01, 2026-10-13
+
+[BUFFER_LOAD_DWORD dossier](../knowledge/buffer-load-dword-translation.md), [RC-0014](../claims/RC-0014-buffer-address-arithmetic.md), [RC-0015](../claims/RC-0015-buffer-load-codegen.md) and [one shader question](../frontiers/shader-translation.md) extend the inspected public bbport pin, within [batch Issue #12](https://github.com/Parm-1/Bloodborne-Research-Commons/issues/12). Exact source bounds/blobs and branch-specific arithmetic controls are in the dossier. [Author r1](reviews/BRC-SHADER-BUFFER-LOAD-01-AUTHOR-r1.md) freezes the local source/documentation candidate for a separate PR. Independent technical review and editorial acceptance are pending. This is a proposed topic, not a fifth accepted table row; the four accepted topics above and their evidence are unchanged.
+
+No fresh-reader evaluation is requested or performed. Issue #9 stays OPEN/NOT MET; all original answers, keys, grades and designs are unchanged. No game/native/GPU/fixture execution, upstream build, source import or private material is involved. The topic provides a conditional implementation reference and a next overflow-address question, not shader fidelity or renderer qualification.
+
+### Shader linked author repair r2 — 2026-10-13
+
+[Author r2](reviews/BRC-SHADER-BUFFER-LOAD-01-AUTHOR-r2.md) repairs the proposed shader topic's paged worked positive after independent r1 review identified an impossible runtime-produced page shift. The [dossier](../knowledge/buffer-load-dword-translation.md) now ties its hypothetical positive to actual sparse block-size/caller and descriptor/table-span/binding premises. Same-reviewer affected recheck and editorial acceptance remain pending. This changes neither the four accepted topic table nor Issue #9 OPEN/NOT MET, and adds no reader or execution result.
+
+### Shader final integration r3 — 2026-10-13
+
+[Independent r1 review](reviews/BRC-SHADER-BUFFER-LOAD-01-REVIEW-r1.md), SHA-256 `9726cb3f73685dd0383272f031376e424e856e817bb8831028a74625ac20b671`, and [same-reviewer affected r2 recheck](reviews/BRC-SHADER-BUFFER-LOAD-01-REVIEW-r2.md), SHA-256 `6a8252ee478d1e260814d755c4a6eecf92cc7c912662b3ddf82d2c1f82f36eb8`, are integrated verbatim. The recheck resolves F1 with no remaining actionable source/documentation finding. Parent accepted the conditional source/documentation contract for public PR delivery in [batch Issue #12](https://github.com/Parm-1/Bloodborne-Research-Commons/issues/12); human editorial acceptance remains pending and unmerged.
+
+[Author r3](reviews/BRC-SHADER-BUFFER-LOAD-01-AUTHOR-r3.md) records report/status integration and focused combined-reference/digest/preservation checks. Technical bodies, all 38 source blobs/bounds, positive/negative controls, field/configuration premises, prior receipts and historical prefixes remain unchanged from the reviewed r2 candidate. Earlier dated pending statements are historical and superseded for current review status by this integration. The four accepted topic table and Issue #9 OPEN/NOT MET are unchanged. No reader, execution, intended-ISA/GPU/game qualification, new topic or external action is added.
+
+## Proposed cache applicability topic — 2026-10-13
+
+[BRC-CACHE-APPLICABILITY-01](../knowledge/shader-pipeline-cache-applicability.md) is a separate source-only candidate at the existing bbport registry pin, with [RC-0016](../claims/RC-0016-module-compatibility.md) and [RC-0017](../claims/RC-0017-cache-domains.md). It supports a bounded module/pipeline reuse decision after descriptor/render changes; exact source identities and supplied hypothetical controls are in the dossier. [Author r1](reviews/BRC-CACHE-APPLICABILITY-01-AUTHOR-r1.md) records local production. Independent review and editorial acceptance are pending. It stands independently from other unmerged shader work.
+
+This proposed topic is not added to the four accepted rows above. Current publication status, frozen usability evidence and Issue #9 OPEN / NOT MET remain unchanged. No fresh-reader evaluation, upstream execution, source import or target qualification is part of this candidate.
+
+## Proposed cache topic reviewed integration r2 — 2026-10-13
+
+[Independent source review r1](reviews/BRC-CACHE-APPLICABILITY-01-REVIEW-r1.md), SHA-256 `6cb0cc6f3a7eedbfdec1c79c416cc1b16f29e9a4834b524bb8b5c58c47dd20fa`, found no actionable source-contract defect in candidate `e27ff4dcc140a9e26f51de7506285ac4d13999e5`, tree `ad5aab8a75b49b2434140152af0a6449a6ba2743`. Parent accepted the conditional source/documentation contract for PR delivery; [author r2](reviews/BRC-CACHE-APPLICABILITY-01-AUTHOR-r2.md) integrates the report and status links without technical changes. Human editorial acceptance remains pending; this proposed topic stays outside the four accepted rows, and the substantive PR stays unmerged.
+
+Earlier pending statements retain their historical stage. Existing publication status, frozen usability results, Issue #9 OPEN / NOT MET, source identities and all technical/example/phase/profile/persistence limits remain unchanged. No source/runtime fidelity promotion, fresh-reader evaluation, upstream execution or new research is part of this integration.
+
 ## Import-resolution proposal — 2026-10-13
 
 BRC-IMPORT-RESOLUTION-01 adds a proposed [source-only import dossier](../knowledge/import-resolution.md), [selection claim](../claims/RC-0018-import-selection.md), [outcome claim](../claims/RC-0019-import-outcomes.md) and [consumer frontier](../frontiers/import-resolution.md), at the existing public bbport pin. Independent review and human acceptance are pending; the accepted corpus remains the four topics above. No execution or fresh-reader evaluation was commissioned. The published entry status and both NOT MET usability results remain; Issue #9 stays open. This topic is independent of other unmerged proposals and links to none of their absent files.
@@ -42,3 +70,7 @@ BRC-IMPORT-RESOLUTION-01 adds a proposed [source-only import dossier](../knowled
 ## Import-resolution reviewed proposal r3 — 2026-10-13
 
 The proposed [import-resolution dossier](../knowledge/import-resolution.md), RC-0018/RC-0019 and consumer frontier have completed independent source review and the same reviewer's [affected recheck r2](reviews/BRC-IMPORT-RESOLUTION-01-REVIEW-r2.md). F1 is closed with no actionable affected defect; parent accepts source/documentation PR delivery only. Human editorial acceptance/merge remain pending. This current status supersedes the proposal's earlier pending-review stage; it does not add an accepted fifth topic to the table above. [Author integration r3](reviews/BRC-IMPORT-RESOLUTION-01-AUTHOR-r3.md) preserves repaired technical content and earlier evidence. No runtime/ABI/game qualification or reader evaluation is added. Existing publication status, both NOT MET usability results and Issue #9 OPEN remain unchanged.
+
+## Batch 01 source-scope status — 2026-10-13
+
+The [Issue #12 handoff](https://github.com/Parm-1/Bloodborne-Research-Commons/issues/12#issuecomment-6139226514) is the current source-scope disposition for the Batch 01 topics listed above. The dated sections keep their stage-specific wording as history. Acceptance covers source and documentation only; it is not runtime, GPU, game or intended-behavior evidence, and Issue #9 stays OPEN / NOT MET.
