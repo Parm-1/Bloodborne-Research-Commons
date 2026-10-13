@@ -163,7 +163,7 @@ projects:
       - build.sh
     import_resolution_extension_scope: BRC-IMPORT-RESOLUTION-01 selected source-only selection and callable-outcome study (RC-0018, RC-0019); source review and affected recheck complete; accepted at source/documentation scope in Issue #12 on 2026-10-13; prior pins and license scope unchanged.
     memory_mapping_extension_checked_on: 2026-10-13
-    memory_mapping_extension_use: BRC-MEMORY-MAPPING-01; Batch 02 Issue 16 item 1; proposed knowledge/guest-memory-mapping.md and RC-0020/RC-0021; independent review and acceptance pending
+    memory_mapping_extension_use: BRC-MEMORY-MAPPING-01; Batch 02 Issue 16 item 1; proposed knowledge/guest-memory-mapping.md and RC-0020/RC-0021; independent review r1 and same-reviewer affected recheck r2 complete, F1/F2 resolved at c6621a34a4876cfaccfcfe8f178717f8e11f8347; parent accepts source/documentation PR delivery only; human editorial acceptance/merge pending, not an eighth accepted topic
     memory_mapping_extension_scope: Selected Linux reserve/direct mapping/protection/backing/alias/unmap/release, table/hook publication and host CPU write predicates with decisive shim/rasterizer/trap/cache endpoints; exact bounds/blobs in dossier. Public source only; no execution, native fixture, source import, device/game result, full kernel/renderer audit or retained reader lease. Existing pins, fields, license caveats and earlier accepted studies unchanged.
     memory_mapping_additional_inspected_paths:
       - src/runtime_memory.c
