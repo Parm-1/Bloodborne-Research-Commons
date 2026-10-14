@@ -202,6 +202,37 @@ projects:
         - https://wiki.libsdl.org/SDL3/SDL_ResumeAudioStreamDevice
         - https://wiki.libsdl.org/SDL3/SDL_DestroyAudioStream
         - https://wiki.libsdl.org/SDL3/SDL_AudioSpec
+    pad_sampling_extension_checked_on: 2026-10-13
+    pad_sampling_extension_use: BRC-PAD-SAMPLING-01; Batch 02 Issue 16 item 3; proposed knowledge/pad-sampling.md and RC-0024/RC-0025; independent review r1 and same-reviewer affected recheck r2 complete, F1 resolved at 6e1a1128a67282460c81ee40b1e5003f7743f04d; root accepts repaired source/documentation contract and reviewed cumulative integration for one PR delivery only; human consolidated editorial acceptance/merge pending, unmerged/proposed
+    pad_sampling_extension_scope: Selected pad layout/lookup/device selection/composite producer/call/lifecycle/capability branches plus decisive SDL window-event/mouse/configuration and exact resolver/relocation dependencies. Fifteen public source blobs and exact bounds in dossier; sixteen conditional source/model reasoning rows, not fixtures. No source import, execution, build, original/device/game input, full SDL/input/UI/framework audit or installed-library/ABI qualification. All earlier fields/pins/licenses, accepted routes and proposed memory/audio unchanged.
+    pad_sampling_additional_inspected_paths:
+      - src/runtime_pad.c
+      - src/runtime.h
+      - src/runtime.c
+      - src/import_names.inc
+      - src/probe.c
+      - gpu/shim/window.cpp
+      - gpu/shim/bbgpu.cpp
+      - gpu/shim/sdl_window.h
+      - gpu/shim/bbport_overlay.cpp
+      - gpu/bbgpu.h
+      - build.sh
+      - shell.nix
+      - README.md
+      - LICENSE
+      - gpu/VENDOR.txt
+    pad_sampling_external_api_references:
+      checked_on: 2026-10-13
+      authority: Official SDL Wiki; mutable API descriptions, no exact documentation revision or installed SDL artifact bound; documented availability since SDL 3.2.0 is not installed-version proof; descriptions paraphrased, Wiki CC BY 4.0
+      urls:
+        - https://wiki.libsdl.org/SDL3/SDL_PollEvent
+        - https://wiki.libsdl.org/SDL3/SDL_GetKeyboardState
+        - https://wiki.libsdl.org/SDL3/SDL_GetGamepadID
+        - https://wiki.libsdl.org/SDL3/SDL_GetGamepads
+        - https://wiki.libsdl.org/SDL3/SDL_GetGamepadAxis
+        - https://wiki.libsdl.org/SDL3/SDL_GamepadConnected
+        - https://wiki.libsdl.org/SDL3/SDL_GetGamepadTouchpadFinger
+        - https://wiki.libsdl.org/SDL3/SDL_RumbleGamepad
   - id: shadps4
     repo: https://github.com/shadps4-emu/shadPS4
     research_commit: e0a466753a1aacbc8db8253be685bf7ab4d9daae
