@@ -179,6 +179,29 @@ projects:
       - gpu/layer/bblayer_write_traps.h
       - gpu/layer/bblayer_gpu_memory.cpp
       - gpu/layer/bblayer_gpu_memory.h
+    audio_submission_extension_checked_on: 2026-10-13
+    audio_submission_extension_use: BRC-AUDIO-SUBMISSION-01; Batch 02 Issue 16 item 2; proposed knowledge/audio-submission.md and RC-0022/RC-0023; independent review r1 complete with no actionable source/documentation defect at ff13fcf439568f868f0bf2de5c11a8a99cb5e83d; root accepts one PR delivery only; human editorial acceptance/consolidation/merge pending, audio remains peer-reviewed proposed
+    audio_submission_extension_scope: Complete selected runtime_audio.c plus bounded native ABI, exact audio import lookup and relocation consumer, build SDL dependency setup and license declaration. Exact bounds/blobs in dossier. Public source and separate official SDL3 API descriptions only; no source import, code execution, build, fixture, runtime, device, original/game input, codec/AJM or whole-framework audit. Existing fields, pins, licenses, peer memory and seven accepted topics preserved.
+    audio_submission_additional_inspected_paths:
+      - src/runtime_audio.c
+      - src/runtime.h
+      - src/runtime.c
+      - src/import_names.inc
+      - src/probe.c
+      - build.sh
+      - shell.nix
+      - README.md
+      - LICENSE
+    audio_submission_external_api_references:
+      checked_on: 2026-10-13
+      authority: Official SDL Wiki; mutable API descriptions, no exact documentation revision or installed SDL artifact bound; APIs documented since SDL 3.2.0 are not installed-version proof; descriptions paraphrased, Wiki CC BY 4.0
+      urls:
+        - https://wiki.libsdl.org/SDL3/SDL_PutAudioStreamData
+        - https://wiki.libsdl.org/SDL3/SDL_GetAudioStreamQueued
+        - https://wiki.libsdl.org/SDL3/SDL_OpenAudioDeviceStream
+        - https://wiki.libsdl.org/SDL3/SDL_ResumeAudioStreamDevice
+        - https://wiki.libsdl.org/SDL3/SDL_DestroyAudioStream
+        - https://wiki.libsdl.org/SDL3/SDL_AudioSpec
   - id: shadps4
     repo: https://github.com/shadps4-emu/shadPS4
     research_commit: e0a466753a1aacbc8db8253be685bf7ab4d9daae
