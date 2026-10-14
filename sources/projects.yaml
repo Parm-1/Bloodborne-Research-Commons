@@ -299,6 +299,12 @@ projects:
         - https://man7.org/linux/man-pages/man3/pthread_attr_setstack.3.html
         - https://man7.org/linux/man-pages/man2/arch_prctl.2.html
         - https://man7.org/linux/man-pages/man3/aligned_alloc.3.html
+    thread_lifecycle_repair_r2_checked_on: 2026-10-14
+    thread_lifecycle_repair_r2_scope: Frozen review r1 F1 requires actual uint64_t typed TCB alignment before conversion/stores and GS; admitted tuple256/filesz1/memsz1/align1 gives offset1/total257/allocation320 and fails the supplied type-alignment8 predicate. Eighteen conditional cases and seventeen source blobs/six primary API descriptions unchanged; existing align16/default16/64 and high128 cases preserved. Same-reviewer affected recheck pending, no PASS/root acceptance/runtime proof; initial extension fields remain historical.
+    thread_lifecycle_repair_r2_standard_reference:
+      checked_on: 2026-10-14
+      authority: Official C11 committee draft N1570 section6.3.2.3 paragraph7; correct referenced-type alignment premise for pointer conversion, not installed type/compiler ABI proof; exact document bytes not frozen
+      url: https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf
   - id: shadps4
     repo: https://github.com/shadps4-emu/shadPS4
     research_commit: e0a466753a1aacbc8db8253be685bf7ab4d9daae
