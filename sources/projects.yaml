@@ -162,6 +162,23 @@ projects:
       - gpu/shadps4/core/libraries/kernel/equeue.cpp
       - build.sh
     import_resolution_extension_scope: BRC-IMPORT-RESOLUTION-01 selected source-only selection and callable-outcome study (RC-0018, RC-0019); source review and affected recheck complete; accepted at source/documentation scope in Issue #12 on 2026-10-13; prior pins and license scope unchanged.
+    memory_mapping_extension_checked_on: 2026-10-13
+    memory_mapping_extension_use: BRC-MEMORY-MAPPING-01; Batch 02 Issue 16 item 1; proposed knowledge/guest-memory-mapping.md and RC-0020/RC-0021; independent review r1 and same-reviewer affected recheck r2 complete, F1/F2 resolved at c6621a34a4876cfaccfcfe8f178717f8e11f8347; parent accepts source/documentation PR delivery only; human editorial acceptance/merge pending, not an eighth accepted topic
+    memory_mapping_extension_scope: Selected Linux reserve/direct mapping/protection/backing/alias/unmap/release, table/hook publication and host CPU write predicates with decisive shim/rasterizer/trap/cache endpoints; exact bounds/blobs in dossier. Public source only; no execution, native fixture, source import, device/game result, full kernel/renderer audit or retained reader lease. Existing pins, fields, license caveats and earlier accepted studies unchanged.
+    memory_mapping_additional_inspected_paths:
+      - src/runtime_memory.c
+      - src/runtime.h
+      - src/runtime.c
+      - src/runtime_file.c
+      - gpu/shim/bbgpu.cpp
+      - gpu/shadps4/video_core/renderer_vulkan/vk_rasterizer.cpp
+      - gpu/shadps4/video_core/page_manager.cpp
+      - gpu/shadps4/video_core/buffer_cache/buffer_cache.cpp
+      - gpu/shadps4/video_core/buffer_cache/buffer.h
+      - gpu/shadps4/video_core/texture_cache/texture_cache.cpp
+      - gpu/layer/bblayer_write_traps.h
+      - gpu/layer/bblayer_gpu_memory.cpp
+      - gpu/layer/bblayer_gpu_memory.h
   - id: shadps4
     repo: https://github.com/shadps4-emu/shadPS4
     research_commit: e0a466753a1aacbc8db8253be685bf7ab4d9daae
