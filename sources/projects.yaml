@@ -258,6 +258,13 @@ projects:
         - https://man7.org/linux/man-pages/man2/pread.2.html
         - https://man7.org/linux/man-pages/man2/open.2.html
         - https://man7.org/linux/man-pages/man2/close.2.html
+    file_read_repair_r2_checked_on: 2026-10-14
+    file_read_repair_r2_scope: Linked F1 current-errno/raw-syscall distinction and F2 explicit requested147456/post7 spans with selected mapping/VMA producer premises; thirteen existing blobs unchanged, eighteen conditional rows; review r1/r2 incorporated verbatim, same-reviewer affected recheck pending. Initial r1 extension fields above remain historical.
+    file_read_repair_r2_external_api_references:
+      authority: Primary mutable Linux man-pages errno/printf descriptions read2026-10-14 solely for errno-preservation countermodel; no installed-libc, diagnostic output failure or runtime observation.
+      urls:
+        - https://man7.org/linux/man-pages/man3/errno.3.html
+        - https://man7.org/linux/man-pages/man3/printf.3.html
   - id: shadps4
     repo: https://github.com/shadps4-emu/shadPS4
     research_commit: e0a466753a1aacbc8db8253be685bf7ab4d9daae
