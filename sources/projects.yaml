@@ -305,6 +305,8 @@ projects:
       checked_on: 2026-10-14
       authority: Official C11 committee draft N1570 section6.3.2.3 paragraph7; correct referenced-type alignment premise for pointer conversion, not installed type/compiler ABI proof; exact document bytes not frozen
       url: https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf
+    thread_lifecycle_delivery_r3_checked_on: 2026-10-14
+    thread_lifecycle_delivery_r3_scope: Same-reviewer affected recheck r2 resolves typed TCB alignment finding F1 at ca5b9b331d6c787faa20c626d8d2cca372c3d20e; repaired technical content unchanged. Root accepts conditional SOURCE_INSPECTED documentation for one proposed unmerged PR delivery; human editorial merge pending. Original reports, peer file PR21 stack evidence and Issue9 OPEN/NOT MET preserved. No runtime or usability qualification.
   - id: shadps4
     repo: https://github.com/shadps4-emu/shadPS4
     research_commit: e0a466753a1aacbc8db8253be685bf7ab4d9daae
