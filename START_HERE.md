@@ -1,5 +1,37 @@
 # Start here
 
+## Current status — 2026-10-14
+
+Batch02 memory/audio/pad PRs #17/#18/#19 are **incorporated** under the owner's explicit merge instruction, as recorded in the [Issue #16 incorporation receipt](https://github.com/Parm-1/Bloodborne-Research-Commons/issues/16#issuecomment-6161123957). Earlier source-scope dispositions remain in the [Issue #12 handoff](https://github.com/Parm-1/Bloodborne-Research-Commons/issues/12#issuecomment-6139226514). Use those decisions and each dossier's evidence scope; the historical pending-stage wording below does not state their current disposition.
+
+Batch03 [#21 file reads](https://github.com/Parm-1/Bloodborne-Research-Commons/pull/21), [#22 threads](https://github.com/Parm-1/Bloodborne-Research-Commons/pull/22) and [#23 saves](https://github.com/Parm-1/Bloodborne-Research-Commons/pull/23) are independently source-reviewed and **UNMERGED; the owner's editorial decision is pending**. Completed technical reviews: [file affected review r3](docs/reviews/BRC-FILE-READ-01-REVIEW-r3.md), [thread affected review r2](docs/reviews/BRC-THREAD-LIFECYCLE-01-REVIEW-r2.md), [save review r1](docs/reviews/BRC-SAVE-COMMIT-01-REVIEW-r1.md). The [controlling Pro review](https://github.com/Parm-1/Bloodborne-Research-Commons/pull/23#pullrequestreview-5522032983) recommends conditional SOURCE_INSPECTED/reference acceptance and requests E1; it is not owner acceptance or a merge instruction. **This E1 entry-status revision awaits affected review**; [author r3](docs/reviews/BRC-SAVE-COMMIT-01-AUTHOR-r3.md) records its bounded scope.
+
+Publication/incorporation, independent source review and owner acceptance have separate records. They do not qualify runtime/native ABI/game behavior or reliable autonomous continuation. [Issue #9](https://github.com/Parm-1/Bloodborne-Research-Commons/issues/9) remains **OPEN / NOT MET**: both the [historical cross-topic assessment](docs/reviews/BRC-AGENT-ENTRY-01-USABILITY-REVIEW-r3.md) and [USABILITY-02 result](docs/reviews/BRC-AGENT-ENTRY-USABILITY-02-RESULT-r1.md) remain **NOT MET**. No reader retry or new research is part of E1.
+
+### Current task routes (2026-10-14)
+
+Choose the matching source reference, then read its claims and frontier before reuse. These routes supply no new acceptance count, execution authority or wider evidence level.
+
+| Task | Dossier | Claims | Next question |
+|---|---|---|---|
+| GX resources | [Dossier](knowledge/gx-resource-lifecycle.md) | [RC-0001](claims/RC-0001-gx-resources.md), [RC-0004](claims/RC-0004-map-observation.md), [RC-0005](claims/RC-0005-ahead-consumer.md), [RC-0006](claims/RC-0006-deferred-retirement.md) | [Frontier](frontiers/resource-ownership.md) |
+| Texture preparation | [Dossier](knowledge/texture-prep-source-lifetime.md) | [RC-0007](claims/RC-0007-prep-completion.md), [RC-0008](claims/RC-0008-map-removal-ordering.md) | [Frontier](frontiers/resource-ownership.md) |
+| Original-code comparison | [Dossier](knowledge/original-code-differential-validation.md) | [RC-0002](claims/RC-0002-decomp-compare.md), [RC-0009](claims/RC-0009-camera-equality.md), [RC-0010](claims/RC-0010-differential-outcomes.md), [RC-0011](claims/RC-0011-camera-state.md) | [Frontier](frontiers/differential-validation.md) |
+| Function/address correspondence | [Dossier](knowledge/function-address-correspondence.md) | [RC-0003](claims/RC-0003-callgraph-limits.md), [RC-0012](claims/RC-0012-address-coordinates.md), [RC-0013](claims/RC-0013-unwind-provenance.md) | [Frontier](frontiers/function-correspondence.md) |
+| Shader buffer loads | [Dossier](knowledge/buffer-load-dword-translation.md) | [RC-0014](claims/RC-0014-buffer-address-arithmetic.md), [RC-0015](claims/RC-0015-buffer-load-codegen.md) | [Frontier](frontiers/shader-translation.md) |
+| Shader cache applicability | [Dossier](knowledge/shader-pipeline-cache-applicability.md) | [RC-0016](claims/RC-0016-module-compatibility.md), [RC-0017](claims/RC-0017-cache-domains.md) | [Frontier](frontiers/cache-applicability.md) |
+| Import resolution | [Dossier](knowledge/import-resolution.md) | [RC-0018](claims/RC-0018-import-selection.md), [RC-0019](claims/RC-0019-import-outcomes.md) | [Frontier](frontiers/import-resolution.md) |
+| Memory mapping | [Dossier](knowledge/guest-memory-mapping.md) | [RC-0020](claims/RC-0020-memory-mapping.md), [RC-0021](claims/RC-0021-write-tracking.md) | [Frontier](frontiers/memory-mapping.md) |
+| Audio submission | [Dossier](knowledge/audio-submission.md) | [RC-0022](claims/RC-0022-audio-submission.md), [RC-0023](claims/RC-0023-audio-completion.md) | [Frontier](frontiers/audio-submission.md) |
+| Pad sampling | [Dossier](knowledge/pad-sampling.md) | [RC-0024](claims/RC-0024-pad-sampling.md), [RC-0025](claims/RC-0025-pad-capabilities.md) | [Frontier](frontiers/pad-sampling.md) |
+| File reads (#21) | [Dossier](knowledge/file-read.md) | [RC-0026](claims/RC-0026-file-path-descriptor.md), [RC-0027](claims/RC-0027-file-read-outcome.md) | [Frontier](frontiers/file-read.md) |
+| Thread lifecycle (#22) | [Dossier](knowledge/thread-lifecycle.md) | [RC-0028](claims/RC-0028-thread-completion.md), [RC-0029](claims/RC-0029-thread-tls-configuration.md) | [Frontier](frontiers/thread-lifecycle.md) |
+| Save commits (#23) | [Dossier](knowledge/save-commit.md) | [RC-0030](claims/RC-0030-save-replacement.md), [RC-0031](claims/RC-0031-save-success-limits.md) | [Frontier](frontiers/save-commit.md) |
+
+## Historical entry text and dated chronology
+
+The retained text below records earlier stages, including then-current scope/count and pending-status statements. Use the current status and routes above for today's disposition; the original body is preserved unchanged.
+
 Choose the task route in the [README](README.md). It links each covered task to its dossier and claim in one step, with source-reviewed batch topics labelled separately. A dossier is a focused account of what selected public source paths show, what they do not show, and where the remaining question belongs.
 
 **Publication status:** source-reviewed entry documentation is published through merged [PR #10](https://github.com/Parm-1/Bloodborne-Research-Commons/pull/10). The [historical cross-topic assessment](docs/reviews/BRC-AGENT-ENTRY-01-USABILITY-REVIEW-r3.md) and the separately commissioned [USABILITY-02 result](docs/reviews/BRC-AGENT-ENTRY-USABILITY-02-RESULT-r1.md) both remain **NOT MET**. [Issue #9](https://github.com/Parm-1/Bloodborne-Research-Commons/issues/9) stays open; independently reliable autonomous continuation is not qualified. See the [current entry status](docs/CORPUS_CHECKPOINT.md#current-entry-status-brc-agent-entry-01-2026-10-13) for the evaluated and published versions.
