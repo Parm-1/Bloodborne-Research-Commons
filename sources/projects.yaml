@@ -265,6 +265,9 @@ projects:
       urls:
         - https://man7.org/linux/man-pages/man3/errno.3.html
         - https://man7.org/linux/man-pages/man3/printf.3.html
+    file_read_delivery_r3_checked_on: 2026-10-14
+    file_read_delivery_r3_use: Independent review r1 and linked qualification correction r2 plus same-reviewer affected recheck r3 complete; F1/F2 resolved at e98ce03cc72710a29c2d1e6c274556a6d61c19d1 tree da47b4ad664546bcf3536e410c6ce3b7da4907f4. Root accepts conditional SOURCE_INSPECTED contract and affected integration for one Batch03 Issue20 goal1 PR delivery only; human editorial acceptance/merge pending, proposed/unmerged. Earlier extension/repair fields remain historical.
+    file_read_delivery_r3_scope: Status-only integration, unchanged eighteen conditional rows, thirteen source blobs and exact bounds, six primary mutable API descriptions and technical meanings; frozen author r1/r2 and review r1/r2/r3 preserved. No source/API re-audit, runtime/ABI/original asset/game/device/reader proof or save/Fios expansion. Existing source/license fields and usability NOT MET/Issue9 OPEN unchanged.
   - id: shadps4
     repo: https://github.com/shadps4-emu/shadPS4
     research_commit: e0a466753a1aacbc8db8253be685bf7ab4d9daae
