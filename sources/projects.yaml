@@ -233,6 +233,31 @@ projects:
         - https://wiki.libsdl.org/SDL3/SDL_GamepadConnected
         - https://wiki.libsdl.org/SDL3/SDL_GetGamepadTouchpadFinger
         - https://wiki.libsdl.org/SDL3/SDL_RumbleGamepad
+    file_read_extension_checked_on: 2026-10-14
+    file_read_extension_use: BRC-FILE-READ-01; Batch03 Issue20 goal1; proposed knowledge/file-read.md and RC-0026/RC-0027; independent review and owner editorial review pending
+    file_read_extension_scope: Selected Linux configure/mount/translation/open/read/pread/close, descriptor and notification phases plus decisive ABI/errno/import/probe/PlayGo and bounded SaveData mount edges. Thirteen public source blobs and exact text bounds in dossier; eighteen conditional source/model reasoning rows, not executed fixtures. No source import, upstream execution/build, native/runtime/game/device/UI/reader result, installed-library proof, full save contract or sandbox claim. Existing pins/license caveats and all earlier dossiers/reports unchanged.
+    file_read_additional_inspected_paths:
+      - src/runtime_file.c
+      - src/runtime.h
+      - src/runtime.c
+      - src/import_names.inc
+      - src/probe.c
+      - src/runtime_kernel.c
+      - src/runtime_thread.c
+      - src/runtime_memory.c
+      - src/runtime_services.c
+      - src/runtime_savedata.c
+      - build.sh
+      - README.md
+      - LICENSE
+    file_read_external_api_references:
+      checked_on: 2026-10-14
+      authority: Primary Linux man-pages project descriptions hosted at man7.org; public mutable API descriptions paraphrased, not installed libc/kernel/filesystem/compiler proof. Read/pread identify man-pages6.19 dated2026-02-08; exact documentation bytes are not frozen. Open Group Issue8 fetches returned403 and supplied no evidence.
+      urls:
+        - https://man7.org/linux/man-pages/man2/read.2.html
+        - https://man7.org/linux/man-pages/man2/pread.2.html
+        - https://man7.org/linux/man-pages/man2/open.2.html
+        - https://man7.org/linux/man-pages/man2/close.2.html
   - id: shadps4
     repo: https://github.com/shadps4-emu/shadPS4
     research_commit: e0a466753a1aacbc8db8253be685bf7ab4d9daae
