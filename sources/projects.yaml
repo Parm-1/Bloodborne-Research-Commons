@@ -307,6 +307,37 @@ projects:
       url: https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf
     thread_lifecycle_delivery_r3_checked_on: 2026-10-14
     thread_lifecycle_delivery_r3_scope: Same-reviewer affected recheck r2 resolves typed TCB alignment finding F1 at ca5b9b331d6c787faa20c626d8d2cca372c3d20e; repaired technical content unchanged. Root accepts conditional SOURCE_INSPECTED documentation for one proposed unmerged PR delivery; human editorial merge pending. Original reports, peer file PR21 stack evidence and Issue9 OPEN/NOT MET preserved. No runtime or usability qualification.
+    save_commit_checked_on: 2026-10-14
+    save_commit_scope: Proposed SOURCE_INSPECTED BRC-SAVE-COMMIT-01 Batch03 Issue20 goal3; mount/current-copy/write/captured-close/unmount and decisive metadata/cleanup branches; twenty conditional reasoning cases, no executed fixture/runtime/ABI/filesystem/device/game/crash proof. Independent review and human editorial acceptance pending; final batch item, no fourth. Peer file/thread stack is integration-only, accepted main and Issue9 OPEN/NOTMET preserved.
+    save_commit_dossier: knowledge/save-commit.md
+    save_commit_claims: [RC-0030, RC-0031]
+    save_commit_source_bounds:
+      - src/runtime_savedata.c: 21-67, 72-145, 151-247, 351-366
+      - src/runtime_file.c: 20-130, 164-205, 217-219, 232-393, 438-495, 526-642
+      - src/runtime.h: 1-16, 46, 54-59, 70-85, 94-97
+      - src/runtime.c: 70-79, 204-278
+      - src/import_names.inc: 247-251, 438-448, 636-640, 739-743 plus selected-name table search
+      - src/probe.c: 249-269, 350, 372-377, 403-408, 528-542
+      - src/runtime_kernel.c: 10-26, 32-46
+      - src/runtime_thread.c: 50-51, 127-128 unchanged errno receipt
+      - build.sh: 1-23, 74-82 not executed
+      - README.md: 394-404 unchanged license receipt
+      - LICENSE: 1-12 unchanged license receipt
+    save_commit_api_descriptions:
+      checked_on: 2026-10-14
+      authority: Seven primary mutable Linux man-pages descriptions; no frozen HTML or installed dependency ABI/kernel/filesystem/device identity; file-read open/close/errno/printf receipt reused unchanged
+      urls:
+        - https://man7.org/linux/man-pages/man2/write.2.html
+        - https://man7.org/linux/man-pages/man2/pwrite.2.html
+        - https://man7.org/linux/man-pages/man2/fsync.2.html
+        - https://man7.org/linux/man-pages/man2/rename.2.html
+        - https://man7.org/linux/man-pages/man3/fwrite.3.html
+        - https://man7.org/linux/man-pages/man3/fflush.3.html
+        - https://man7.org/linux/man-pages/man3/fclose.3.html
+    save_commit_delivery_r2_checked_on: 2026-10-14
+    save_commit_delivery_r2_scope: Independent source review r1 found no actionable defect at a716b621f53f653acefffb79d438e8b83adb1d6e tree625c36c20635092659200834bb1bcfaeb498f3d9; root accepts conditional SOURCE_INSPECTED contract and cumulative preservation for one proposed unmerged Batch03 Issue20 goal3 PR delivery only. Human editorial acceptance/merge pending. Twenty reviewed cases, eleven source blobs/bounds, seven primary API descriptions and reused receipts unchanged; earlier stages/frozen evidence/Issue9 OPEN NOTMET retained. No technical repair, source audit, reader or runtime/game/usability qualification; final batch item, no fourth.
+    save_commit_delivery_r2_review: docs/reviews/BRC-SAVE-COMMIT-01-REVIEW-r1.md
+    save_commit_delivery_r2_review_sha256: 0b69fd8d7c03966c4b58936c5d4873dc2762dcfcdfda44e44dc0b4e6ae81e6a4
   - id: shadps4
     repo: https://github.com/shadps4-emu/shadPS4
     research_commit: e0a466753a1aacbc8db8253be685bf7ab4d9daae
