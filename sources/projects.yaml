@@ -233,6 +233,41 @@ projects:
         - https://wiki.libsdl.org/SDL3/SDL_GamepadConnected
         - https://wiki.libsdl.org/SDL3/SDL_GetGamepadTouchpadFinger
         - https://wiki.libsdl.org/SDL3/SDL_RumbleGamepad
+    file_read_extension_checked_on: 2026-10-14
+    file_read_extension_use: BRC-FILE-READ-01; Batch03 Issue20 goal1; proposed knowledge/file-read.md and RC-0026/RC-0027; independent review and owner editorial review pending
+    file_read_extension_scope: Selected Linux configure/mount/translation/open/read/pread/close, descriptor and notification phases plus decisive ABI/errno/import/probe/PlayGo and bounded SaveData mount edges. Thirteen public source blobs and exact text bounds in dossier; eighteen conditional source/model reasoning rows, not executed fixtures. No source import, upstream execution/build, native/runtime/game/device/UI/reader result, installed-library proof, full save contract or sandbox claim. Existing pins/license caveats and all earlier dossiers/reports unchanged.
+    file_read_additional_inspected_paths:
+      - src/runtime_file.c
+      - src/runtime.h
+      - src/runtime.c
+      - src/import_names.inc
+      - src/probe.c
+      - src/runtime_kernel.c
+      - src/runtime_thread.c
+      - src/runtime_memory.c
+      - src/runtime_services.c
+      - src/runtime_savedata.c
+      - build.sh
+      - README.md
+      - LICENSE
+    file_read_external_api_references:
+      checked_on: 2026-10-14
+      authority: Primary Linux man-pages project descriptions hosted at man7.org; public mutable API descriptions paraphrased, not installed libc/kernel/filesystem/compiler proof. Read/pread identify man-pages6.19 dated2026-02-08; exact documentation bytes are not frozen. Open Group Issue8 fetches returned403 and supplied no evidence.
+      urls:
+        - https://man7.org/linux/man-pages/man2/read.2.html
+        - https://man7.org/linux/man-pages/man2/pread.2.html
+        - https://man7.org/linux/man-pages/man2/open.2.html
+        - https://man7.org/linux/man-pages/man2/close.2.html
+    file_read_repair_r2_checked_on: 2026-10-14
+    file_read_repair_r2_scope: Linked F1 current-errno/raw-syscall distinction and F2 explicit requested147456/post7 spans with selected mapping/VMA producer premises; thirteen existing blobs unchanged, eighteen conditional rows; review r1/r2 incorporated verbatim, same-reviewer affected recheck pending. Initial r1 extension fields above remain historical.
+    file_read_repair_r2_external_api_references:
+      authority: Primary mutable Linux man-pages errno/printf descriptions read2026-10-14 solely for errno-preservation countermodel; no installed-libc, diagnostic output failure or runtime observation.
+      urls:
+        - https://man7.org/linux/man-pages/man3/errno.3.html
+        - https://man7.org/linux/man-pages/man3/printf.3.html
+    file_read_delivery_r3_checked_on: 2026-10-14
+    file_read_delivery_r3_use: Independent review r1 and linked qualification correction r2 plus same-reviewer affected recheck r3 complete; F1/F2 resolved at e98ce03cc72710a29c2d1e6c274556a6d61c19d1 tree da47b4ad664546bcf3536e410c6ce3b7da4907f4. Root accepts conditional SOURCE_INSPECTED contract and affected integration for one Batch03 Issue20 goal1 PR delivery only; human editorial acceptance/merge pending, proposed/unmerged. Earlier extension/repair fields remain historical.
+    file_read_delivery_r3_scope: Status-only integration, unchanged eighteen conditional rows, thirteen source blobs and exact bounds, six primary mutable API descriptions and technical meanings; frozen author r1/r2 and review r1/r2/r3 preserved. No source/API re-audit, runtime/ABI/original asset/game/device/reader proof or save/Fios expansion. Existing source/license fields and usability NOT MET/Issue9 OPEN unchanged.
   - id: shadps4
     repo: https://github.com/shadps4-emu/shadPS4
     research_commit: e0a466753a1aacbc8db8253be685bf7ab4d9daae

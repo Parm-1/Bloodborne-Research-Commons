@@ -1,0 +1,25 @@
+# BRC-FILE-READ-01 — final author integration r3
+
+2026-10-14. Status-only successor of reviewed repaired `e98ce03cc72710a29c2d1e6c274556a6d61c19d1`, tree `da47b4ad664546bcf3536e410c6ce3b7da4907f4`, tag `brc-file-read-candidate-r2`. Delivery tag `brc-file-read-delivery-r3`; branch `research/brc-file-read-01`. Exact delivery commit/tree/report SHA-256 are provided after freezing. Original-main baseline remains `f293f8b2c2a68a68e221732129d26c86dfc85507`, tree `2b784ddabfac45bd9f206347519809df5ae268a4`. Proposed/unmerged, human editorial acceptance/merge pending.
+
+## Accepted scope and final evidence
+
+Root verified and accepted the repaired conditional SOURCE_INSPECTED source/documentation contract and affected integration for one Batch03 [Issue20](https://github.com/Parm-1/Bloodborne-Research-Commons/issues/20) goal1 PR delivery only. [Same-reviewer affected recheck r3](BRC-FILE-READ-01-REVIEW-r3.md), SHA-256 `9a6e4916fc8019b3accf695fd2d812ad428171769e22bbb5e546da50dcc2b688`, is incorporated verbatim; F1/F2 resolved with no remaining actionable affected source/documentation defect at the repaired identity above. This receipt records parent acceptance, not author self-review or runtime qualification.
+
+[Original review r1](BRC-FILE-READ-01-REVIEW-r1.md), SHA-256 `66327cc9d344f0d836c589139f2c06de59fb917f45cc3ec25f2c5a9916406f57`, and [qualification correction r2](BRC-FILE-READ-01-REVIEW-r2.md), SHA-256 `25a50891e0a68235a186768585dc31cc90cb48b5cd728c9f23bc512eaf4adfe4`, remain verbatim; the retracted universal16KiB-edge rationale and repaired findings remain historical. [Author r1](BRC-FILE-READ-01-AUTHOR-r1.md), SHA-256 `a92825241e0e82b39555a483676c3ec833da256103731aec465cb27a317c28f6`, and [author repair r2](BRC-FILE-READ-01-AUTHOR-r2.md), SHA-256 `d95aa894d7ae9a3f158715ef935007ee74fe0ba65ecdd5fb3e343f2ca5c7e42c`, and both candidate tags are preserved unchanged.
+
+Integration changes only the current metadata and dated status of the [dossier](../../knowledge/file-read.md), [RC-0026](../../claims/RC-0026-file-path-descriptor.md), [RC-0027](../../claims/RC-0027-file-read-outcome.md), [frontier](../../frontiers/file-read.md), routes, registry and appended records, plus this receipt and the frozen recheck. Reviewed technical meanings, all eighteen conditional cases, thirteen source blobs/exact bounds and six primary mutable API descriptions are unchanged. F1 raw syscall/current helper error preservation and F2 pre-request147456/post-positive7 phases retain their reviewed content. Broader memory/import and all earlier topic receipts are reused; no fresh source/API review is performed.
+
+## Focused integration checks
+
+Final focused status-only check: 11 changed/new UTF-8 status/routing/report paths with no BOM/NUL/CR; 407 relative Markdown references including anchors resolve; zero encoding/link/anchor/private-pattern errors. Four technical bodies are byte-identical to reviewed r2 apart from their current metadata paragraph and appended delivery status; all18 cases remain exact. Four shared append records preserve r2 prefixes, and removing exactly the registry delivery block recovers the prior registry. Five frozen author/reviewer SHA pins match. Scoped Git delta preserves all135 protected original-main paths out of140 and prior file modes; old semantic/source/blob/bounds/API receipts are reused unchanged. Git whitespace passes. No source/API freshness or runtime check is added.
+
+Source/API/hash/reference mechanics from repaired r2 and independent recheck are reused at their stated scope. The final check challenges only identity/status/unchanged-body/link/append integration. PyYAML remains unavailable; no parser validation or dependency installation is claimed. No unchanged source/API inventory is rebuilt and no check output is promoted into semantic/runtime proof.
+
+## Closure and handoff
+
+Conditional supported facts and UNKNOWNs retain the reviewed limits: actual invocation/bytes, original asset/content/format, caller ordering/incarnation/external mutation, destination lifetime/writers, installed dependency/native ABI, failure side effects and device visibility are unqualified. Full save/Fios proof is deferred. Source/model examples are not serialized/native/game observations. Both failed usability links remain, results NOT MET and Issue9 OPEN. Earlier pending-stage records remain historical and dated current status supersedes them.
+
+One author, no descendants, background process, runtime/UI/device/game resources or source writes/live handles. No push/PR/merge/outside contact, source/build/script execution/import, dependency installation, reader retry, framework or authority/model-route expansion. Served-model telemetry, usage/token/cost and measured elapsed-time scope remain UNKNOWN across author/repair/integration/reviewer records; none is inferred or summed.
+
+Frozen delivery is ready for parent verification of the status-only delta and one proposed PR publication. Human editorial acceptance/merge remains reserved. This completes the authorized author repair/recheck/evidence-integration loop at checked handoff; no further topic/runtime work is selected by this receipt.
