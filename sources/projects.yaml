@@ -268,6 +268,45 @@ projects:
     file_read_delivery_r3_checked_on: 2026-10-14
     file_read_delivery_r3_use: Independent review r1 and linked qualification correction r2 plus same-reviewer affected recheck r3 complete; F1/F2 resolved at e98ce03cc72710a29c2d1e6c274556a6d61c19d1 tree da47b4ad664546bcf3536e410c6ce3b7da4907f4. Root accepts conditional SOURCE_INSPECTED contract and affected integration for one Batch03 Issue20 goal1 PR delivery only; human editorial acceptance/merge pending, proposed/unmerged. Earlier extension/repair fields remain historical.
     file_read_delivery_r3_scope: Status-only integration, unchanged eighteen conditional rows, thirteen source blobs and exact bounds, six primary mutable API descriptions and technical meanings; frozen author r1/r2 and review r1/r2/r3 preserved. No source/API re-audit, runtime/ABI/original asset/game/device/reader proof or save/Fios expansion. Existing source/license fields and usability NOT MET/Issue9 OPEN unchanged.
+    thread_lifecycle_extension_checked_on: 2026-10-14
+    thread_lifecycle_extension_use: BRC-THREAD-LIFECYCLE-01; Batch03 Issue20 goal2; proposed knowledge/thread-lifecycle.md and RC-0028/RC-0029; independent review and human editorial acceptance/merge pending
+    thread_lifecycle_extension_scope: Seventeen selected public source blobs with exact bounds in dossier, six separate primary mutable host API descriptions and eighteen conditional source/model cases; static TLS producer/rewrite/attach, guest entry/exit/key cleanup/host join/detach/retention and decisive NP/HLE caller edges. No source import/upstream execution/build, machine TLS/register/syscall/pthread fixture, native/runtime/game/device/UI/reader proof, installed ABI/library qualification, full dynamic TLS or scheduler/media campaign. Existing pins/license fields and historical technical/review evidence unchanged.
+    thread_lifecycle_additional_inspected_paths:
+      - src/runtime_thread.c
+      - scripts/link_modules.py
+      - scripts/link_libc.py
+      - src/probe.c
+      - src/runtime.h
+      - src/runtime.c
+      - src/runtime_kernel.c
+      - src/runtime_memory.c
+      - src/runtime_net.c
+      - gpu/bbnet/bbnet.h
+      - gpu/bbnet/bbnet_glue.cpp
+      - gpu/bbnet/shadps4/core/libraries/np/np_common.cpp
+      - gpu/shim/core/libraries/kernel/threads.h
+      - gpu/bbnet/include/core/libraries/kernel/threads.h
+      - gpu/shadps4/core/libraries/avplayer/avplayer_source.cpp
+      - src/import_names.inc
+      - build.sh
+    thread_lifecycle_external_api_references:
+      checked_on: 2026-10-14
+      authority: Primary Linux man-pages project descriptions hosted at man7.org; mutable paraphrased documentation identifies man-pages6.19 tarball fetched2026-09-09, exact documentation bytes not frozen; not installed libc/kernel/compiler/standard-library or runtime proof
+      urls:
+        - https://man7.org/linux/man-pages/man3/pthread_create.3.html
+        - https://man7.org/linux/man-pages/man3/pthread_join.3.html
+        - https://man7.org/linux/man-pages/man3/pthread_detach.3.html
+        - https://man7.org/linux/man-pages/man3/pthread_attr_setstack.3.html
+        - https://man7.org/linux/man-pages/man2/arch_prctl.2.html
+        - https://man7.org/linux/man-pages/man3/aligned_alloc.3.html
+    thread_lifecycle_repair_r2_checked_on: 2026-10-14
+    thread_lifecycle_repair_r2_scope: Frozen review r1 F1 requires actual uint64_t typed TCB alignment before conversion/stores and GS; admitted tuple256/filesz1/memsz1/align1 gives offset1/total257/allocation320 and fails the supplied type-alignment8 predicate. Eighteen conditional cases and seventeen source blobs/six primary API descriptions unchanged; existing align16/default16/64 and high128 cases preserved. Same-reviewer affected recheck pending, no PASS/root acceptance/runtime proof; initial extension fields remain historical.
+    thread_lifecycle_repair_r2_standard_reference:
+      checked_on: 2026-10-14
+      authority: Official C11 committee draft N1570 section6.3.2.3 paragraph7; correct referenced-type alignment premise for pointer conversion, not installed type/compiler ABI proof; exact document bytes not frozen
+      url: https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf
+    thread_lifecycle_delivery_r3_checked_on: 2026-10-14
+    thread_lifecycle_delivery_r3_scope: Same-reviewer affected recheck r2 resolves typed TCB alignment finding F1 at ca5b9b331d6c787faa20c626d8d2cca372c3d20e; repaired technical content unchanged. Root accepts conditional SOURCE_INSPECTED documentation for one proposed unmerged PR delivery; human editorial merge pending. Original reports, peer file PR21 stack evidence and Issue9 OPEN/NOT MET preserved. No runtime or usability qualification.
   - id: shadps4
     repo: https://github.com/shadps4-emu/shadPS4
     research_commit: e0a466753a1aacbc8db8253be685bf7ab4d9daae
