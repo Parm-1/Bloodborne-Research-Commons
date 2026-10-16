@@ -402,10 +402,15 @@ projects:
         - https://man7.org/linux/man-pages/man3/pthread_condattr_getclock.3p.html
         - https://man7.org/linux/man-pages/man3/clock_gettime.3.html
     clock_sleep_checked_on: 2026-10-16
-    clock_sleep_status: Proposed/unmerged SOURCE_INSPECTED BRC-CLOCK-SLEEP-01 Batch04 Issue24; independent review, parent conditional acceptance and owner editorial acceptance/merge pending; mutex PR26 over semaphore PR25 remains reviewed/root conditionally accepted open/unmerged integration-only predecessor
+    clock_sleep_status: Proposed/unmerged SOURCE_INSPECTED BRC-CLOCK-SLEEP-01 Batch04 Issue24; independent source review complete with no actionable finding at ced0f4bcd98c44684216e41c79228acf6eb68e93 tree 8b311feb36584832b4d930cfd0da502418653992; review r2 is a report-only location correction, no candidate repair or repeated semantic review or affected-candidate recheck; root conditionally accepts bounded SOURCE_INSPECTED reference/editorial delivery for one unmerged PR, owner editorial acceptance/merge pending; mutex PR26 over semaphore PR25 remains reviewed/root conditionally accepted open/unmerged integration-only predecessor
     clock_sleep_dossier: knowledge/clock-sleep.md
     clock_sleep_claims: [RC-0036, RC-0037]
     clock_sleep_author_r1: docs/reviews/BRC-CLOCK-SLEEP-01-AUTHOR-r1.md
+    clock_sleep_review_r1: docs/reviews/BRC-CLOCK-SLEEP-01-REVIEW-r1.md
+    clock_sleep_review_r1_sha256: 3ad6a8fb690e63a9b5460ff921e3b749211d212c92e502be0b8df6586e639944
+    clock_sleep_review_r2: docs/reviews/BRC-CLOCK-SLEEP-01-REVIEW-r2.md
+    clock_sleep_review_r2_sha256: c915d71b7136761bc591f3e4736b588eae1737d6eb9b48fd05bab3cdccc30e84
+    clock_sleep_delivery_r2: docs/reviews/BRC-CLOCK-SLEEP-01-AUTHOR-r2.md
     clock_sleep_scope: Sixteen pinned public source blobs/selected bounds, eight substantive separately qualified primary descriptions and fourteen conditional source/model cases; clock-domain and constructor-origin applicability, split borrow/truncation arithmetic, calibrated versus fixed-scale counters, exact resolver/error paths, caller and native ABI gaps, sleep retry/error masking/remainder and diagnostic phases. No source import/build/scripts/upstream execution, serialized/native fixture/runtime/device/UI/game/timing/calibration/reader or installed-host qualification. KNOWLEDGE_REFERENCE only; predecessor blocks unchanged.
     clock_sleep_source_bounds:
       - src/runtime_kernel.c: 1-155, 290-318, 325-377
