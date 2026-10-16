@@ -367,6 +367,37 @@ projects:
         - https://man7.org/linux/man-pages/man3/pthread_condattr_getclock.3p.html
         - https://man7.org/linux/man-pages/man3/pthread_cond_destroy.3p.html
         - https://man7.org/linux/man-pages/man3/clock_gettime.3.html
+    mutex_condition_checked_on: 2026-10-16
+    mutex_condition_status: Proposed SOURCE_INSPECTED BRC-MUTEX-COND-01 Batch04 Issue24; independent review, parent conditional acceptance and owner editorial acceptance/merge pending; semaphore PR25 is open/unmerged integration-only base
+    mutex_condition_dossier: knowledge/mutex-condition.md
+    mutex_condition_claims: [RC-0034, RC-0035]
+    mutex_condition_author_r1: docs/reviews/BRC-MUTEX-COND-01-AUTHOR-r1.md
+    mutex_condition_scope: Eleven pinned public source blobs/selected bounds, nine substantive mutable primary API descriptions and fourteen conditional source/model worked cases; pointer-slot admission, configured versus applied attributes, lock/depth ownership, condition release/reacquire versus predicate, realtime relative/absolute adapters, destroy/reinit and diagnostic data-race limits. No source import/build/upstream execution/scripts, serialized/native fixture/runtime/device/UI/game/reader or installed ABI/host qualification. KNOWLEDGE_REFERENCE only; preceding evidence preserved.
+    mutex_condition_source_bounds:
+      - src/runtime_mutex.c: 1-282
+      - src/runtime.h: 1-20, 28-35
+      - src/runtime.c: 70-99, 204-245
+      - src/probe.c: 528-542
+      - src/import_names.inc: 17-22, 54-60, 115, 418-424, 643, 654-656, 692-695, 744
+      - tests/test_runtime.c: 1-29, 122-165, 396-423 read only
+      - src/runtime_kernel.c: 325-377
+      - scripts/prepare.py: 224-227 read only
+      - build.sh: 1-23, 73-82 read only
+      - README.md: 394-402 reused license receipt
+      - LICENSE: 1-8 reused license receipt
+    mutex_condition_api_descriptions:
+      checked_on: 2026-10-16
+      scope: Eight substantive reproduced IEEE/Open Group POSIX.1-2017 descriptions at man7 plus Linux man-pages clock_gettime release5.07 description; mutable bytes not frozen, direct Issue8 fetch403, not installed-host or Issue8 proof
+      urls:
+        - https://man7.org/linux/man-pages/man3/pthread_mutex_lock.3p.html
+        - https://man7.org/linux/man-pages/man3/pthread_mutex_timedlock.3p.html
+        - https://man7.org/linux/man-pages/man3/pthread_mutex_destroy.3p.html
+        - https://man7.org/linux/man-pages/man3/pthread_mutexattr_gettype.3p.html
+        - https://man7.org/linux/man-pages/man3/pthread_cond_wait.3p.html
+        - https://man7.org/linux/man-pages/man3/pthread_cond_broadcast.3p.html
+        - https://man7.org/linux/man-pages/man3/pthread_cond_destroy.3p.html
+        - https://man7.org/linux/man-pages/man3/pthread_condattr_getclock.3p.html
+        - https://man7.org/linux/man-pages/man3/clock_gettime.3.html
   - id: shadps4
     repo: https://github.com/shadps4-emu/shadPS4
     research_commit: e0a466753a1aacbc8db8253be685bf7ab4d9daae
