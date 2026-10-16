@@ -442,11 +442,13 @@ projects:
         - https://gcc.gnu.org/onlinedocs/gcc/x86-Attributes.html
         - https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf
     ajm_batch_checked_on: 2026-10-16
-    ajm_batch_status: Proposed/unmerged SOURCE_INSPECTED BRC-AJM-BATCH-01 Batch04 Issue24; independent review and parent conditional acceptance pending, human editorial acceptance/merge pending; reviewed/root conditionally accepted open/unmerged PR27 over PR26 over PR25 is integration-only predecessor
+    ajm_batch_status: Proposed/unmerged SOURCE_INSPECTED BRC-AJM-BATCH-01 Batch04 Issue24; initial review r1 plus linked r2 found F1-F3, r3 bounded repairs written, same-reviewer affected recheck and parent conditional acceptance pending, human editorial acceptance/merge pending; reviewed/root conditionally accepted open/unmerged PR27 over PR26 over PR25 is integration-only predecessor
     ajm_batch_dossier: knowledge/ajm-batch.md
     ajm_batch_claims: [RC-0038, RC-0039]
     ajm_batch_author_r1: docs/reviews/BRC-AJM-BATCH-01-AUTHOR-r1.md
     ajm_batch_author_r2: docs/reviews/BRC-AJM-BATCH-01-AUTHOR-r2.md
+    ajm_batch_author_r3: docs/reviews/BRC-AJM-BATCH-01-AUTHOR-r3.md
+    ajm_batch_initial_reviews: [docs/reviews/BRC-AJM-BATCH-01-REVIEW-r1.md, docs/reviews/BRC-AJM-BATCH-01-REVIEW-r2.md]
     ajm_batch_scope: Twenty exact public source blobs/selected bounds (ten bbport, ten exact-gitlink LibAtrac9), three separately qualified primary descriptions and sixteen conditional source/model cases; synchronous job processing versus API/sideband result, decoder-bearing implications requiring a separately qualified dependency/compiler artifact defining config/decode reads (absent), no-decode public-producer positives/counts, global batch slot retirement/cancel/context reuse, buffer and decoder lifetime. No source import/adaptation, encoded inputs, upstream build/scripts/execution, serialized/native fixture/runtime/device/game/reader/timing or installed ABI/host qualification. KNOWLEDGE_REFERENCE only; prior blocks unchanged.
     ajm_batch_source_bounds:
       - src/runtime_ajm.c: 1-496
