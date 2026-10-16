@@ -339,7 +339,10 @@ projects:
     save_commit_delivery_r2_review: docs/reviews/BRC-SAVE-COMMIT-01-REVIEW-r1.md
     save_commit_delivery_r2_review_sha256: 0b69fd8d7c03966c4b58936c5d4873dc2762dcfcdfda44e44dc0b4e6ae81e6a4
     semaphore_wait_checked_on: 2026-10-16
-    semaphore_wait_status: Proposed SOURCE_INSPECTED BRC-SEMAPHORE-WAIT-01 Batch04 Issue24; independent review, parent acceptance and owner editorial acceptance/merge pending
+    semaphore_wait_status: Proposed/unmerged SOURCE_INSPECTED BRC-SEMAPHORE-WAIT-01 Batch04 Issue24; independent review and same-reviewer affected recheck complete, F1 resolved; root conditionally accepts repaired reference contract for one editorial PR, owner editorial acceptance/merge pending
+    semaphore_wait_review_r2: docs/reviews/BRC-SEMAPHORE-WAIT-01-REVIEW-r2.md
+    semaphore_wait_review_r2_sha256: 7b27e870926c2b238dbcc9d0f4c2199cdc9e3e09af145d3b7174eeb89c9165a4
+    semaphore_wait_delivery_r3: docs/reviews/BRC-SEMAPHORE-WAIT-01-AUTHOR-r3.md
     semaphore_wait_dossier: knowledge/semaphore-wait.md
     semaphore_wait_claims: [RC-0032, RC-0033]
     semaphore_wait_scope: Eleven pinned public source blobs with selected bounds, five substantive mutable primary API descriptions and twenty original conditional source/model cases; ID/count admission, fitting-request bypass, timeout phases, cancellation selection and lookup removal versus active waiter cleanup. No source import, build, upstream execution, pthread/syscall/native fixture/runtime/device/UI/game/reader result or installed ABI/host qualification. Existing source pins, other project bytes, technical and frozen review evidence remain unchanged; KNOWLEDGE_REFERENCE only.
