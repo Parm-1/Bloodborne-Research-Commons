@@ -488,10 +488,13 @@ projects:
         - https://gcc.gnu.org/onlinedocs/gcc/x86-Attributes.html
         - https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf
     videoout_flip_checked_on: 2026-10-16
-    videoout_flip_status: Proposed/unmerged SOURCE_INSPECTED BRC-VIDEOOUT-FLIP-01 Batch04 Issue24; independent review, root acceptance and human editorial acceptance/merge pending; reviewed/root conditionally accepted open/unmerged AJM PR28 over clock27 over mutex26 over semaphore25 are integration-only predecessors
+    videoout_flip_status: Proposed/unmerged SOURCE_INSPECTED BRC-VIDEOOUT-FLIP-01 Batch04 Issue24; independent source review r1 complete with no actionable defect at 038162129a46c1ecc679a2a72b05a61337751b72 tree2dd486fdf91de249fdc731e7d6a7c8642b772f10; root conditionally accepts bounded reference/editorial contract for one unmerged PR delivery only, owner editorial acceptance/merge pending; no candidate repair or affected recheck required; reviewed/root conditionally accepted open/unmerged AJM PR28 over clock27 over mutex26 over semaphore25 are integration-only predecessors
     videoout_flip_dossier: knowledge/videoout-flip.md
     videoout_flip_claims: [RC-0040, RC-0041]
     videoout_flip_author_r1: docs/reviews/BRC-VIDEOOUT-FLIP-01-AUTHOR-r1.md
+    videoout_flip_review_r1: docs/reviews/BRC-VIDEOOUT-FLIP-01-REVIEW-r1.md
+    videoout_flip_review_r1_sha256: 85b925b19655cb56d536f946631bf6169f86eae7228f6fc2bf5655255d108cd0
+    videoout_flip_delivery_r2: docs/reviews/BRC-VIDEOOUT-FLIP-01-AUTHOR-r2.md
     videoout_flip_scope: Twenty-nine exact public source blobs/selected bounds, five relied primary descriptions and fourteen conditional source/model cases; active shim and ordinary CPU admission through preparation, request/present/swap workers, covered rendering timeline versus presentation, status/event/previous-label, close and reregister identity. No source import/build/scripts/execution, serialized/native fixture, GPU/device/window/UI/runtime/game, actual race/capture/timing/display or reader/usability result. KNOWLEDGE_REFERENCE only; predecessor bytes and Issue9 OPEN NOTMET unchanged.
     videoout_flip_source_bounds:
       - "gpu/shim/bbgpu.cpp: 64–77, 219–225, 265–321: symbol producer, direct clock shims, startup/registration and NID-prefix fallback"
