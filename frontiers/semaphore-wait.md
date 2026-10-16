@@ -1,0 +1,17 @@
+# Semaphore frontier: observe the matching wait return
+
+BRC-SEMAPHORE-WAIT-01 / Batch04 [Issue #24](https://github.com/Parm-1/Bloodborne-Research-Commons/issues/24), proposed SOURCE_INSPECTED, checked2026-10-16. Independent review, parent acceptance and owner editorial acceptance/merge pending. [Dossier](../knowledge/semaphore-wait.md), [RC-0032](../claims/RC-0032-semaphore-admission.md), [RC-0033](../claims/RC-0033-semaphore-retirement.md), [author r1](../docs/reviews/BRC-SEMAPHORE-WAIT-01-AUTHOR-r1.md). Reuse KNOWLEDGE_REFERENCE, not a backend repair or target-execution grant.
+
+Consumer: kernel-wait maintainer deciding token acquisition versus completion of one waiter call. The missing execution premise is an attributable actual caller, matching wait identity and ordered observation after its return on a qualified native ABI/host implementation. The public resolver/test caller exists in source; an original-game caller and target behavior remain UNKNOWN. A queue-count snapshot cannot supply that premise.
+
+If separately authorized later, one non-game experiment can enroll distinct need3 and need1 calls on count0/max3 with ordered receipts, signal1, and observe the small call's actual return. A second bounded schedule can grant a need1 A, let delete select a still-linked B before A reacquires, then record each actual wait return. All inputs and returned fields must be distinct, stable and correctly typed. Use established synchronization at real mutex-release boundaries; do not busy-read non-atomic internal fields or invent a data-racy positive. No original asset or source import is needed for the reasoning here; any executable fixture/code reuse requires its own permission and license review.
+
+Outcome branches derived from the cited producer, not a checker:
+
+- Later small request returns0 while large head remains linked: supports fitting-request bypass on that observed implementation. Equal-sized scan order alone does not settle mixed-need service or actual return order.
+- Granted A returns0 after delete0, while linked B returns raw32 `0x8002000d`: supports distinct grant/selection/return endpoints. Attribution of both returns is essential; delete0/queue0 alone leaves them unfinished/UNKNOWN.
+- Blocked timeout returns raw32 `0x8002003c` with remainder0; blocked grant may instead return0/remainder0. Raw timeout0 alone cannot classify the outcome. An unchanged nonzero timeout on an early error is outside the blocked remainder writer.
+- A contrary mixed-need, result, width or lifetime observation first triggers identity/phase/host-return/source-drift checks. It does not justify changing expectations until producer and observation are reconciled.
+- Missing actual-call identity, failed host operation, cancellation/nonlocal exit, invalid ABI/storage, unsupported arithmetic or absent synchronized return receipt prevents the corresponding defined positive. Preserve the exact missing premise.
+
+Stop this package at source/documentation drafting, frozen independent review, linked same-author repairs/same-reviewer affected recheck and checked parent delivery for one unmerged PR. No pthread/syscall/runtime/native fixture/device/UI/game execution, acquisition, original-hardware scheduler claim or transitive job/memory-retirement claim is authorized. Parent owns external PR/Issue publication and conditional acceptance; owner controls editorial merge. Other Issue24 questions remain separate goals. Issue #9 stays OPEN/NOT MET and both failed usability records stay preserved.
