@@ -401,6 +401,41 @@ projects:
         - https://man7.org/linux/man-pages/man3/pthread_cond_destroy.3p.html
         - https://man7.org/linux/man-pages/man3/pthread_condattr_getclock.3p.html
         - https://man7.org/linux/man-pages/man3/clock_gettime.3.html
+    clock_sleep_checked_on: 2026-10-16
+    clock_sleep_status: Proposed/unmerged SOURCE_INSPECTED BRC-CLOCK-SLEEP-01 Batch04 Issue24; independent review, parent conditional acceptance and owner editorial acceptance/merge pending; mutex PR26 over semaphore PR25 remains reviewed/root conditionally accepted open/unmerged integration-only predecessor
+    clock_sleep_dossier: knowledge/clock-sleep.md
+    clock_sleep_claims: [RC-0036, RC-0037]
+    clock_sleep_author_r1: docs/reviews/BRC-CLOCK-SLEEP-01-AUTHOR-r1.md
+    clock_sleep_scope: Sixteen pinned public source blobs/selected bounds, eight substantive separately qualified primary descriptions and fourteen conditional source/model cases; clock-domain and constructor-origin applicability, split borrow/truncation arithmetic, calibrated versus fixed-scale counters, exact resolver/error paths, caller and native ABI gaps, sleep retry/error masking/remainder and diagnostic phases. No source import/build/scripts/upstream execution, serialized/native fixture/runtime/device/UI/game/timing/calibration/reader or installed-host qualification. KNOWLEDGE_REFERENCE only; predecessor blocks unchanged.
+    clock_sleep_source_bounds:
+      - src/runtime_kernel.c: 1-155, 290-318, 325-377
+      - src/runtime_time.c: 1-28
+      - src/runtime.c: 70-85, 204-261, 263-282
+      - src/runtime.h: 1-16, 28-35, 46-58
+      - src/runtime_thread.c: 47-54, 126-128, 335-342
+      - src/probe.c: 528-542
+      - src/import_names.inc: 42, 68-69, 97, 413-414, 662, 691, 696, 703, 717, 740 and selected-name search
+      - tests/test_runtime.c: 1-29, 166-179, 396-423 read only
+      - tests/test_gpu_runtime_stubs.cpp: 1-23, 40 read only
+      - gpu/shim/bbgpu.cpp: 39-55, 219-225, 306-322
+      - gpu/shadps4/common/rdtsc.h: 1-54 selected x86 branch
+      - gpu/shadps4/core/libraries/videoout/driver.cpp: 27, 672-678, 733-745
+      - build.sh: 1-23, 73-82 read only
+      - README.md: 394-402 reused license receipt
+      - LICENSE: 1-8 reused license receipt
+      - gpu/VENDOR.txt: 1-5 reused lineage receipt
+    clock_sleep_api_descriptions:
+      checked_on: 2026-10-16
+      scope: Five Linux man-pages descriptions (clock release5.07, others6.19), Intel SDM Volume2B order253667-093US September2026 RDTSC pages4-559-560, GCC x86 sysv_abi description, WG14 N1570 C11 committee draft selected clauses; mutable bytes not frozen, not installed-host/compiler/CPU or original-console proof
+      urls:
+        - https://man7.org/linux/man-pages/man3/clock_gettime.3.html
+        - https://man7.org/linux/man-pages/man2/nanosleep.2.html
+        - https://man7.org/linux/man-pages/man2/gettimeofday.2.html
+        - https://man7.org/linux/man-pages/man3/sleep.3.html
+        - https://man7.org/linux/man-pages/man3/usleep.3.html
+        - https://cdrdv2.intel.com/v1/dl/getContent/671241
+        - https://gcc.gnu.org/onlinedocs/gcc/x86-Attributes.html
+        - https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf
   - id: shadps4
     repo: https://github.com/shadps4-emu/shadPS4
     research_commit: e0a466753a1aacbc8db8253be685bf7ab4d9daae
