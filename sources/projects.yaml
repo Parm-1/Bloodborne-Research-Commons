@@ -535,6 +535,41 @@ projects:
         - https://docs.vulkan.org/refpages/latest/refpages/source/vkQueueSubmit.html
         - https://docs.vulkan.org/refpages/latest/refpages/source/vkWaitForFences.html
         - https://docs.vulkan.org/refpages/latest/refpages/source/vkQueuePresentKHR.html
+    equeue_wait_checked_on: 2026-10-17
+    equeue_wait_status: Proposed/unmerged SOURCE_INSPECTED BRC-EQUEUE-WAIT-01 Issue24; independent source review, root acceptance and owner editorial acceptance/merge pending; Batch04 PR25-29 incorporated under separate owner authorization; no inherited merge authority
+    equeue_wait_dossier: knowledge/equeue-wait.md
+    equeue_wait_claims: [RC-0042, RC-0043]
+    equeue_wait_frontier: frontiers/equeue-wait.md
+    equeue_wait_author_r1: docs/reviews/BRC-EQUEUE-WAIT-01-AUTHOR-r1.md
+    equeue_wait_scope: Eighteen pinned public source blobs/selected bounds, five primary descriptions and seventeen conditional source/model cases; selected registration/resolver route, ordinary versus edge User trigger/coalescing/copy, duplicate-key flags, capacity/count and output/error/timeout/diagnostic phases, small-timer applicability and raw registry/callback lifetime. No source import/build/scripts/upstream execution, pthread/syscall/clock/timer/Asio/native fixture, runtime/device/UI/game/private input, installed ABI/host qualification or reader retry. KNOWLEDGE_REFERENCE only; existing evidence and Issue9 OPEN NOTMET preserved.
+    equeue_wait_source_bounds:
+      - 'gpu/shadps4/core/libraries/kernel/equeue.cpp: 1-320, 323-538, 540-711'
+      - 'gpu/shadps4/core/libraries/kernel/equeue.h: 1-200'
+      - 'gpu/shim/bbgpu.cpp: 39-77, 305-321, 346-380'
+      - 'gpu/shim/core/libraries/libs.h: 1-20'
+      - 'src/runtime.c: 70-85, 204-261'
+      - 'src/probe.c: 365-395, 528-542'
+      - 'src/import_names.inc: 272, 275, 279 and selected-name whole-table search'
+      - 'gpu/CMakeLists.txt: 1-8, 113-135, 151-165'
+      - 'gpu/shadps4/common/types.h: 1-28'
+      - 'gpu/shadps4/core/libraries/kernel/orbis_error.h: 1-24, 31, 71, 74'
+      - 'gpu/shadps4/core/libraries/error_codes.h: 1-8'
+      - 'gpu/shadps4/core/libraries/videoout/video_out.cpp: 41-122'
+      - 'gpu/shadps4/core/libraries/videoout/driver.cpp: 147-164, 749-765, 902-917'
+      - 'gpu/shadps4/common/debug.h: 14-21, 46-50'
+      - 'gpu/shim/common/logging/log.h: 1-3, 25-45'
+      - 'README.md: 394-404 reused license receipt'
+      - 'LICENSE: 1-8 reused license receipt'
+      - 'gpu/VENDOR.txt: 1-5 reused lineage receipt'
+    equeue_wait_primary_descriptions:
+      checked_on: 2026-10-17
+      scope: Named WG21 N4950 C++23 draft selected conversion/race/condition-variable/steady-clock/destruction rules, mutable GCC x86 sysv_abi description and named Boost1.85 timer destructor/cancel-overload1/async_wait descriptions; exact documentation bytes not frozen; not installed compiler/standard-library/Boost/ABI/runtime qualification
+      urls:
+        - https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2023/n4950.pdf
+        - https://gcc.gnu.org/onlinedocs/gcc/x86-Attributes.html
+        - https://www.boost.org/doc/libs/1_85_0/doc/html/boost_asio/reference/basic_waitable_timer/_basic_waitable_timer.html
+        - https://www.boost.org/doc/libs/1_85_0/doc/html/boost_asio/reference/basic_waitable_timer/cancel/overload1.html
+        - https://www.boost.org/doc/libs/1_85_0/doc/html/boost_asio/reference/basic_waitable_timer/async_wait.html
   - id: shadps4
     repo: https://github.com/shadps4-emu/shadPS4
     research_commit: e0a466753a1aacbc8db8253be685bf7ab4d9daae
