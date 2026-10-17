@@ -76,6 +76,38 @@ projects:
     commit_date_utc: 2026-10-10T22:57:36Z
     research_use: tools/re/callgraph.py (RC-0003 plus correspondence extension, RC-0012 and RC-0013); description of a separate runtime and shadPS4-derived renderer (frontier); proposed BUFFER_LOAD_DWORD source trace (RC-0014, RC-0015 and knowledge/buffer-load-dword-translation.md); proposed shader pipeline cache applicability source inspection (RC-0016, RC-0017 and knowledge/shader-pipeline-cache-applicability.md); source-reviewed import-resolution study (RC-0018, RC-0019 and knowledge/import-resolution.md)
     disclaimer: Source lineage and forks are not independent confirmations. The earlier scope read only the cited script, README, LICENSE and gpu/VENDOR.txt. The separately dated shader, cache and import extensions below read bounded source; no intended-ISA, runtime, cache-selection or game correctness is established.
+    # BRC-PTHREAD-ONCE-01 begin
+    pthread_once_checked_on: 2026-10-17
+    pthread_once_status: Proposed/unmerged SOURCE_INSPECTED BRC-PTHREAD-ONCE-01 Issue24; independent source review r1 complete with no actionable finding atfbfe78bfbf50989a31bc07b252ba40f6d7913f78 tree554b6fdcc774eaf853e0851ff9d9e6f03635edd9; root accepts bounded conditional SOURCE_INSPECTED contract for one unmerged reference/editorial PR only; owner editorial acceptance/merge and runtime qualification pending; no candidate repair or affected recheck required; reviewed/unmerged thread key PR39 over38/37/36/35/34/33/32/31/30 integration-only not corroboration; Issue9 OPEN NOTMET; current proposal ahead of preserved chronology
+    pthread_once_dossier: knowledge/pthread-once.md
+    pthread_once_claims: [RC-0062, RC-0063]
+    pthread_once_frontier: frontiers/pthread-once.md
+    pthread_once_author_r1: docs/reviews/BRC-PTHREAD-ONCE-01-AUTHOR-r1.md
+    pthread_once_review_r1: docs/reviews/BRC-PTHREAD-ONCE-01-REVIEW-r1.md
+    pthread_once_review_r1_sha256: 03a4b48494960a71a6355b4ac58f438251c0a598298e3c992f72be3da9a996af
+    pthread_once_final_r2: docs/reviews/BRC-PTHREAD-ONCE-01-AUTHOR-r2.md
+    pthread_once_scope: Eleven exact public source blobs and selected bounds, four separately qualified primary descriptions and twenty unexecuted conditional source/model rows; zero executed cases. Exact signed32 control1 completion, strong0to2 CAS selection, normal callback return release1 and matching acquire publication; failedCAS1 yields then reloads. Raw1 provenance, raw3 contrary, different routines one control, no owner or abort, same-control recursion and valid guest-thread exit leaving surviving2, no fairness from yield, raw SCE22 versus POSIX22 and explicit errno limits. Mask0x1 bit index0 admission is not binding. Actual caller/control/data protocol and installed atomic/ABI/host/lifetime remain unknown. KNOWLEDGE_REFERENCE only; prior guard/thread/key scope unchanged; no source execution/build/import, fixture/serialized/native/runtime/device/game/usability qualification.
+    pthread_once_source_bounds:
+      - 'src/runtime_kernel.c: 1-26, 230-244, 293-319'
+      - 'src/runtime_thread.c: 1-54, 64-109, 220-285, 337-361'
+      - 'src/runtime.h: 1-16, 42-46, 54-58'
+      - 'src/runtime.c: 19, 70-74, 204-278'
+      - 'src/import_names.inc: 67, 651, 698; complete selected-name/NID search'
+      - 'src/probe.c: 528-542'
+      - 'tests/test_runtime.c: 1-34, 368; complete selected-name/NID search of424 lines'
+      - 'tests/test_runtime.py: 1-44'
+      - 'build.sh: 1-24, 73-97; text only'
+      - 'README.md: 394-404; reused license receipt'
+      - 'LICENSE: 1-8; reused license receipt'
+    pthread_once_primary_descriptions:
+      checked_on: 2026-10-17
+      scope: GCC memory-model-aware atomic builtins description; WG14 N1570 C11 draft for language lifetime alignment types races and valid nonlocal restoration; comparative Linux pthread_once and sched_yield descriptions. Exact mutable documentation bytes not frozen and installed compiler/atomic/ABI/libc/scheduler behavior unqualified. OpenGroup2024 pthread_once fetch403 excluded.
+      urls:
+        - https://gcc.gnu.org/onlinedocs/gcc/_005f_005fatomic-Builtins.html
+        - https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf
+        - https://man7.org/linux/man-pages/man3/pthread_once.3.html
+        - https://man7.org/linux/man-pages/man2/sched_yield.2.html
+    # BRC-PTHREAD-ONCE-01 end
     # BRC-THREAD-KEY-01 begin
     thread_key_checked_on: 2026-10-17
     thread_key_status: Proposed/unmerged SOURCE_INSPECTED BRC-THREAD-KEY-01 Issue24; independent source review r1 found F1 ambiguous capability predicate; linked author repair r2 specifies mask0x1 bit0 and0x2-versus0x1 gate contrast; same-reviewer affected recheck r2 resolved F1 with no new affected finding at61e4c5d348bf78b8a9f5ee31639c6277cf356131 treea45950d128e819243dd7108053e57dd5c048c28d; root accepts repaired conditional SOURCE_INSPECTED contract for one unmerged reference/editorial PR only; owner editorial acceptance/merge pending; HR timer PR38 over37/36/35/34/33/32/31/30 integration-only not corroboration; Issue9 OPEN NOTMET; current proposal ahead of preserved chronology
