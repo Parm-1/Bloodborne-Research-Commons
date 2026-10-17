@@ -1,5 +1,11 @@
 # Start here
 
+<!-- BRC-PROBE-IMAGE-01 begin -->
+## Current probe-image proposal — 2026-10-17
+
+**BRC-PROBE-IMAGE-01 is proposed/unmerged SOURCE_INSPECTED; independent review and root acceptance pending.** Consumer: loader maintainer distinguishing BBPROBE2 metadata admission, whole-image read, ordered relocation/protection and pre-entry Mapped from exact image identity, final effective permissions and entry readiness. [Dossier](knowledge/probe-image.md), [RC-0046](claims/RC-0046-probe-image-admission.md), [RC-0047](claims/RC-0047-probe-image-permissions.md), [frontier](frontiers/probe-image.md), [author r1](docs/reviews/BRC-PROBE-IMAGE-01-AUTHOR-r1.md). Ten exact public source blobs/selected bounds, five separately qualified primary descriptions and seventeen original conditional source/model categories; no executed cases. Supplied Linux x86-64 CPU-only/no-patches/BBPROBE2/no-linked-modules route; producer completion requires absent accepted input/game_check/inspect_libc/packing/I/O premises. Last page request follows segment order while executable_entry remembers any executable logical containment; Mapped is pre-entry. KNOWLEDGE_REFERENCE only; no source import, image/fixture bytes, upstream execution/build, compiler/native/runtime/device/UI/game, installed ABI/host, original fidelity, sandbox or usability qualification. Reviewed/unmerged rwlock [PR #31](https://github.com/Parm-1/Bloodborne-Research-Commons/pull/31) over eventqueue [PR #30](https://github.com/Parm-1/Bloodborne-Research-Commons/pull/30) have root conditional reference/editorial delivery acceptance only, owner editorial acceptance/merge pending, and are integration-only predecessors. Batch04 PR25–29 are already owner-authorized incorporated reference material; prior technical/frozen/history bytes are preserved. One new outcome in uncapped [Issue #24](https://github.com/Parm-1/Bloodborne-Research-Commons/issues/24); no inherited merge authority. Issue #9 OPEN / NOT MET, both failed answers/grades/evaluated heads unchanged.
+<!-- BRC-PROBE-IMAGE-01 end -->
+
 <!-- BRC-RWLOCK-01 begin -->
 ## Current rwlock proposal — 2026-10-17
 
