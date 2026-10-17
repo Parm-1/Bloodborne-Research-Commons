@@ -741,6 +741,34 @@ projects:
         - https://gcc.gnu.org/onlinedocs/gcc/x86-Attributes.html
         - https://man7.org/linux/man-pages/man3/pthread_mutex_lock.3p.html
     # BRC-EXIT-HANDLER-01 end
+    # BRC-MODULE-TLS-01 begin
+    module_tls_checked_on: 2026-10-17
+    module_tls_status: Proposed/unmerged SOURCE_INSPECTED BRC-MODULE-TLS-01 Issue24; independent review and root/owner editorial acceptance/merge pending; PR35 over34/33/32/31/30 integration-only not corroboration; main and incorporated history unchanged; Issue9 OPEN NOTMET
+    module_tls_dossier: knowledge/module-tls.md
+    module_tls_claims: [RC-0054, RC-0055]
+    module_tls_frontier: frontiers/module-tls.md
+    module_tls_author_r1: docs/reviews/BRC-MODULE-TLS-01-AUTHOR-r1.md
+    module_tls_scope: Twelve exact public source blobs/selected bounds, two separately qualified primary descriptions and twenty original conditional scalar source/model rows; zero executed cases. Selected linked metadata/setter/current data-ID-offset admission, per-host-thread lazy calloc/template copy, cached mutation, ordered equal-size/shrink/grow/duplicate-ID replacement and thread-exit lifetime. Stable valid config/source/destination/ABI/size/span premises; current gate does not retain allocation extent/generation and grow beyond old one-past has no defined return prediction. KNOWLEDGE_REFERENCE only; full module TLS DEFER/UNKNOWN; no source import/build/execution/fixture/compiler oracle/native/runtime/game/installed ABI/usability qualification; prior pins/licenses/frozen failures unchanged.
+    module_tls_source_bounds:
+      - 'src/runtime.c: 23–26, 52–68, 70–85, 198–205, 206–228'
+      - 'src/runtime.h: 1–18, 38–45'
+      - 'src/import_names.inc: 113; complete selected-name/NID search'
+      - 'src/probe.c: 30–38, 80–85, 102–114, 271–276, 403–449, 483–485, 528–542, 545–574'
+      - 'scripts/link_modules.py: 92–107, 129–164, 192–195, 216–223'
+      - 'scripts/link_libc.py: 74–102, 118–132, 180–188'
+      - 'src/runtime_thread.c: 33–78, 89–109, 220–227, 260–285'
+      - 'tests/test_runtime.c: 1–16, 29–57, 395–424'
+      - 'tests/test_runtime.py: 1–30'
+      - 'build.sh: 1–23, 73–90'
+      - 'README.md: 394–404 reused license receipt'
+      - 'LICENSE: 1–8 reused license receipt'
+    module_tls_primary_descriptions:
+      checked_on: 2026-10-17
+      scope: Named WG14 N1570 C11 committee draft2011-04-12 selected race/storage-duration/initialization/pointer/allocation/copy rules and mutable GCC x86 sysv_abi description; alternate Function-Attributes body unavailable adds no description; exact bytes not frozen; no installed compiler/libc/TLS/allocator/ABI qualification
+      urls:
+        - https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf
+        - https://gcc.gnu.org/onlinedocs/gcc/x86-Attributes.html
+    # BRC-MODULE-TLS-01 end
   - id: shadps4
     repo: https://github.com/shadps4-emu/shadPS4
     research_commit: e0a466753a1aacbc8db8253be685bf7ab4d9daae

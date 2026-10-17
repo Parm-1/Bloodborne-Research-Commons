@@ -1,5 +1,11 @@
 # Start here
 
+<!-- BRC-MODULE-TLS-01 begin -->
+## Current module TLS proposal — 2026-10-17
+
+**BRC-MODULE-TLS-01 is proposed/unmerged SOURCE_INSPECTED; independent review, root acceptance and owner editorial acceptance/merge pending.** Consumer: TLS maintainer deciding fixed module configuration versus generation-aware replacement/reclamation. [Dossier](knowledge/module-tls.md), [RC-0054](claims/RC-0054-module-tls-admission.md), [RC-0055](claims/RC-0055-module-tls-cache-lifetime.md), [frontier](frontiers/module-tls.md), [author r1](docs/reviews/BRC-MODULE-TLS-01-AUTHOR-r1.md). Twelve exact public source blobs/selected bounds, two substantive primary descriptions and twenty original conditional scalar source/model rows; zero executed cases. Direct setters validate only ID; getters gate on current data/memsz but retain per-host-thread prior blocks without stored extent/generation. Stable valid configuration supports first-copy/zero-tail/cache-hit/independent-host byte positives; reconfiguration can diverge old/fresh blocks, shrink rejects retained bytes, and grow admission is not proof of defined pointer arithmetic. Thread completion does not automatically free separate heap blocks in selected paths. Full module TLS DEFER/UNKNOWN; KNOWLEDGE_REFERENCE only, no execution/fixture/runtime/game/installed ABI/usability qualification. Reviewed/unmerged exit-handler PR #35 over #34/#33/#32/#31/#30 is integration-only, not corroboration; Issue #9 **OPEN / NOT MET** and all failed/frozen/evaluated history preserved. Current proposal precedes preserved history.
+<!-- BRC-MODULE-TLS-01 end -->
+
 <!-- BRC-EXIT-HANDLER-01 begin -->
 ## Current exit-handler proposal — 2026-10-17
 
