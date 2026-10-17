@@ -1,5 +1,11 @@
 # Start here
 
+## Current Batch04 route — 2026-10-16
+
+[Issue #24](https://github.com/Parm-1/Bloodborne-Research-Commons/issues/24) starts an extensible one-goal/one-independently-reviewed-PR queue. **Semaphore waits remain proposed/unmerged: independent source review and same-reviewer affected recheck are complete, F1 is resolved, and root conditionally accepts the repaired SOURCE_INSPECTED reference contract for one editorial PR. Owner editorial acceptance/merge remain pending.** [Review r1](docs/reviews/BRC-SEMAPHORE-WAIT-01-REVIEW-r1.md), [affected recheck r2](docs/reviews/BRC-SEMAPHORE-WAIT-01-REVIEW-r2.md), [final author integration r3](docs/reviews/BRC-SEMAPHORE-WAIT-01-AUTHOR-r3.md). Use the [semaphore dossier](knowledge/semaphore-wait.md), [RC-0032](claims/RC-0032-semaphore-admission.md), [RC-0033](claims/RC-0033-semaphore-retirement.md) and [frontier](frontiers/semaphore-wait.md) for the bounded SOURCE_INSPECTED contract. This source/model work supplies no runtime, native ABI, game or usability qualification.
+
+Batch03 remains owner-authorized incorporated conditional source reference material ([Issue #20 receipt](https://github.com/Parm-1/Bloodborne-Research-Commons/issues/20#issuecomment-6181484649)). The retained dated status and13-route table below are historical context; this block adds only the current semaphore route. [Issue #9](https://github.com/Parm-1/Bloodborne-Research-Commons/issues/9) remains **OPEN / NOT MET**; both [cross-topic assessment](docs/reviews/BRC-AGENT-ENTRY-01-USABILITY-REVIEW-r3.md) and [USABILITY-02 result](docs/reviews/BRC-AGENT-ENTRY-USABILITY-02-RESULT-r1.md) remain **NOT MET**. No reader retry.
+
 ## Current status — 2026-10-14
 
 Batch02 memory/audio/pad PRs #17/#18/#19 are **incorporated** under the owner's explicit merge instruction, as recorded in the [Issue #16 incorporation receipt](https://github.com/Parm-1/Bloodborne-Research-Commons/issues/16#issuecomment-6161123957). Earlier source-scope dispositions remain in the [Issue #12 handoff](https://github.com/Parm-1/Bloodborne-Research-Commons/issues/12#issuecomment-6139226514). Use those decisions and each dossier's evidence scope; the historical pending-stage wording below does not state their current disposition.

@@ -338,6 +338,35 @@ projects:
     save_commit_delivery_r2_scope: Independent source review r1 found no actionable defect at a716b621f53f653acefffb79d438e8b83adb1d6e tree625c36c20635092659200834bb1bcfaeb498f3d9; root accepts conditional SOURCE_INSPECTED contract and cumulative preservation for one proposed unmerged Batch03 Issue20 goal3 PR delivery only. Human editorial acceptance/merge pending. Twenty reviewed cases, eleven source blobs/bounds, seven primary API descriptions and reused receipts unchanged; earlier stages/frozen evidence/Issue9 OPEN NOTMET retained. No technical repair, source audit, reader or runtime/game/usability qualification; final batch item, no fourth.
     save_commit_delivery_r2_review: docs/reviews/BRC-SAVE-COMMIT-01-REVIEW-r1.md
     save_commit_delivery_r2_review_sha256: 0b69fd8d7c03966c4b58936c5d4873dc2762dcfcdfda44e44dc0b4e6ae81e6a4
+    semaphore_wait_checked_on: 2026-10-16
+    semaphore_wait_status: Proposed/unmerged SOURCE_INSPECTED BRC-SEMAPHORE-WAIT-01 Batch04 Issue24; independent review and same-reviewer affected recheck complete, F1 resolved; root conditionally accepts repaired reference contract for one editorial PR, owner editorial acceptance/merge pending
+    semaphore_wait_review_r2: docs/reviews/BRC-SEMAPHORE-WAIT-01-REVIEW-r2.md
+    semaphore_wait_review_r2_sha256: 7b27e870926c2b238dbcc9d0f4c2199cdc9e3e09af145d3b7174eeb89c9165a4
+    semaphore_wait_delivery_r3: docs/reviews/BRC-SEMAPHORE-WAIT-01-AUTHOR-r3.md
+    semaphore_wait_dossier: knowledge/semaphore-wait.md
+    semaphore_wait_claims: [RC-0032, RC-0033]
+    semaphore_wait_scope: Eleven pinned public source blobs with selected bounds, five substantive mutable primary API descriptions and twenty original conditional source/model cases; ID/count admission, fitting-request bypass, timeout phases, cancellation selection and lookup removal versus active waiter cleanup. No source import, build, upstream execution, pthread/syscall/native fixture/runtime/device/UI/game/reader result or installed ABI/host qualification. Existing source pins, other project bytes, technical and frozen review evidence remain unchanged; KNOWLEDGE_REFERENCE only.
+    semaphore_wait_source_bounds:
+      - src/runtime_sema.c: 1-185
+      - src/runtime.h: 1-16, 28-35, 47-49
+      - src/runtime.c: 70-99, 204-245
+      - src/probe.c: 528-542
+      - src/import_names.inc: 125-128, 224 and selected-name search
+      - tests/test_sema.c: 1-137 read only
+      - src/runtime_kernel.c: 320-377
+      - scripts/prepare.py: 215-225
+      - build.sh: 1-23, 73-82
+      - README.md: 394-402 existing license receipt rechecked
+      - LICENSE: 1-8 existing license receipt rechecked
+    semaphore_wait_api_descriptions:
+      checked_on: 2026-10-16
+      scope: POSIX.1-2017 text reproduced at man7 and Linux man-pages clock description; mutable bytes not frozen, not installed-host or Issue8 proof
+      urls:
+        - https://man7.org/linux/man-pages/man3/pthread_cond_wait.3p.html
+        - https://man7.org/linux/man-pages/man3/pthread_cond_broadcast.3p.html
+        - https://man7.org/linux/man-pages/man3/pthread_condattr_getclock.3p.html
+        - https://man7.org/linux/man-pages/man3/pthread_cond_destroy.3p.html
+        - https://man7.org/linux/man-pages/man3/clock_gettime.3.html
   - id: shadps4
     repo: https://github.com/shadps4-emu/shadPS4
     research_commit: e0a466753a1aacbc8db8253be685bf7ab4d9daae
