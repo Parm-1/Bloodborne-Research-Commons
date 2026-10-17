@@ -709,6 +709,38 @@ projects:
         - https://gcc.gnu.org/onlinedocs/gcc/x86-Attributes.html
         - https://man7.org/linux/man-pages/man2/sched_yield.2.html
     # BRC-STATIC-GUARD-01 end
+    # BRC-EXIT-HANDLER-01 begin
+    exit_handler_checked_on: 2026-10-17
+    exit_handler_status: Proposed/unmerged SOURCE_INSPECTED BRC-EXIT-HANDLER-01 Issue24; independent source review r1 complete with no actionable finding at 1de81b61d0707cc462d35939fdc6f05966d7298c tree 516fce25e39cdc84a731d20c0cf664a9168c3aab; root accepts the conditional source contract for one unmerged reference/editorial PR only; owner editorial acceptance/merge pending; no candidate repair or affected recheck required; guard PR34 over33/32/31/30 integration-only not corroboration; incorporated history and Issue9 OPEN NOTMET preserved
+    exit_handler_dossier: knowledge/exit-handler.md
+    exit_handler_claims: [RC-0052, RC-0053]
+    exit_handler_frontier: frontiers/exit-handler.md
+    exit_handler_author_r1: docs/reviews/BRC-EXIT-HANDLER-01-AUTHOR-r1.md
+    exit_handler_review_r1: docs/reviews/BRC-EXIT-HANDLER-01-REVIEW-r1.md
+    exit_handler_review_r1_sha256: 1573e7164d080d9421a4c3f9d82d5ee8cdc6038b508480a761eefbf9cee6ffd7
+    exit_handler_delivery_r2: docs/reviews/BRC-EXIT-HANDLER-01-AUTHOR-r2.md
+    exit_handler_scope: Eleven exact public source blobs/selected bounds, four separately qualified primary descriptions and twenty original conditional scalar source/model rows; zero executed cases. Accepted per-record identities versus plain attempts/null/admission failure, retained count/capacity, DSO-filter/global wildcard, reverse locked selection versus callback start/completion, inactive-before-call/recursive/concurrent/no-join, new registrations and local copy across registry realloc, finite-return and external code/argument/DSO lifetime premises; selected guest exit versus puts-only entry callback and unsupported trap. KNOWLEDGE_REFERENCE only; no source import/build/execution/fixture/native/runtime/game/ABI/usability qualification.
+    exit_handler_source_bounds:
+      - 'src/runtime.c: 12-21,70-90,108-145,198-218,259-282'
+      - 'src/runtime.h: 1-18'
+      - 'src/import_names.inc: 1-13; complete selected-name/NID search'
+      - 'src/probe.c: 115-139,528-542,576-589'
+      - 'tests/test_runtime.c: 1-20,82-111,395-424'
+      - 'tests/test_runtime.py: 1-44 complete'
+      - 'scripts/prepare.py: 198-219'
+      - 'build.sh: 1-23,73-99'
+      - 'README.md: 394-402 reused license receipt'
+      - 'LICENSE: 1-8 reused receipt'
+      - 'gpu/VENDOR.txt: 1-5 reused receipt'
+    exit_handler_primary_descriptions:
+      checked_on: 2026-10-17
+      scope: Mutable comparative Itanium C++ ABI section3.3.6, WG14 N1570 C11 draft2011-04-12, GCC x86 sysv_abi and accessible POSIX Programmer Manual mutex-lock/unlock reproduction with its Linux caveat. Direct Open Group bodies unavailable through read route; exact documentation bytes not frozen; no installed ABI/compiler/libc/pthread/allocator or console qualification.
+      urls:
+        - https://itanium-cxx-abi.github.io/cxx-abi/abi.html
+        - https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf
+        - https://gcc.gnu.org/onlinedocs/gcc/x86-Attributes.html
+        - https://man7.org/linux/man-pages/man3/pthread_mutex_lock.3p.html
+    # BRC-EXIT-HANDLER-01 end
   - id: shadps4
     repo: https://github.com/shadps4-emu/shadPS4
     research_commit: e0a466753a1aacbc8db8253be685bf7ab4d9daae
