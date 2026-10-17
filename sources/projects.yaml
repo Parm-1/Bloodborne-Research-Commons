@@ -642,6 +642,40 @@ projects:
         - https://man7.org/linux/man-pages/man3/fread.3.html
         - https://man7.org/linux/man-pages/man3/fgetc.3.html
     # BRC-PROBE-IMAGE-01 end
+    # BRC-RTC-CONVERSION-01 begin
+    rtc_conversion_checked_on: 2026-10-17
+    rtc_conversion_status: Proposed/unmerged SOURCE_INSPECTED BRC-RTC-CONVERSION-01 Issue24; independent source review r1 complete with no actionable finding at a2007ccfe20c286065a12caaab05cf0d3fd948c3 tree 86dec37f90b11e38308f95ba31ca61c4b6bf3ec7; root accepts the conditional source contract for one unmerged reference/editorial PR only, owner editorial acceptance/merge pending; no candidate repair or affected recheck required; reviewed/unmerged PR32 over31 over30 integration-only, no corroboration or inherited merge authority; incorporated main and first five Batch04 incorporations unchanged; Issue9 OPEN NOTMET preserved
+    rtc_conversion_dossier: knowledge/rtc-conversion.md
+    rtc_conversion_claims: [RC-0048, RC-0049]
+    rtc_conversion_frontier: frontiers/rtc-conversion.md
+    rtc_conversion_author_r1: docs/reviews/BRC-RTC-CONVERSION-01-AUTHOR-r1.md
+    rtc_conversion_review_r1: docs/reviews/BRC-RTC-CONVERSION-01-REVIEW-r1.md
+    rtc_conversion_review_r1_sha256: 91683586fac04480dea1f5bbde1c5f094ed16cb6ae6bef3db129bb9031c6fcb2
+    rtc_conversion_delivery_r2: docs/reviews/BRC-RTC-CONVERSION-01-AUTHOR-r2.md
+    rtc_conversion_scope: Eleven exact public source blobs/selected bounds, six separately qualified primary descriptions, nineteen original conditional source/model rows and zero executed fixtures. Validated calendar fields versus raw tick/year narrowing, Unix clamp/fraction/scaling, exact callable route/ABI limits, host realtime network alias, offset lookup versus inverse, formatter index/capacity/native-promoted-type and output lifetime/error phases. KNOWLEDGE_REFERENCE only; no source import or upstream execution/build, calendar/date/timezone/compiler oracle, native/runtime/device/UI/game/save inputs or fixtures, installed host/ABI/RFC fidelity/usability qualification. Prior pins/licenses, frozen evidence and failed Issue9 evaluations unchanged.
+    rtc_conversion_source_bounds:
+      - 'src/runtime_rtc.c: 1-151 complete'
+      - 'src/runtime.c: 70-85, 204-261, 263-282'
+      - 'src/runtime.h: 1-17, 54-58, 93'
+      - 'src/import_names.inc: 286, 309-311, 584, 587-588, 625, 658-659; complete selected-name search'
+      - 'src/probe.c: 528-542'
+      - 'gpu/shim/bbgpu.cpp: 305-321'
+      - 'gpu/bbnet/include/core/libraries/rtc/rtc.h: 1-44, 46-82'
+      - 'build.sh: 1-23, 73-82 read only'
+      - 'README.md: 394-402 reused license receipt'
+      - 'LICENSE: 1-8 reused license receipt'
+      - 'gpu/VENDOR.txt: 1-5 reused lineage receipt'
+    rtc_conversion_primary_descriptions:
+      checked_on: 2026-10-17
+      scope: Mutable Linux man-pages clock_gettime-getres release5.07 rendering2020-07-14, localtime_r struct-tm snprintf release6.19 rendering2026-09-09, GCC x86 sysv_abi and WG14 N1570 C11 draft2011-04-12. Exact documentation bytes not frozen; alternate GCC Function-Attributes URL supplied no substantive contract. Descriptions are not installed libc/compiler/kernel/time_t/timezone/ABI qualification.
+      urls:
+        - https://man7.org/linux/man-pages/man3/clock_gettime.3.html
+        - https://man7.org/linux/man-pages/man3/localtime.3.html
+        - https://man7.org/linux/man-pages/man3/tm.3type.html
+        - https://man7.org/linux/man-pages/man3/snprintf.3.html
+        - https://gcc.gnu.org/onlinedocs/gcc/x86-Attributes.html
+        - https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf
+    # BRC-RTC-CONVERSION-01 end
   - id: shadps4
     repo: https://github.com/shadps4-emu/shadPS4
     research_commit: e0a466753a1aacbc8db8253be685bf7ab4d9daae

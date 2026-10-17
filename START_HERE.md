@@ -1,5 +1,11 @@
 # Start here
 
+<!-- BRC-RTC-CONVERSION-01 begin -->
+## Current RTC conversion proposal — 2026-10-17
+
+**BRC-RTC-CONVERSION-01 is proposed/unmerged SOURCE_INSPECTED; Independent source [review r1](docs/reviews/BRC-RTC-CONVERSION-01-REVIEW-r1.md) is complete with no actionable finding at `a2007ccfe20c286065a12caaab05cf0d3fd948c3`, tree `86dec37f90b11e38308f95ba31ca61c4b6bf3ec7`. Root accepts the conditional SOURCE_INSPECTED contract for one unmerged reference/editorial PR only; owner editorial acceptance/merge pending. No candidate repair or affected recheck required. [Final author integration r2](docs/reviews/BRC-RTC-CONVERSION-01-AUTHOR-r2.md).** For a calendar API decision, read [RTC dossier](knowledge/rtc-conversion.md), [calendar-range claim](claims/RC-0048-rtc-calendar-range.md), [local-result claim](claims/RC-0049-rtc-local-result.md), [frontier](frontiers/rtc-conversion.md) and [author r1](docs/reviews/BRC-RTC-CONVERSION-01-AUTHOR-r1.md). Retain raw widths/ranges, selected callable route, UTC/local basis and host/storage premises; SetTick0 does not imply validated fields or safe formatting. Eleven source blobs, six primary descriptions, nineteen conditional rows; no execution. Reviewed/unmerged PR #32 over #31 over #30 is integration-only; owner merge remains pending. Earlier incorporations and Issue #9 **OPEN / NOT MET**, both failed results/grades/evaluated heads remain unchanged. No reader retry or stronger ABI/native/game claim.
+<!-- BRC-RTC-CONVERSION-01 end -->
+
 <!-- BRC-PROBE-IMAGE-01 begin -->
 ## Current probe-image proposal — 2026-10-17
 

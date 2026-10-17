@@ -1,5 +1,11 @@
 # Bloodborne Research Commons
 
+<!-- BRC-RTC-CONVERSION-01 begin -->
+## Current RTC conversion proposal — 2026-10-17
+
+**BRC-RTC-CONVERSION-01 is proposed/unmerged SOURCE_INSPECTED; Independent source [review r1](docs/reviews/BRC-RTC-CONVERSION-01-REVIEW-r1.md) is complete with no actionable finding at `a2007ccfe20c286065a12caaab05cf0d3fd948c3`, tree `86dec37f90b11e38308f95ba31ca61c4b6bf3ec7`. Root accepts the conditional SOURCE_INSPECTED contract for one unmerged reference/editorial PR only; owner editorial acceptance/merge pending. No candidate repair or affected recheck required. [Final author integration r2](docs/reviews/BRC-RTC-CONVERSION-01-AUTHOR-r2.md).** [Dossier](knowledge/rtc-conversion.md), [RC-0048](claims/RC-0048-rtc-calendar-range.md), [RC-0049](claims/RC-0049-rtc-local-result.md), [frontier](frontiers/rtc-conversion.md), [author r1](docs/reviews/BRC-RTC-CONVERSION-01-AUTHOR-r1.md). Calendar maintainer route: distinguish validated date fields from unrestricted raw ticks, lossy/wrapping Unix conversion, offset lookup from an inverse and formatted-output premises. Eleven pinned source blobs, six separate primary descriptions and nineteen conditional source/model rows; zero executed cases. Reviewed/unmerged probe-image PR #32 over #31 over #30 is an integration-only predecessor. Incorporated main and first five Batch04 incorporations remain unchanged. Issue #9 stays **OPEN / NOT MET**, all failed records/evaluated heads preserved; no reader retry or runtime/game/ABI qualification. Current status precedes retained historical text below.
+<!-- BRC-RTC-CONVERSION-01 end -->
+
 <!-- BRC-PROBE-IMAGE-01 begin -->
 ## Current probe-image proposal — 2026-10-17
 
