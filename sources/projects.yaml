@@ -676,6 +676,39 @@ projects:
         - https://gcc.gnu.org/onlinedocs/gcc/x86-Attributes.html
         - https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf
     # BRC-RTC-CONVERSION-01 end
+    # BRC-STATIC-GUARD-01 begin
+    static_guard_checked_on: 2026-10-17
+    static_guard_status: Proposed/unmerged SOURCE_INSPECTED BRC-STATIC-GUARD-01 Issue24; independent source review r1 complete with no actionable finding at 9448a0f9302235d63bc0828ae9eac7600e985a07 tree e2aae6c2b4330127cdd8323b451ad2be97a02cd4; root accepts the conditional source contract for one unmerged reference/editorial PR only; owner editorial acceptance/merge pending; no candidate repair or affected recheck required; reviewed/unmerged RTC PR33 over32/31/30 integration-only not corroboration; prior root reference acceptance not owner acceptance; incorporated history and Issue9 OPEN NOTMET preserved
+    static_guard_dossier: knowledge/static-guard.md
+    static_guard_claims: [RC-0050, RC-0051]
+    static_guard_frontier: frontiers/static-guard.md
+    static_guard_author_r1: docs/reviews/BRC-STATIC-GUARD-01-AUTHOR-r1.md
+    static_guard_review_r1: docs/reviews/BRC-STATIC-GUARD-01-REVIEW-r1.md
+    static_guard_review_r1_sha256: e21433f1e91e413a01a307ae458977706e7e94089e8ba34eb48852f10d6ef56e
+    static_guard_delivery_r2: docs/reviews/BRC-STATIC-GUARD-01-AUTHOR-r2.md
+    static_guard_scope: Twelve exact public source blobs/selected bounds, four separately qualified primary descriptions and sixteen conditional scalar source/model rows; zero executed cases. Zero-CAS, bit0, nonzero unique owner premises and finite tag wrap/reuse, abort low32 retention, caller initializer responsibility, conditional release/acquire publication and unqualified compiler fast path. Public test caller/assertion source is not execution or atomic layout proof. KNOWLEDGE_REFERENCE only; no source import/build/compiler/assembly oracle/native/runtime/game/ABI/usability qualification; original source/licensing/frozen failures unchanged.
+    static_guard_source_bounds:
+      - 'src/runtime.c: 18-21, 70-90, 146-174, 198-222, 259-282'
+      - 'src/runtime.h: 1-18'
+      - 'src/import_names.inc: 1-13; complete selected-name/NID search'
+      - 'src/probe.c: 528-542'
+      - 'gpu/shim/bbgpu.cpp: 305-321'
+      - 'tests/test_runtime.c: 1-20, 112-121, 395-424'
+      - 'tests/test_runtime.py: 1-44 complete'
+      - 'scripts/prepare.py: 198-219 read only'
+      - 'build.sh: 1-23, 73-99 read only'
+      - 'README.md: 394-402 reused license receipt'
+      - 'LICENSE: 1-8 reused license receipt'
+      - 'gpu/VENDOR.txt: 1-5 reused lineage receipt'
+    static_guard_primary_descriptions:
+      checked_on: 2026-10-17
+      scope: Mutable Itanium C++ ABI sections2.8/3.3.3 comparative only, WG14 N1570 C11 draft2011-04-12, GCC x86 sysv_abi and Linux man-pages sched_yield6.19 dated2026-02-08 rendered2026-09-09. Exact bytes not frozen; no installed compiler/atomic layout/lock freedom/scheduler or console ABI qualification.
+      urls:
+        - https://itanium-cxx-abi.github.io/cxx-abi/abi.html#once-ctor
+        - https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf
+        - https://gcc.gnu.org/onlinedocs/gcc/x86-Attributes.html
+        - https://man7.org/linux/man-pages/man2/sched_yield.2.html
+    # BRC-STATIC-GUARD-01 end
   - id: shadps4
     repo: https://github.com/shadps4-emu/shadPS4
     research_commit: e0a466753a1aacbc8db8253be685bf7ab4d9daae
