@@ -644,11 +644,14 @@ projects:
     # BRC-PROBE-IMAGE-01 end
     # BRC-RTC-CONVERSION-01 begin
     rtc_conversion_checked_on: 2026-10-17
-    rtc_conversion_status: Proposed/unmerged SOURCE_INSPECTED BRC-RTC-CONVERSION-01 Issue24; independent review and root acceptance pending, owner editorial acceptance/merge pending; reviewed/unmerged PR32 over31 over30 integration-only, no corroboration or inherited merge authority; incorporated main and first five Batch04 incorporations unchanged; Issue9 OPEN NOTMET preserved
+    rtc_conversion_status: Proposed/unmerged SOURCE_INSPECTED BRC-RTC-CONVERSION-01 Issue24; independent source review r1 complete with no actionable finding at a2007ccfe20c286065a12caaab05cf0d3fd948c3 tree 86dec37f90b11e38308f95ba31ca61c4b6bf3ec7; root accepts the conditional source contract for one unmerged reference/editorial PR only, owner editorial acceptance/merge pending; no candidate repair or affected recheck required; reviewed/unmerged PR32 over31 over30 integration-only, no corroboration or inherited merge authority; incorporated main and first five Batch04 incorporations unchanged; Issue9 OPEN NOTMET preserved
     rtc_conversion_dossier: knowledge/rtc-conversion.md
     rtc_conversion_claims: [RC-0048, RC-0049]
     rtc_conversion_frontier: frontiers/rtc-conversion.md
     rtc_conversion_author_r1: docs/reviews/BRC-RTC-CONVERSION-01-AUTHOR-r1.md
+    rtc_conversion_review_r1: docs/reviews/BRC-RTC-CONVERSION-01-REVIEW-r1.md
+    rtc_conversion_review_r1_sha256: 91683586fac04480dea1f5bbde1c5f094ed16cb6ae6bef3db129bb9031c6fcb2
+    rtc_conversion_delivery_r2: docs/reviews/BRC-RTC-CONVERSION-01-AUTHOR-r2.md
     rtc_conversion_scope: Eleven exact public source blobs/selected bounds, six separately qualified primary descriptions, nineteen original conditional source/model rows and zero executed fixtures. Validated calendar fields versus raw tick/year narrowing, Unix clamp/fraction/scaling, exact callable route/ABI limits, host realtime network alias, offset lookup versus inverse, formatter index/capacity/native-promoted-type and output lifetime/error phases. KNOWLEDGE_REFERENCE only; no source import or upstream execution/build, calendar/date/timezone/compiler oracle, native/runtime/device/UI/game/save inputs or fixtures, installed host/ABI/RFC fidelity/usability qualification. Prior pins/licenses, frozen evidence and failed Issue9 evaluations unchanged.
     rtc_conversion_source_bounds:
       - 'src/runtime_rtc.c: 1-151 complete'
