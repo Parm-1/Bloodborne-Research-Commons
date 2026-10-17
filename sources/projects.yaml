@@ -76,6 +76,44 @@ projects:
     commit_date_utc: 2026-10-10T22:57:36Z
     research_use: tools/re/callgraph.py (RC-0003 plus correspondence extension, RC-0012 and RC-0013); description of a separate runtime and shadPS4-derived renderer (frontier); proposed BUFFER_LOAD_DWORD source trace (RC-0014, RC-0015 and knowledge/buffer-load-dword-translation.md); proposed shader pipeline cache applicability source inspection (RC-0016, RC-0017 and knowledge/shader-pipeline-cache-applicability.md); source-reviewed import-resolution study (RC-0018, RC-0019 and knowledge/import-resolution.md)
     disclaimer: Source lineage and forks are not independent confirmations. The earlier scope read only the cited script, README, LICENSE and gpu/VENDOR.txt. The separately dated shader, cache and import extensions below read bounded source; no intended-ISA, runtime, cache-selection or game correctness is established.
+    # BRC-NET-MODULE-01 begin
+    net_module_checked_on: 2026-10-17
+    net_module_status: Proposed/unmerged SOURCE_INSPECTED BRC-NET-MODULE-01 Issue24; fresh uninvolved independent source review, root acceptance and owner editorial acceptance/merge pending; reviewed/unmerged pthread once PR40 over39/38/37/36/35/34/33/32/31/30 integration-only not corroboration; Issue9 OPEN NOTMET; current proposal ahead of preserved chronology
+    net_module_dossier: knowledge/net-module.md
+    net_module_claims: [RC-0064, RC-0065]
+    net_module_frontier: frontiers/net-module.md
+    net_module_author_r1: docs/reviews/BRC-NET-MODULE-01-AUTHOR-r1.md
+    net_module_scope: Nineteen exact public source blobs and selected bounds, five separately qualified primary descriptions, twenty unexecuted conditional source/model rows and zero executed cases. ABI1 host layout and function pointer declarations; tried before load and no ordinary retry, cached successful resolver, first NID-prefix match ignores suffix/type, raw address/count/init0 not service readiness. Selected pre-admission explicit-1 differs from supplied other-module side-effect failure. Shallow g_host strings/callbacks, owned ElfInfo config copies, Configure file and NP RegisterLib side-effect boundaries, unreleased dlopen reference, synchronous reentry and repeated direct-init append/global-state limits. Actual artifact/export origin/config/caller/installed ABI/dependency/order/lifetime unknown. KNOWLEDGE_REFERENCE only; prior import/thread scopes unchanged; no source import/build/execution, fixture/serialized/native/runtime/network/device/game/usability qualification.
+    net_module_source_bounds:
+      - 'src/runtime_net.c: 1-92'
+      - 'gpu/bbnet/bbnet.h: 1-40'
+      - 'gpu/bbnet/bbnet_glue.cpp: 1-69, 280-288, 404-515'
+      - 'gpu/bbnet/include/core/libraries/libs.h: 1-22'
+      - 'gpu/bbnet/include/core/emulator_settings.h: 14-18, 78-93'
+      - 'gpu/shadps4/common/elf_info.h: 63-79, 102-119, 145-159'
+      - 'src/runtime_thread.c: 1-54, 64-109, 220-285, 314-335'
+      - 'src/runtime.h: 1-16, 60-68'
+      - 'src/runtime.c: 70-74, 204-278'
+      - 'src/runtime_services.c: 470-476'
+      - 'src/probe.c: 372-382, 528-542'
+      - 'src/import_names.inc: 145-146, 573'
+      - 'gpu/CMakeLists.txt: 225-242'
+      - 'gpu/bbnet/CMakeLists.txt: 1-38'
+      - 'gpu/bbnet/shadps4/core/libraries/network/net.cpp: 1739-1747, 1949-1951'
+      - 'gpu/bbnet/shadps4/core/libraries/np/np_manager.cpp: 1205-1218'
+      - 'gpu/bbnet/shadps4/core/libraries/np/np_web_api/np_web_api.cpp: 869-872'
+      - 'README.md: 394-404'
+      - 'LICENSE: 1-8'
+    net_module_primary_descriptions:
+      checked_on: 2026-10-17
+      scope: Linux man-pages dlopen and dlsym API descriptions, GCC x86 ABI attributes, C++ working-draft vector modifiers and library data race avoidance. Mutable descriptions not frozen; no installed compiler/libc/libstdc++/loader/ABI artifact. OpenGroup2024 dlopen and dlsym fetch403 excluded; cppreference discovery not relied as primary authority; glibc overview not relied API contract.
+      urls:
+        - https://man7.org/linux/man-pages/man3/dlopen.3.html
+        - https://man7.org/linux/man-pages/man3/dlsym.3.html
+        - https://gcc.gnu.org/onlinedocs/gcc/x86-Attributes.html
+        - https://eel.is/c++draft/vector.modifiers
+        - https://eel.is/c++draft/res.on.data.races
+    # BRC-NET-MODULE-01 end
     # BRC-PTHREAD-ONCE-01 begin
     pthread_once_checked_on: 2026-10-17
     pthread_once_status: Proposed/unmerged SOURCE_INSPECTED BRC-PTHREAD-ONCE-01 Issue24; independent source review r1 complete with no actionable finding atfbfe78bfbf50989a31bc07b252ba40f6d7913f78 tree554b6fdcc774eaf853e0851ff9d9e6f03635edd9; root accepts bounded conditional SOURCE_INSPECTED contract for one unmerged reference/editorial PR only; owner editorial acceptance/merge and runtime qualification pending; no candidate repair or affected recheck required; reviewed/unmerged thread key PR39 over38/37/36/35/34/33/32/31/30 integration-only not corroboration; Issue9 OPEN NOTMET; current proposal ahead of preserved chronology

@@ -1,0 +1,18 @@
+# Frontier — Decide whether the optional module contract applies
+
+**2026-10-17 — Proposed/unmerged SOURCE_INSPECTED, BRC-NET-MODULE-01. Fresh uninvolved independent source review, root acceptance and owner editorial acceptance/merge pending.** [Dossier](../knowledge/net-module.md), [RC-0064](../claims/RC-0064-net-module-admission.md), [RC-0065](../claims/RC-0065-net-module-lifetime.md), [author r1](../docs/reviews/BRC-NET-MODULE-01-AUTHOR-r1.md).
+
+Consumer decision: retain KNOWLEDGE_REFERENCE for a fixed, externally serialized loader/module handshake. Defer readiness, reconfiguration, replacement or retirement decisions. The missing controlling premise is an authorized target-owned exact module/caller/configuration/lifetime identity, including its export origins and dependency ABI. An environment flag or returned address does not supply it.
+
+The smallest authorized successor in this package is root pin verification and fresh uninvolved source review, followed by linked ordinary author repair/same-reviewer affected recheck if required. Any later applicability work requires its own target-owned authority and read-only inspection of the actual artifact, entry path/capability/binding, host struct ABI, borrowed storage, configuration writers, initialization order and code/worker/argument ownership. This public record supplies no target permission or input.
+
+Outcome branches:
+
+- Exact compatible artifact/exports/header/default ABI plus valid externally serialized setup and ordinary returning dependencies: retain the conditional first-attempt/cached-resolver/address contract. Keep init, address and service readiness as separate phases with attributable evidence.
+- Missing/mismatched export, rawabi0/2/null callbacks, first-attempt failure, unknown decode or zero result: retain the exact rejection/fallback branch. Do not infer retry, unload or rollback. Distinguish selected init's pre-admission-1 from a different module's supplied post-side-effect nonzero return.
+- Repeated direct init, configuration mutation, callback/context replacement, unsynchronized access or proposed unload: current contract is insufficient. Return concrete ownership/order/generation/drain requirements to the target maintainer; do not invent a reset, reload or shutdown implementation.
+- If service readiness is the actual product question: an init0/address/vector length cannot answer it. First identify the separately authorized service-specific consumer and benign success/failure criterion; no network/HTTP/PSN/authentication/account/traffic experiment is authorized here.
+
+A future separately authorized controlled experiment would have to bind the actual module/dependency/artifact and callback/storage identities at each phase and distinguish a normal positive from wrong-version/null/missing-export/zero-first-match/cached-failure/reentry contraries. These are experiment design requirements, not fixtures, execution instructions or permission. Existing source/model rows remain unexecuted.
+
+Stop rule: stop this author grant at the frozen candidate and root pin-check/review handoff. Do not activate reviewer/descendants, publish, execute/import/build source or tests, load any module, run compiler/loader/pthread/syscall/native/device/UI/service oracle, create fixtures, access real configuration/accounts/private/game data or conduct network service traffic. Stop future applicability at the first absent artifact/owner/storage/order fact and return that dependency. No full Configure/account/network/lifecycle campaign, EventFlag goal, framework or reader retry follows. Preserve all predecessor records and Issue #9 **OPEN / NOT MET**; usage/cost/elapsed unknown unless actually measured.

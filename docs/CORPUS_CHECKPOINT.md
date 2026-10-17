@@ -1,3 +1,9 @@
+<!-- BRC-NET-MODULE-01 begin -->
+## Current optional network module proposal — 2026-10-17
+
+**BRC-NET-MODULE-01 is proposed/unmerged SOURCE_INSPECTED; fresh uninvolved independent source review, root acceptance and owner editorial acceptance/merge pending.** Consumer: module/runtime maintainer separating ABI admission, configuration, address selection, service readiness and lifetime. [Dossier](../knowledge/net-module.md), [RC-0064](../claims/RC-0064-net-module-admission.md), [RC-0065](../claims/RC-0065-net-module-lifetime.md), [frontier](../frontiers/net-module.md), [author r1](reviews/BRC-NET-MODULE-01-AUTHOR-r1.md). Nineteen exact public source blobs/selected bounds, five separately qualified primary descriptions and twenty unexecuted conditional source/model rows; zero executed cases. Tried precedes load/init and permits no ordinary retry; init0 publishes cached resolver, first NID-prefix match ignores suffix/type, address and vector count do not establish readiness. Selected ABI1 plus nonnull callbacks only admits; shallow g_host pointers, separate owned identity, Configure/NP registration side effects, unreleased loader reference and repeat-init append/global-context limits remain explicit. Selected init has only pre-admission explicit-1, distinct from a supplied different module's post-side-effect failure. KNOWLEDGE_REFERENCE only; actual caller/config/artifact/dependency/installed ABI/order/lifetime unknown. No source import/build/execution, fixture/serialized/native/runtime/network/device/game/usability qualification. Existing import/thread scope unchanged; reviewed/unmerged pthread once PR40 over39/38/37/36/35/34/33/32/31/30 is integration-only, not corroboration. Issue #9 **OPEN / NOT MET** and all accepted/pending/frozen/failed/usability history preserved. Current proposal precedes retained chronology.
+<!-- BRC-NET-MODULE-01 end -->
+
 <!-- BRC-PTHREAD-ONCE-01 begin -->
 ## Current pthread once proposal — 2026-10-17
 
