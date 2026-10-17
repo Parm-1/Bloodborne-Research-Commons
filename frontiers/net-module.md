@@ -1,10 +1,10 @@
 # Frontier — Decide whether the optional module contract applies
 
-**2026-10-17 — Proposed/unmerged SOURCE_INSPECTED, BRC-NET-MODULE-01. Fresh uninvolved independent source review, root acceptance and owner editorial acceptance/merge pending.** [Dossier](../knowledge/net-module.md), [RC-0064](../claims/RC-0064-net-module-admission.md), [RC-0065](../claims/RC-0065-net-module-lifetime.md), [author r1](../docs/reviews/BRC-NET-MODULE-01-AUTHOR-r1.md).
+**2026-10-17 — Proposed/unmerged SOURCE_INSPECTED, BRC-NET-MODULE-01. Independent source [review r1](../docs/reviews/BRC-NET-MODULE-01-REVIEW-r1.md) found F1; linked [author repair r2](../docs/reviews/BRC-NET-MODULE-01-AUTHOR-r2.md) corrects creator/worker phases. Same-reviewer affected recheck, root acceptance and owner editorial acceptance/merge pending.** [Dossier](../knowledge/net-module.md), [RC-0064](../claims/RC-0064-net-module-admission.md), [RC-0065](../claims/RC-0065-net-module-lifetime.md), [author r1](../docs/reviews/BRC-NET-MODULE-01-AUTHOR-r1.md).
 
 Consumer decision: retain KNOWLEDGE_REFERENCE for a fixed, externally serialized loader/module handshake. Defer readiness, reconfiguration, replacement or retirement decisions. The missing controlling premise is an authorized target-owned exact module/caller/configuration/lifetime identity, including its export origins and dependency ABI. An environment flag or returned address does not supply it.
 
-The smallest authorized successor in this package is root pin verification and fresh uninvolved source review, followed by linked ordinary author repair/same-reviewer affected recheck if required. Any later applicability work requires its own target-owned authority and read-only inspection of the actual artifact, entry path/capability/binding, host struct ABI, borrowed storage, configuration writers, initialization order and code/worker/argument ownership. This public record supplies no target permission or input.
+The smallest authorized successor in this package is root verification of the linked F1 repair candidate and activation of the same uninvolved reviewer for affected recheck. Root acceptance remains pending; any further ordinary repair stays with this author and that reviewer. Any later applicability work requires its own target-owned authority and read-only inspection of the actual artifact, entry path/capability/binding, host struct ABI, borrowed storage, configuration writers, initialization order and code/worker/argument ownership. This public record supplies no target permission or input.
 
 Outcome branches:
 

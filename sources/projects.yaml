@@ -78,11 +78,14 @@ projects:
     disclaimer: Source lineage and forks are not independent confirmations. The earlier scope read only the cited script, README, LICENSE and gpu/VENDOR.txt. The separately dated shader, cache and import extensions below read bounded source; no intended-ISA, runtime, cache-selection or game correctness is established.
     # BRC-NET-MODULE-01 begin
     net_module_checked_on: 2026-10-17
-    net_module_status: Proposed/unmerged SOURCE_INSPECTED BRC-NET-MODULE-01 Issue24; fresh uninvolved independent source review, root acceptance and owner editorial acceptance/merge pending; reviewed/unmerged pthread once PR40 over39/38/37/36/35/34/33/32/31/30 integration-only not corroboration; Issue9 OPEN NOTMET; current proposal ahead of preserved chronology
+    net_module_status: Proposed/unmerged SOURCE_INSPECTED BRC-NET-MODULE-01 Issue24; independent source review r1 found F1; linked author repair r2 corrects creator/worker phase wording; same-reviewer affected recheck, root acceptance and owner editorial acceptance/merge pending; reviewed/unmerged pthread once PR40 over39/38/37/36/35/34/33/32/31/30 integration-only not corroboration; Issue9 OPEN NOTMET; current proposal ahead of preserved chronology
     net_module_dossier: knowledge/net-module.md
     net_module_claims: [RC-0064, RC-0065]
     net_module_frontier: frontiers/net-module.md
     net_module_author_r1: docs/reviews/BRC-NET-MODULE-01-AUTHOR-r1.md
+    net_module_review_r1: docs/reviews/BRC-NET-MODULE-01-REVIEW-r1.md
+    net_module_review_r1_sha256: 801d4ca97c0b8c6a2e29ff296f3bac4947a38f2ee03f766df8d2d35987c70f71
+    net_module_author_r2: docs/reviews/BRC-NET-MODULE-01-AUTHOR-r2.md
     net_module_scope: Nineteen exact public source blobs and selected bounds, five separately qualified primary descriptions, twenty unexecuted conditional source/model rows and zero executed cases. ABI1 host layout and function pointer declarations; tried before load and no ordinary retry, cached successful resolver, first NID-prefix match ignores suffix/type, raw address/count/init0 not service readiness. Selected pre-admission explicit-1 differs from supplied other-module side-effect failure. Shallow g_host strings/callbacks, owned ElfInfo config copies, Configure file and NP RegisterLib side-effect boundaries, unreleased dlopen reference, synchronous reentry and repeated direct-init append/global-state limits. Actual artifact/export origin/config/caller/installed ABI/dependency/order/lifetime unknown. KNOWLEDGE_REFERENCE only; prior import/thread scopes unchanged; no source import/build/execution, fixture/serialized/native/runtime/network/device/game/usability qualification.
     net_module_source_bounds:
       - 'src/runtime_net.c: 1-92'
