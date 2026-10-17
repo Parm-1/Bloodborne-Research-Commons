@@ -612,11 +612,14 @@ projects:
     # BRC-RWLOCK-01 end
     # BRC-PROBE-IMAGE-01 begin
     probe_image_checked_on: 2026-10-17
-    probe_image_status: Proposed/unmerged SOURCE_INSPECTED BRC-PROBE-IMAGE-01 Issue24; independent review and root acceptance pending; reviewed/unmerged rwlock PR31 over eventqueue PR30 have root conditional reference/editorial delivery acceptance only and are integration-only predecessors, owner editorial acceptance/merge pending; Batch04 PR25-29 incorporated separately, no inherited merge authority
+    probe_image_status: Proposed/unmerged SOURCE_INSPECTED BRC-PROBE-IMAGE-01 Issue24; independent source review r1 complete with no actionable finding at 9ccc22fd86093a05522e23c4b3d9565df33c33ba tree 931fb45edd3a4b6d218a6a18eb8b88b34f2e0b4b; root accepts the conditional source contract for one unmerged reference/editorial PR only, owner editorial acceptance/merge pending; no candidate repair or affected recheck required; reviewed/unmerged rwlock PR31 over eventqueue PR30 have root conditional reference/editorial delivery acceptance only and are integration-only predecessors, owner editorial acceptance/merge pending; Batch04 PR25-29 incorporated separately, no inherited merge authority
     probe_image_dossier: knowledge/probe-image.md
     probe_image_claims: [RC-0046, RC-0047]
     probe_image_frontier: frontiers/probe-image.md
     probe_image_author_r1: docs/reviews/BRC-PROBE-IMAGE-01-AUTHOR-r1.md
+    probe_image_review_r1: docs/reviews/BRC-PROBE-IMAGE-01-REVIEW-r1.md
+    probe_image_review_r1_sha256: 19dfc79ff4ea292db5b1c41555f0509c93322a459beab22c52efceef54b3a35e
+    probe_image_delivery_r2: docs/reviews/BRC-PROBE-IMAGE-01-AUTHOR-r2.md
     probe_image_scope: Ten exact public source blobs/selected bounds, five separately qualified primary descriptions and seventeen conditional source/model categories; supplied Linux x86-64 CPU-only/no-patches/BBPROBE2/no-linked-modules route. Producer completion and partial-output boundary, raw admission, full declared-image read and EOF/error, relocation order and signed fields, backing versus rounded extents, last requested page flags versus any-exec logical entry, pre-entry report and side effects. KNOWLEDGE_REFERENCE only; no source import, actual image/fixture bytes, upstream execution/build, compiler/native/runtime/device/UI/game, installed ABI/host, original fidelity, sandbox or usability qualification. Issue9 OPEN NOTMET and failed evaluations/evaluated heads unchanged.
     probe_image_source_bounds:
       - 'scripts/prepare.py: 19-90, 112-141, 148-215, 233-251'
