@@ -487,6 +487,54 @@ projects:
         - https://man7.org/linux/man-pages/man3/pthread_mutex_lock.3p.html
         - https://gcc.gnu.org/onlinedocs/gcc/x86-Attributes.html
         - https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf
+    videoout_flip_checked_on: 2026-10-16
+    videoout_flip_status: Proposed/unmerged SOURCE_INSPECTED BRC-VIDEOOUT-FLIP-01 Batch04 Issue24; independent source review r1 complete with no actionable defect at 038162129a46c1ecc679a2a72b05a61337751b72 tree2dd486fdf91de249fdc731e7d6a7c8642b772f10; root conditionally accepts bounded reference/editorial contract for one unmerged PR delivery only, owner editorial acceptance/merge pending; no candidate repair or affected recheck required; reviewed/root conditionally accepted open/unmerged AJM PR28 over clock27 over mutex26 over semaphore25 are integration-only predecessors
+    videoout_flip_dossier: knowledge/videoout-flip.md
+    videoout_flip_claims: [RC-0040, RC-0041]
+    videoout_flip_author_r1: docs/reviews/BRC-VIDEOOUT-FLIP-01-AUTHOR-r1.md
+    videoout_flip_review_r1: docs/reviews/BRC-VIDEOOUT-FLIP-01-REVIEW-r1.md
+    videoout_flip_review_r1_sha256: 85b925b19655cb56d536f946631bf6169f86eae7228f6fc2bf5655255d108cd0
+    videoout_flip_delivery_r2: docs/reviews/BRC-VIDEOOUT-FLIP-01-AUTHOR-r2.md
+    videoout_flip_scope: Twenty-nine exact public source blobs/selected bounds, five relied primary descriptions and fourteen conditional source/model cases; active shim and ordinary CPU admission through preparation, request/present/swap workers, covered rendering timeline versus presentation, status/event/previous-label, close and reregister identity. No source import/build/scripts/execution, serialized/native fixture, GPU/device/window/UI/runtime/game, actual race/capture/timing/display or reader/usability result. KNOWLEDGE_REFERENCE only; predecessor bytes and Issue9 OPEN NOTMET unchanged.
+    videoout_flip_source_bounds:
+      - "gpu/shim/bbgpu.cpp: 64–77, 219–225, 265–321: symbol producer, direct clock shims, startup/registration and NID-prefix fallback"
+      - "src/runtime.c: 204–261: resolver precedence and final GPU fallback"
+      - "src/probe.c: 501–514: non-CPU startup condition; no actual caller observation"
+      - "src/import_names.inc: 270–278, 576: named import metadata, not call execution"
+      - "gpu/CMakeLists.txt: 1–6, 113–135, 151–165: C++23, selected compiled bodies, shim include precedence and declared dependencies"
+      - "gpu/shadps4/common/types.h: 9–28: exact integer aliases, address and SysV attribute"
+      - "gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp: 3104–3107: Liverpool and presenter construction only"
+      - "gpu/shim/core/emulator_settings.h: 14–25, 30–55: flag/number parser and scheduling settings"
+      - "gpu/shadps4/core/libraries/videoout/buffer.h: 13–28, 51–72: slot/group capacity and registration structures"
+      - "gpu/shadps4/core/libraries/videoout/video_out.h: 44–119, 121–144: IDs, status types, event aggregate and API declarations"
+      - "gpu/shadps4/core/libraries/videoout/driver.h: 20–68, 81–137: stable main-port storage, labels, request pointers and worker members"
+      - "gpu/shadps4/core/libraries/videoout/video_out.cpp: 21–65, 125–269, 271–359, 374–386, 467–505: selected setup, admission, observation, EOP contrast and registration"
+      - "gpu/shadps4/core/libraries/videoout/driver.cpp: 70–262, 370–377, 721–954: setup/lifecycle, scheduling, status/events/labels and vblank worker; intervening diagnostic bodies excluded"
+      - "gpu/shadps4/video_core/amdgpu/liverpool.h: 153–181: port binding and SendCommand default asynchronous enqueue"
+      - "gpu/shadps4/video_core/amdgpu/liverpool.cpp: 94–125: command worker construction, draw-pipe drain and callback consumption"
+      - "gpu/shadps4/video_core/renderer_vulkan/vk_presenter.h: 30–42, 77–104, 119–134: frame identity, surface registration, presentation and scheduler ownership"
+      - "gpu/shadps4/video_core/renderer_vulkan/vk_presenter.cpp: 128–175, 246–301, 304–785: pool, selected frame preparation, waits, skip/present and frame recycling"
+      - "gpu/shadps4/video_core/renderer_vulkan/vk_scheduler.h: 75–96, 842–851, 974–990: submit signals, submitted-versus-completed and timeline identity"
+      - "gpu/shadps4/video_core/renderer_vulkan/vk_scheduler.cpp: 805–832, 909–1080: flush/wait and synchronous/asynchronous signal submission"
+      - "gpu/shadps4/video_core/renderer_vulkan/vk_semaphore.h: 18–53: logical/current tick, signal increment and timeline storage"
+      - "gpu/shadps4/video_core/renderer_vulkan/vk_semaphore.cpp: 15–81: timeline creation, refresh and wait"
+      - "gpu/shadps4/video_core/renderer_vulkan/vk_swapchain.h: 35–87: presentability, image and semaphore identity"
+      - "gpu/shadps4/video_core/renderer_vulkan/vk_swapchain.cpp: 21–165, 207–237: swapchain creation, acquire/present results and present-mode selection"
+      - "gpu/shadps4/video_core/renderer_vulkan/vk_common.h: 1–20: Vulkan-Hpp no-exceptions/result-assert configuration"
+      - "gpu/shadps4/core/libraries/kernel/equeue.h: 30–139: raw event types, display packing, count and clearing"
+      - "gpu/shadps4/core/libraries/kernel/equeue.cpp: 33–38, 56–123, 167–178, 181–261: lookup, registration, trigger/coalescing and retrieval"
+      - "README.md: 394–404: existing GPL v2-or-later and third-party license declaration reused"
+      - "LICENSE: 1–8: existing GPL version2 text receipt reused"
+      - "gpu/VENDOR.txt: 1–5: existing shadPS4 lineage receipt reused"
+    videoout_flip_primary_descriptions:
+      checked_on: 2026-10-16
+      scope: WG21 N4950 C++23 named working draft selected shift/static-cast/aggregate/bit-field clauses plus four mutable Khronos Vulkan API descriptions; exact documentation bytes not frozen, no installed compiler/Vulkan-Hpp/loader/driver/ABI/device or original-console qualification
+      urls:
+        - https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2023/n4950.pdf
+        - https://docs.vulkan.org/refpages/latest/refpages/source/vkWaitSemaphores.html
+        - https://docs.vulkan.org/refpages/latest/refpages/source/vkQueueSubmit.html
+        - https://docs.vulkan.org/refpages/latest/refpages/source/vkWaitForFences.html
+        - https://docs.vulkan.org/refpages/latest/refpages/source/vkQueuePresentKHR.html
   - id: shadps4
     repo: https://github.com/shadps4-emu/shadPS4
     research_commit: e0a466753a1aacbc8db8253be685bf7ab4d9daae
