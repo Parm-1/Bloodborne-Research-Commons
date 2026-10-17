@@ -743,11 +743,14 @@ projects:
     # BRC-EXIT-HANDLER-01 end
     # BRC-HRTIMER-EVENT-01 begin
     hrtimer_event_checked_on: 2026-10-17
-    hrtimer_event_status: Proposed/unmerged SOURCE_INSPECTED BRC-HRTIMER-EVENT-01 Issue24; independent source review and owner editorial acceptance/merge pending; AvPlayer PR37 over36/35/34/33/32/31/30 integration-only not corroboration; main and all prior history unchanged; Issue9 OPEN NOTMET
+    hrtimer_event_status: Proposed/unmerged SOURCE_INSPECTED BRC-HRTIMER-EVENT-01 Issue24; independent source review r1 complete with no actionable finding at 12e0279456fb0fa5f93bbde0a43ee8a1b916430f tree 1ad1d1c94ba8a801c1031afca2309781776b917a; root accepts bounded conditional SOURCE_INSPECTED contract for one unmerged reference/editorial PR only; owner editorial acceptance/merge pending; no candidate repair or affected recheck required; AvPlayer PR37 over36/35/34/33/32/31/30 integration-only not corroboration; main and all prior history unchanged; Issue9 OPEN NOTMET
     hrtimer_event_dossier: knowledge/hrtimer-event.md
     hrtimer_event_claims: [RC-0058, RC-0059]
     hrtimer_event_frontier: frontiers/hrtimer-event.md
     hrtimer_event_author_r1: docs/reviews/BRC-HRTIMER-EVENT-01-AUTHOR-r1.md
+    hrtimer_event_review_r1: docs/reviews/BRC-HRTIMER-EVENT-01-REVIEW-r1.md
+    hrtimer_event_review_r1_sha256: 0ee03551077a7a9feed1cc340f9f4ece847489a9015e87f031d078735dc3e0f0
+    hrtimer_event_delivery_r2: docs/reviews/BRC-HRTIMER-EVENT-01-AUTHOR-r2.md
     hrtimer_event_scope: Fifteen exact public blobs/selected bounds, nine separately qualified primary descriptions and25 conditional source/model rows; zero executed cases. Signed timespec/bintime arithmetic and threshold versus reconstructed interval; separate small-map raw local-address encoding and vector data publication; poll/null/positive applicability, copied record versus callback return, mixed-map re-add/delete and live-queue queued-success replacement without generation; ordered service request-reset progress countermodel. KNOWLEDGE_REFERENCE only; prior equeue user/T1/L2, clock/sleep and VideoOut scope unchanged. No execution/fixture/runtime/installed ABI/timing precision/device/game/usability qualification or source import/build.
     hrtimer_event_source_bounds:
       - 'gpu/shadps4/core/libraries/kernel/equeue.cpp: 1-320, 323-345, 426-464, 494-619, 654-660, 685-711'
