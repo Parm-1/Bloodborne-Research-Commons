@@ -78,7 +78,7 @@ projects:
     disclaimer: Source lineage and forks are not independent confirmations. The earlier scope read only the cited script, README, LICENSE and gpu/VENDOR.txt. The separately dated shader, cache and import extensions below read bounded source; no intended-ISA, runtime, cache-selection or game correctness is established.
     # BRC-THREAD-KEY-01 begin
     thread_key_checked_on: 2026-10-17
-    thread_key_status: Proposed/unmerged SOURCE_INSPECTED BRC-THREAD-KEY-01 Issue24; independent source review r1 found F1 ambiguous capability predicate; linked author repair r2 specifies mask0x1 bit0 and0x2-versus0x1 gate contrast; same-reviewer affected recheck, root acceptance and owner editorial acceptance/merge pending; HR timer PR38 over37/36/35/34/33/32/31/30 integration-only not corroboration; Issue9 OPEN NOTMET; current proposal ahead of preserved chronology
+    thread_key_status: Proposed/unmerged SOURCE_INSPECTED BRC-THREAD-KEY-01 Issue24; independent source review r1 found F1 ambiguous capability predicate; linked author repair r2 specifies mask0x1 bit0 and0x2-versus0x1 gate contrast; same-reviewer affected recheck r2 resolved F1 with no new affected finding at61e4c5d348bf78b8a9f5ee31639c6277cf356131 treea45950d128e819243dd7108053e57dd5c048c28d; root accepts repaired conditional SOURCE_INSPECTED contract for one unmerged reference/editorial PR only; owner editorial acceptance/merge pending; HR timer PR38 over37/36/35/34/33/32/31/30 integration-only not corroboration; Issue9 OPEN NOTMET; current proposal ahead of preserved chronology
     thread_key_dossier: knowledge/thread-key.md
     thread_key_claims: [RC-0060, RC-0061]
     thread_key_frontier: frontiers/thread-key.md
@@ -86,6 +86,9 @@ projects:
     thread_key_review_r1: docs/reviews/BRC-THREAD-KEY-01-REVIEW-r1.md
     thread_key_review_r1_sha256: 3a52067ae9ad6c04c609e837a9cf43c0877bded32b86686ffe473d91748e2878
     thread_key_repair_r2: docs/reviews/BRC-THREAD-KEY-01-AUTHOR-r2.md
+    thread_key_review_r2: docs/reviews/BRC-THREAD-KEY-01-REVIEW-r2.md
+    thread_key_review_r2_sha256: 7fae25ec32267278d835d383c9d61dd5e5be312f12799667f632744417cc4f5e
+    thread_key_final_r3: docs/reviews/BRC-THREAD-KEY-01-AUTHOR-r3.md
     thread_key_scope: Eleven exact bounded public source blobs, three substantive primary descriptions and23 conditional source/model worked rows; zero executed cases. Global numeric used/destructor registration versus per-host-thread pointer association; create/set/get/delete/reuse, capacity255 and raw SCE versus POSIX errors; clear-before-call, ascending four-round selection/repopulation and same-thread guest-exit cleanup restart; returning calls versus host join versus resource retirement. Actual key caller and installed C11/TLS/SysV/host outcomes unknown. KNOWLEDGE_REFERENCE only; prior thread lifecycle, module TLS and exit-handler scopes unchanged; no fixture/serialized/native/runtime/device/game/usability or complete POSIX qualification, source import or build.
     thread_key_source_bounds:
       - 'src/runtime_kernel.c: 1-26, 245-319'
