@@ -741,6 +741,47 @@ projects:
         - https://gcc.gnu.org/onlinedocs/gcc/x86-Attributes.html
         - https://man7.org/linux/man-pages/man3/pthread_mutex_lock.3p.html
     # BRC-EXIT-HANDLER-01 end
+    # BRC-HRTIMER-EVENT-01 begin
+    hrtimer_event_checked_on: 2026-10-17
+    hrtimer_event_status: Proposed/unmerged SOURCE_INSPECTED BRC-HRTIMER-EVENT-01 Issue24; independent source review r1 complete with no actionable finding at 12e0279456fb0fa5f93bbde0a43ee8a1b916430f tree 1ad1d1c94ba8a801c1031afca2309781776b917a; root accepts bounded conditional SOURCE_INSPECTED contract for one unmerged reference/editorial PR only; owner editorial acceptance/merge pending; no candidate repair or affected recheck required; AvPlayer PR37 over36/35/34/33/32/31/30 integration-only not corroboration; main and all prior history unchanged; Issue9 OPEN NOTMET
+    hrtimer_event_dossier: knowledge/hrtimer-event.md
+    hrtimer_event_claims: [RC-0058, RC-0059]
+    hrtimer_event_frontier: frontiers/hrtimer-event.md
+    hrtimer_event_author_r1: docs/reviews/BRC-HRTIMER-EVENT-01-AUTHOR-r1.md
+    hrtimer_event_review_r1: docs/reviews/BRC-HRTIMER-EVENT-01-REVIEW-r1.md
+    hrtimer_event_review_r1_sha256: 0ee03551077a7a9feed1cc340f9f4ece847489a9015e87f031d078735dc3e0f0
+    hrtimer_event_delivery_r2: docs/reviews/BRC-HRTIMER-EVENT-01-AUTHOR-r2.md
+    hrtimer_event_scope: Fifteen exact public blobs/selected bounds, nine separately qualified primary descriptions and25 conditional source/model rows; zero executed cases. Signed timespec/bintime arithmetic and threshold versus reconstructed interval; separate small-map raw local-address encoding and vector data publication; poll/null/positive applicability, copied record versus callback return, mixed-map re-add/delete and live-queue queued-success replacement without generation; ordered service request-reset progress countermodel. KNOWLEDGE_REFERENCE only; prior equeue user/T1/L2, clock/sleep and VideoOut scope unchanged. No execution/fixture/runtime/installed ABI/timing precision/device/game/usability qualification or source import/build.
+    hrtimer_event_source_bounds:
+      - 'gpu/shadps4/core/libraries/kernel/equeue.cpp: 1-320, 323-345, 426-464, 494-619, 654-660, 685-711'
+      - 'gpu/shadps4/core/libraries/kernel/equeue.h: 1-71, 85-112, 131-200'
+      - 'gpu/shadps4/core/libraries/kernel/time.h: 1-39'
+      - 'gpu/shim/bbgpu.cpp: 1-20, 64-77, 305-321, 346-380'
+      - 'gpu/shim/core/libraries/libs.h: 1-20'
+      - 'src/runtime.c: 70-85, 204-261'
+      - 'src/probe.c: 365-395, 528-542'
+      - 'src/import_names.inc: 1-13; complete selected API-name/NID search'
+      - 'gpu/CMakeLists.txt: 1-8, 113-135, 151-165'
+      - 'gpu/shadps4/common/types.h: 1-28'
+      - 'gpu/shadps4/core/libraries/kernel/orbis_error.h: 1-24, 31, 71'
+      - 'gpu/shadps4/core/libraries/error_codes.h: 1-8'
+      - 'README.md: 394-404; reused license/lineage receipt'
+      - 'LICENSE: 1-8; reused license/lineage receipt'
+      - 'gpu/VENDOR.txt: 1-5; reused license/lineage receipt'
+    hrtimer_event_primary_descriptions:
+      checked_on: 2026-10-17
+      scope: Named WG21 N4950 C++23 draft and Boost1.86 steady_timer relative-constructor async_wait destructor cancel run restart descriptions, plus mutable GCC sysv_abi; exact documentation bytes not frozen. Navigation/initially unavailable URLs and redirect add no descriptions; no installed Boost/compiler/chrono/clock/ABI qualification.
+      urls:
+        - https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2023/n4950.pdf
+        - https://gcc.gnu.org/onlinedocs/gcc/x86-Attributes.html
+        - https://www.boost.org/doc/libs/1_86_0/doc/html/boost_asio/reference/steady_timer.html
+        - https://www.boost.org/doc/libs/1_86_0/doc/html/boost_asio/reference/basic_waitable_timer/basic_waitable_timer/overload6.html
+        - https://www.boost.org/doc/libs/1_86_0/doc/html/boost_asio/reference/basic_waitable_timer/async_wait.html
+        - https://www.boost.org/doc/libs/1_86_0/doc/html/boost_asio/reference/basic_waitable_timer/_basic_waitable_timer.html
+        - https://www.boost.org/doc/libs/1_86_0/doc/html/boost_asio/reference/basic_waitable_timer/cancel/overload1.html
+        - https://www.boost.org/doc/libs/1_86_0/doc/html/boost_asio/reference/io_context/run/overload1.html
+        - https://www.boost.org/doc/libs/1_86_0/doc/html/boost_asio/reference/io_context/restart.html
+    # BRC-HRTIMER-EVENT-01 end
     # BRC-AVPLAYER-FRAME-01 begin
     avplayer_frame_work: BRC-AVPLAYER-FRAME-01
     avplayer_frame_status: Proposed/unmerged SOURCE_INSPECTED; review r1 found F1/F2; linked author repair r2 corrects Stop reachability and raw timestamp applicability; same-reviewer affected recheck r2 resolved F1/F2 with no new actionable finding at 8a6f83cbf053a979fc0af9e17f3f3e6a3b0661c9 tree 36ef3d50cd5a71a9f46c9cbdb677a4ab7082ad0a; root accepts repaired conditional SOURCE_INSPECTED for one unmerged reference/editorial PR only; owner editorial acceptance and merge pending; PR36 over35/34/33/32/31/30 integration-only not corroboration; Issue9 OPEN NOTMET
