@@ -573,6 +573,39 @@ projects:
         - https://www.boost.org/doc/libs/1_85_0/doc/html/boost_asio/reference/basic_waitable_timer/_basic_waitable_timer.html
         - https://www.boost.org/doc/libs/1_85_0/doc/html/boost_asio/reference/basic_waitable_timer/cancel/overload1.html
         - https://www.boost.org/doc/libs/1_85_0/doc/html/boost_asio/reference/basic_waitable_timer/async_wait.html
+    # BRC-RWLOCK-01 begin
+    rwlock_checked_on: 2026-10-17
+    rwlock_status: Proposed/unmerged SOURCE_INSPECTED BRC-RWLOCK-01 Issue24; independent review, root acceptance and owner editorial acceptance/merge pending; eventqueue PR30 reviewed/unmerged root conditional reference delivery is integration-only; Batch04 PR25-29 already incorporated under separate owner authorization, no inherited merge authority
+    rwlock_dossier: knowledge/rwlock.md
+    rwlock_claims: [RC-0044, RC-0045]
+    rwlock_frontier: frontiers/rwlock.md
+    rwlock_author_r1: docs/reviews/BRC-RWLOCK-01-AUTHOR-r1.md
+    rwlock_scope: Ten pinned public source blobs/selected bounds, nine substantive primary API descriptions and sixteen conditional source/model cases; selected init/lazy/read/write/try/timed/unlock/destroy/reinit route, native versus wrapper ownership/pending/retention, result phases, absolute realtime deadline, aliases and generation limits. KNOWLEDGE_REFERENCE only; no source import/build/scripts/producer execution, pthread/syscall/clock/serialized/native fixture/compiler/runtime/device/UI/game/private input, installed ABI/host or reader/usability qualification. Existing evidence and Issue9 OPEN NOTMET preserved.
+    rwlock_source_bounds:
+      - 'src/runtime_rwlock.c: 1-166'
+      - 'src/runtime.h: 1-20, 28-37'
+      - 'src/runtime.c: 70-99, 204-245'
+      - 'src/probe.c: 528-542'
+      - 'src/import_names.inc: 642, 644-650, 746'
+      - 'tests/test_runtime.c: 1-29, 288-423'
+      - 'tests/test_runtime.py: 1-17, 34-44'
+      - 'build.sh: 1-23, 73-82'
+      - 'README.md: 394-404 reused license/lineage receipt'
+      - 'LICENSE: 1-8 reused license receipt'
+    rwlock_primary_descriptions:
+      checked_on: 2026-10-17
+      scope: Reproduced IEEE/Open Group POSIX.1-2017 Issue7 2018 read/tryread, write/trywrite, timedread, timedwrite, unlock, init/destroy, self and equal; mutable GCC x86 sysv_abi description. Exact documentation bytes not frozen; direct Open Group requests403 and wrlock redirect add no substantive contract. Documentation is separate from installed libc/kernel/compiler/ABI/native/runtime qualification.
+      urls:
+        - https://man7.org/linux/man-pages/man3/pthread_rwlock_rdlock.3p.html
+        - https://man7.org/linux/man-pages/man3/pthread_rwlock_trywrlock.3p.html
+        - https://man7.org/linux/man-pages/man3/pthread_rwlock_timedrdlock.3p.html
+        - https://man7.org/linux/man-pages/man3/pthread_rwlock_timedwrlock.3p.html
+        - https://man7.org/linux/man-pages/man3/pthread_rwlock_unlock.3p.html
+        - https://man7.org/linux/man-pages/man3/pthread_rwlock_destroy.3p.html
+        - https://man7.org/linux/man-pages/man3/pthread_self.3p.html
+        - https://man7.org/linux/man-pages/man3/pthread_equal.3p.html
+        - https://gcc.gnu.org/onlinedocs/gcc/x86-Attributes.html
+    # BRC-RWLOCK-01 end
   - id: shadps4
     repo: https://github.com/shadps4-emu/shadPS4
     research_commit: e0a466753a1aacbc8db8253be685bf7ab4d9daae
