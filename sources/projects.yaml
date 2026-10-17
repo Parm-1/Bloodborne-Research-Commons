@@ -610,6 +610,38 @@ projects:
         - https://man7.org/linux/man-pages/man3/pthread_equal.3p.html
         - https://gcc.gnu.org/onlinedocs/gcc/x86-Attributes.html
     # BRC-RWLOCK-01 end
+    # BRC-PROBE-IMAGE-01 begin
+    probe_image_checked_on: 2026-10-17
+    probe_image_status: Proposed/unmerged SOURCE_INSPECTED BRC-PROBE-IMAGE-01 Issue24; independent source review r1 complete with no actionable finding at 9ccc22fd86093a05522e23c4b3d9565df33c33ba tree 931fb45edd3a4b6d218a6a18eb8b88b34f2e0b4b; root accepts the conditional source contract for one unmerged reference/editorial PR only, owner editorial acceptance/merge pending; no candidate repair or affected recheck required; reviewed/unmerged rwlock PR31 over eventqueue PR30 have root conditional reference/editorial delivery acceptance only and are integration-only predecessors, owner editorial acceptance/merge pending; Batch04 PR25-29 incorporated separately, no inherited merge authority
+    probe_image_dossier: knowledge/probe-image.md
+    probe_image_claims: [RC-0046, RC-0047]
+    probe_image_frontier: frontiers/probe-image.md
+    probe_image_author_r1: docs/reviews/BRC-PROBE-IMAGE-01-AUTHOR-r1.md
+    probe_image_review_r1: docs/reviews/BRC-PROBE-IMAGE-01-REVIEW-r1.md
+    probe_image_review_r1_sha256: 19dfc79ff4ea292db5b1c41555f0509c93322a459beab22c52efceef54b3a35e
+    probe_image_delivery_r2: docs/reviews/BRC-PROBE-IMAGE-01-AUTHOR-r2.md
+    probe_image_scope: Ten exact public source blobs/selected bounds, five separately qualified primary descriptions and seventeen conditional source/model categories; supplied Linux x86-64 CPU-only/no-patches/BBPROBE2/no-linked-modules route. Producer completion and partial-output boundary, raw admission, full declared-image read and EOF/error, relocation order and signed fields, backing versus rounded extents, last requested page flags versus any-exec logical entry, pre-entry report and side effects. KNOWLEDGE_REFERENCE only; no source import, actual image/fixture bytes, upstream execution/build, compiler/native/runtime/device/UI/game, installed ABI/host, original fidelity, sandbox or usability qualification. Issue9 OPEN NOTMET and failed evaluations/evaluated heads unchanged.
+    probe_image_source_bounds:
+      - 'scripts/prepare.py: 19-90, 112-141, 148-215, 233-251'
+      - 'src/probe.c: 1-43, 80-114, 271-276, 332-554; 555-589 phase boundary only'
+      - 'src/runtime.c: 70-85, 204-261'
+      - 'src/runtime_memory.c: 35-38, 61-70, 131, 662-677'
+      - 'src/runtime.h: 1-17, 86'
+      - 'gpu/shim/bbgpu.cpp: 305-321, 346-375'
+      - 'build.sh: 1-23, 72-82 read only'
+      - 'README.md: 394-404 reused license receipt'
+      - 'LICENSE: 1-8 reused license receipt'
+      - 'gpu/VENDOR.txt: 1-5 reused lineage receipt'
+    probe_image_primary_descriptions:
+      checked_on: 2026-10-17
+      scope: Mutable Python3.15 struct documentation and Linux man-pages6.19 mmap, mprotect, fread and fgetc descriptions. Documentation bytes not frozen; no installed Python/libc/kernel/compiler/CPU/personality/ABI/host qualification.
+      urls:
+        - https://docs.python.org/3/library/struct.html
+        - https://man7.org/linux/man-pages/man2/mmap.2.html
+        - https://man7.org/linux/man-pages/man2/mprotect.2.html
+        - https://man7.org/linux/man-pages/man3/fread.3.html
+        - https://man7.org/linux/man-pages/man3/fgetc.3.html
+    # BRC-PROBE-IMAGE-01 end
   - id: shadps4
     repo: https://github.com/shadps4-emu/shadPS4
     research_commit: e0a466753a1aacbc8db8253be685bf7ab4d9daae
