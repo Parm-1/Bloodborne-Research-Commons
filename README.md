@@ -1,5 +1,11 @@
 # Bloodborne Research Commons
 
+<!-- BRC-STATIC-GUARD-01 begin -->
+## Current static guard proposal — 2026-10-17
+
+**BRC-STATIC-GUARD-01 is proposed/unmerged SOURCE_INSPECTED; independent review and root acceptance pending; owner editorial acceptance/merge pending.** Consumer: runtime/compiler-adapter maintainer separating acquire responsibility, caller initializer writes, release/abort and later observation of the same guard/object. [Dossier](knowledge/static-guard.md), [RC-0050](claims/RC-0050-static-guard-state.md), [RC-0051](claims/RC-0051-static-guard-publication.md), [frontier](frontiers/static-guard.md), [author r1](docs/reviews/BRC-STATIC-GUARD-01-AUTHOR-r1.md). Twelve pinned source blobs/selected bounds, four separately qualified primary descriptions, sixteen conditional source/model rows, zero executed cases. Zero-only CAS, bit0 completion, distinct nonzero finite owner tags, retained abort low bits and conditional release/acquire visibility; public scalar test callers do not qualify atomic layout or compiler fast paths. Reviewed/unmerged RTC PR #33 over #32/#31/#30 is integration-only, not corroboration; previous root reference/editorial acceptance is not owner acceptance. Incorporated main/first five Batch04 history and Issue #9 **OPEN / NOT MET**, all failed grades/heads/frozen evidence remain unchanged. KNOWLEDGE_REFERENCE only; no source import/build/runtime/compiler/assembly oracle, native/game/ABI/usability qualification or reader retry. Current status precedes preserved historical text.
+<!-- BRC-STATIC-GUARD-01 end -->
+
 <!-- BRC-RTC-CONVERSION-01 begin -->
 ## Current RTC conversion proposal — 2026-10-17
 
