@@ -1,6 +1,6 @@
 # AvPlayer frame frontier — one pixel-reader decision
 
-**2026-10-17 — Proposed/unmerged SOURCE_INSPECTED, BRC-AVPLAYER-FRAME-01, Batch04 [Issue #24](https://github.com/Parm-1/Bloodborne-Research-Commons/issues/24). Independent source review, root acceptance and owner editorial acceptance/merge pending.**
+**2026-10-17 — Proposed/unmerged SOURCE_INSPECTED, BRC-AVPLAYER-FRAME-01, Batch04 [Issue #24](https://github.com/Parm-1/Bloodborne-Research-Commons/issues/24). Independent [review r1](../docs/reviews/BRC-AVPLAYER-FRAME-01-REVIEW-r1.md) found F1/F2; [author repair r2](../docs/reviews/BRC-AVPLAYER-FRAME-01-AUTHOR-r2.md) corrects Stop reachability and raw timestamp applicability. Same-reviewer affected recheck, root acceptance and owner editorial acceptance/merge pending.**
 
 Consumer: media/runtime maintainer selecting a safely owned copy or a separately justified retention/completion mechanism. [Dossier](../knowledge/avplayer-frame.md), [RC-0056](../claims/RC-0056-avplayer-frame-output.md), [RC-0057](../claims/RC-0057-avplayer-frame-lifetime.md), [author r1](../docs/reviews/BRC-AVPLAYER-FRAME-01-AUTHOR-r1.md). Public bbport `3c57da4198ad62039f63f33bfd205b9916518acf`; source-only, KNOWLEDGE_REFERENCE.
 
