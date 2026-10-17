@@ -743,11 +743,14 @@ projects:
     # BRC-EXIT-HANDLER-01 end
     # BRC-MODULE-TLS-01 begin
     module_tls_checked_on: 2026-10-17
-    module_tls_status: Proposed/unmerged SOURCE_INSPECTED BRC-MODULE-TLS-01 Issue24; independent review and root/owner editorial acceptance/merge pending; PR35 over34/33/32/31/30 integration-only not corroboration; main and incorporated history unchanged; Issue9 OPEN NOTMET
+    module_tls_status: Proposed/unmerged SOURCE_INSPECTED BRC-MODULE-TLS-01 Issue24; independent source review r1 complete with no actionable finding at a14832800c80978d6df281157ba80cea1f17ad04 tree d51119b41fa8c3dcc2ef1d65764e85b82ee65354; root accepts the conditional source contract for one unmerged reference/editorial PR only; owner editorial acceptance/merge pending; no candidate repair or affected recheck required; PR35 over34/33/32/31/30 integration-only not corroboration; main and incorporated history unchanged; Issue9 OPEN NOTMET
     module_tls_dossier: knowledge/module-tls.md
     module_tls_claims: [RC-0054, RC-0055]
     module_tls_frontier: frontiers/module-tls.md
     module_tls_author_r1: docs/reviews/BRC-MODULE-TLS-01-AUTHOR-r1.md
+    module_tls_review_r1: docs/reviews/BRC-MODULE-TLS-01-REVIEW-r1.md
+    module_tls_review_r1_sha256: 4955a3a7e9686495b7d790c1e42b25dc2ffcfbb26079721e47402323a20b46ca
+    module_tls_delivery_r2: docs/reviews/BRC-MODULE-TLS-01-AUTHOR-r2.md
     module_tls_scope: Twelve exact public source blobs/selected bounds, two separately qualified primary descriptions and twenty original conditional scalar source/model rows; zero executed cases. Selected linked metadata/setter/current data-ID-offset admission, per-host-thread lazy calloc/template copy, cached mutation, ordered equal-size/shrink/grow/duplicate-ID replacement and thread-exit lifetime. Stable valid config/source/destination/ABI/size/span premises; current gate does not retain allocation extent/generation and grow beyond old one-past has no defined return prediction. KNOWLEDGE_REFERENCE only; full module TLS DEFER/UNKNOWN; no source import/build/execution/fixture/compiler oracle/native/runtime/game/installed ABI/usability qualification; prior pins/licenses/frozen failures unchanged.
     module_tls_source_bounds:
       - 'src/runtime.c: 23–26, 52–68, 70–85, 198–205, 206–228'
