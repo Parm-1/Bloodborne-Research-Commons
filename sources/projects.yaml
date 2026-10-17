@@ -575,13 +575,15 @@ projects:
         - https://www.boost.org/doc/libs/1_85_0/doc/html/boost_asio/reference/basic_waitable_timer/async_wait.html
     # BRC-RWLOCK-01 begin
     rwlock_checked_on: 2026-10-17
-    rwlock_status: Proposed/unmerged SOURCE_INSPECTED BRC-RWLOCK-01 Issue24; independent review r1 requests R1 explicit storage/input/protected-data premise clarification, linked author repair r2 awaits same-reviewer affected recheck; root acceptance and owner editorial acceptance/merge pending; eventqueue PR30 reviewed/unmerged root conditional reference delivery is integration-only; Batch04 PR25-29 already incorporated under separate owner authorization, no inherited merge authority
+    rwlock_status: Proposed/unmerged SOURCE_INSPECTED BRC-RWLOCK-01 Issue24; independent source review and same-reviewer affected recheck complete, R1 resolved at 6eb12b55d538412f71775095a84c8fe9f040a1d1 tree 8f79cf41fe465794e441618ee868907696c9c36f; root conditionally accepts repaired bounded reference/editorial delivery for one unmerged PR only, owner editorial acceptance/merge pending; eventqueue PR30 reviewed/unmerged root conditional reference delivery is integration-only; Batch04 PR25-29 already incorporated under separate owner authorization, no inherited merge authority
     rwlock_dossier: knowledge/rwlock.md
     rwlock_claims: [RC-0044, RC-0045]
     rwlock_frontier: frontiers/rwlock.md
     rwlock_author_r1: docs/reviews/BRC-RWLOCK-01-AUTHOR-r1.md
     rwlock_review_r1: docs/reviews/BRC-RWLOCK-01-REVIEW-r1.md
     rwlock_repair_r2: docs/reviews/BRC-RWLOCK-01-AUTHOR-r2.md
+    rwlock_review_r2: docs/reviews/BRC-RWLOCK-01-REVIEW-r2.md
+    rwlock_delivery_r3: docs/reviews/BRC-RWLOCK-01-AUTHOR-r3.md
     rwlock_scope: Ten pinned public source blobs/selected bounds, nine substantive primary API descriptions and sixteen conditional source/model cases; selected init/lazy/read/write/try/timed/unlock/destroy/reinit route, native versus wrapper ownership/pending/retention, result phases, absolute realtime deadline, aliases and generation limits; R1 explicitly requires disjoint caller/internal slot storage, stable readable accessed attr/deadline bytes without concurrent mutation, and cooperating consumer access/lifetime protocol for protected-data claims. KNOWLEDGE_REFERENCE only; no source import/build/scripts/producer execution, pthread/syscall/clock/serialized/native fixture/compiler/runtime/device/UI/game/private input, installed ABI/host or reader/usability qualification. Existing evidence and Issue9 OPEN NOTMET preserved.
     rwlock_source_bounds:
       - 'src/runtime_rwlock.c: 1-166'
