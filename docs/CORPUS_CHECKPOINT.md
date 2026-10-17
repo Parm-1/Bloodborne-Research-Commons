@@ -1,3 +1,9 @@
+<!-- BRC-AVPLAYER-FRAME-01 begin -->
+## Current AvPlayer frame proposal — 2026-10-17
+
+**BRC-AVPLAYER-FRAME-01 is proposed/unmerged SOURCE_INSPECTED; independent source review, root acceptance and owner editorial acceptance/merge pending.** Consumer: media/runtime maintainer deciding returned video pointer ownership and the reader endpoint required before recycle/free. [Dossier](../knowledge/avplayer-frame.md), [RC-0056](../claims/RC-0056-avplayer-frame-output.md), [RC-0057](../claims/RC-0057-avplayer-frame-lifetime.md), [frontier](../frontiers/avplayer-frame.md), [author r1](reviews/BRC-AVPLAYER-FRAME-01-AUTHOR-r1.md). Twenty-one exact public source blobs/selected bounds, five substantive primary descriptions and 23 original conditional scalar source/model rows; zero executed cases. Metadata is copied, pixels remain in callback storage; next success recycles old current before return, false admission retains only under ordered same-source premises, Stop/destruction can free it. Shared source locks and unlocked queue observations do not establish producer/getter/lifecycle serialization. Width/pitch/capacity/stride, pointer/content generation and covered joins/external readers stay distinct. KNOWLEDGE_REFERENCE only; no fixture/media/decoder/native/runtime/GPU/device/game/playback/usability qualification. Reviewed/unmerged TLS PR #36 over #35/#34/#33/#32/#31/#30 is integration-only, not corroboration; Issue #9 **OPEN / NOT MET** and all accepted/pending/frozen/failed history preserved. Current proposal precedes preserved history.
+<!-- BRC-AVPLAYER-FRAME-01 end -->
+
 <!-- BRC-MODULE-TLS-01 begin -->
 ## Current module TLS proposal — 2026-10-17
 
