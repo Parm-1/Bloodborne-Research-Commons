@@ -741,6 +741,52 @@ projects:
         - https://gcc.gnu.org/onlinedocs/gcc/x86-Attributes.html
         - https://man7.org/linux/man-pages/man3/pthread_mutex_lock.3p.html
     # BRC-EXIT-HANDLER-01 end
+    # BRC-AVPLAYER-FRAME-01 begin
+    avplayer_frame_work: BRC-AVPLAYER-FRAME-01
+    avplayer_frame_status: Proposed/unmerged SOURCE_INSPECTED; review r1 found F1/F2; linked author repair r2 corrects Stop reachability and raw timestamp applicability; same-reviewer affected recheck r2 resolved F1/F2 with no new actionable finding at 8a6f83cbf053a979fc0af9e17f3f3e6a3b0661c9 tree 36ef3d50cd5a71a9f46c9cbdb677a4ab7082ad0a; root accepts repaired conditional SOURCE_INSPECTED for one unmerged reference/editorial PR only; owner editorial acceptance and merge pending; PR36 over35/34/33/32/31/30 integration-only not corroboration; Issue9 OPEN NOTMET
+    avplayer_frame_dossier: knowledge/avplayer-frame.md
+    avplayer_frame_claims:
+      - claims/RC-0056-avplayer-frame-output.md
+      - claims/RC-0057-avplayer-frame-lifetime.md
+    avplayer_frame_frontier: frontiers/avplayer-frame.md
+    avplayer_frame_author_r1: docs/reviews/BRC-AVPLAYER-FRAME-01-AUTHOR-r1.md
+    avplayer_frame_review_r1: docs/reviews/BRC-AVPLAYER-FRAME-01-REVIEW-r1.md
+    avplayer_frame_author_r2: docs/reviews/BRC-AVPLAYER-FRAME-01-AUTHOR-r2.md
+    avplayer_frame_review_r2: docs/reviews/BRC-AVPLAYER-FRAME-01-REVIEW-r2.md
+    avplayer_frame_delivery_r3: docs/reviews/BRC-AVPLAYER-FRAME-01-AUTHOR-r3.md
+    avplayer_frame_scope: Twenty-one exact public source blobs/selected bounds, six separately qualified primary descriptions, adding only the decisive FFmpeg7.1 rescale API description and 23 original conditional scalar source/model rows; zero executed cases. Selected registration/ABI/callback allocation/decode-copy-enqueue/getter gates/metadata/current recycle/Stop/destruction; actual ordering and valid allocation/extent/stride/decoded-frame premises supplied, not demonstrated. KNOWLEDGE_REFERENCE only; no source import/build/upstream execution/fixture/media/decoder/compiler/pthread/native/syscall/runtime/GPU/device/game/playback/usability qualification; earlier pins/licenses/frozen history unchanged.
+    avplayer_frame_source_bounds:
+      - 'gpu/shim/bbgpu.cpp: 64-77,117-119,306-321 blob d71cfc41a9e532ff1c0e30ccc9073d24726315d3'
+      - 'gpu/shim/core/libraries/libs.h: 1-20 blob 033c32a857fbe02b7dd147acc69396e4e887996d'
+      - 'gpu/CMakeLists.txt: 122-135,155-165 blob bcb0671aa67883d7b6fbadf8267e1fb6ce8c442a'
+      - 'gpu/shadps4/common/types.h: 9-28 blob c2b7bd35ea2767287a80b84dc756394c72a7af03'
+      - 'gpu/shadps4/common/alignment.h: 1-17 blob 22c339036ff158fbbb7b5f3a05c43a4c16e04a9f'
+      - 'gpu/shadps4/common/assert.h: 14-37 blob 63bd1257e5f0a635b9d3fbe1fbd52914c3e9be63'
+      - 'gpu/shadps4/core/libraries/avplayer/avplayer.cpp: 37-44,87-144,224-238,253-279 blob 63556dbbcfdc00743d84f639c647dbe2dacf8fbd'
+      - 'gpu/shadps4/core/libraries/avplayer/avplayer.h: 15-19,58-63,86-91,110-158,286-289 blob 31378d6a8e7de17893e959f299fb997ae19bf1cb'
+      - 'gpu/shadps4/core/libraries/avplayer/avplayer_impl.cpp: 10-36,74-118,170-217 blob 277f44bbc85924a062082fc987d05eda3fcfcaf2'
+      - 'gpu/shadps4/core/libraries/avplayer/avplayer_impl.h: 15-17,38-57 blob 7153b9f707275e88cb2ba3e0e337d5383d76bc31'
+      - 'gpu/shadps4/core/libraries/avplayer/avplayer_state.cpp: 15-38,73-86,99-153,177-238,281-310,321-376,407-417,421-436,460-472,512-579 blob c81f9e1c6631b9d564654333873c726e107c162d'
+      - 'gpu/shadps4/core/libraries/avplayer/avplayer_state.h: 74-94 blob 8933521a3f63b62526487c3248ddaa77bcd963ec'
+      - 'gpu/shadps4/core/libraries/avplayer/avplayer_source.cpp: 50-59,230-423,465-498,536-608,610-764,881-888 blob ad22920842a323036940d124c42dd5e8eab57e61'
+      - 'gpu/shadps4/core/libraries/avplayer/avplayer_source.h: 43-146,148-168,188-258 blob a835a146dad0bbeef62d402fca10f0052eec9bb2'
+      - 'gpu/shadps4/core/libraries/avplayer/avplayer_common.h: 18-34,56-90 blob 1e5715009fa8d65abe761cbea7df7a1154e87d2b'
+      - 'gpu/shadps4/core/libraries/videodec/video_utils.cpp: 1-47 blob 6854e90614b8f0476e14831a905ebfdd9578b57c'
+      - 'gpu/shim/core/libraries/kernel/threads.h: 1-39 blob b7f36cdc53713df8827b970aa26ddaf14c04e361'
+      - 'gpu/shim/core/memory.h: 1-34 blob 97e8901e101d4540da2bbd117445b8f09ca5b1a4'
+      - 'gpu/VENDOR.txt: 1-10 blob 4a8603c7854cfb254ae105f8f21b34d36a6cf102'
+      - 'README.md: 394-404 blob b7004d7901749ab08dd296ac4f198c230ca19dda'
+      - 'LICENSE: 1-8 blob 9efa6fbc962836e243e20f7f23db062e2c077d28'
+    avplayer_frame_primary_descriptions:
+      urls:
+        - https://ffmpeg.org/doxygen/7.1/structAVFrame.html
+        - https://ffmpeg.org/doxygen/7.1/group__lavc__encdec.html
+        - https://ffmpeg.org/doxygen/7.1/group__lavu__math.html
+        - https://eel.is/c++draft/thread.jthread.mem
+        - https://eel.is/c++draft/intro.races
+        - https://gcc.gnu.org/onlinedocs/gcc/x86-Attributes.html
+      scope: FFmpeg7.1 named API descriptions, including r2 av_rescale_q rational rescale/nearest-rounding description and mutable C++ working draft jthread/races plus GCC sysv_abi descriptions, read2026-10-17; exact bytes not frozen; no installed FFmpeg/compiler/libc/allocator/thread/callback/console ABI qualification; redirect adds no description
+    # BRC-AVPLAYER-FRAME-01 end
     # BRC-MODULE-TLS-01 begin
     module_tls_checked_on: 2026-10-17
     module_tls_status: Proposed/unmerged SOURCE_INSPECTED BRC-MODULE-TLS-01 Issue24; independent source review r1 complete with no actionable finding at a14832800c80978d6df281157ba80cea1f17ad04 tree d51119b41fa8c3dcc2ef1d65764e85b82ee65354; root accepts the conditional source contract for one unmerged reference/editorial PR only; owner editorial acceptance/merge pending; no candidate repair or affected recheck required; PR35 over34/33/32/31/30 integration-only not corroboration; main and incorporated history unchanged; Issue9 OPEN NOTMET
