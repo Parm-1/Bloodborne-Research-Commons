@@ -536,11 +536,14 @@ projects:
         - https://docs.vulkan.org/refpages/latest/refpages/source/vkWaitForFences.html
         - https://docs.vulkan.org/refpages/latest/refpages/source/vkQueuePresentKHR.html
     equeue_wait_checked_on: 2026-10-17
-    equeue_wait_status: Proposed/unmerged SOURCE_INSPECTED BRC-EQUEUE-WAIT-01 Issue24; independent source review, root acceptance and owner editorial acceptance/merge pending; Batch04 PR25-29 incorporated under separate owner authorization; no inherited merge authority
+    equeue_wait_status: Proposed/unmerged SOURCE_INSPECTED BRC-EQUEUE-WAIT-01 Issue24; independent source review r1 complete with no actionable defect at 21793c2253142c2f8fa7256c0bf6b6b5482fd90c tree bc63ec053f649eb6937f38a1e177863388edeab4; root conditionally accepts bounded reference/editorial delivery for one unmerged PR only, owner editorial acceptance/merge pending; no candidate repair or affected recheck required; Batch04 PR25-29 incorporated under separate owner authorization; no inherited merge authority
     equeue_wait_dossier: knowledge/equeue-wait.md
     equeue_wait_claims: [RC-0042, RC-0043]
     equeue_wait_frontier: frontiers/equeue-wait.md
     equeue_wait_author_r1: docs/reviews/BRC-EQUEUE-WAIT-01-AUTHOR-r1.md
+    equeue_wait_review_r1: docs/reviews/BRC-EQUEUE-WAIT-01-REVIEW-r1.md
+    equeue_wait_review_r1_sha256: 6dddf4755f1db1a6142fc3bc060aa36d3dc7e976a8d02279f25db7868abf6528
+    equeue_wait_delivery_r2: docs/reviews/BRC-EQUEUE-WAIT-01-AUTHOR-r2.md
     equeue_wait_scope: Eighteen pinned public source blobs/selected bounds, five primary descriptions and seventeen conditional source/model cases; selected registration/resolver route, ordinary versus edge User trigger/coalescing/copy, duplicate-key flags, capacity/count and output/error/timeout/diagnostic phases, small-timer applicability and raw registry/callback lifetime. No source import/build/scripts/upstream execution, pthread/syscall/clock/timer/Asio/native fixture, runtime/device/UI/game/private input, installed ABI/host qualification or reader retry. KNOWLEDGE_REFERENCE only; existing evidence and Issue9 OPEN NOTMET preserved.
     equeue_wait_source_bounds:
       - 'gpu/shadps4/core/libraries/kernel/equeue.cpp: 1-320, 323-538, 540-711'
