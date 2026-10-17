@@ -1,0 +1,17 @@
+# Frontier — Decide whether a target can rely on once publication
+
+**2026-10-17 — Proposed/unmerged SOURCE_INSPECTED, BRC-PTHREAD-ONCE-01. Independent source review, root acceptance and owner editorial acceptance/merge pending.** [Dossier](../knowledge/pthread-once.md), [RC-0062](../claims/RC-0062-pthread-once-publication.md), [RC-0063](../claims/RC-0063-pthread-once-progress.md), [author r1](../docs/reviews/BRC-PTHREAD-ONCE-01-AUTHOR-r1.md).
+
+Consumer decision: use the conditional source reference for an ordinary one-initialization protocol; defer reliance on automatic retry/progress, opaque ABI compatibility or data retirement. Actual target caller/control/routine/data identity is the missing premise. No target access or experiment is authorized by this public dossier.
+
+The smallest successor is read-only, target-owned applicability inspection: identify an authorized exact artifact/version/platform and actual selected import/call, its mask0x1 eligibility and final binding; identify live signed32-compatible control storage, initialization and all access/reset sites; identify the compatible initializer and the initialized bytes, normal-return paths, readers, post-publication writers and code/data lifetime owner. An import name, prior guard result or numerical1 alone does not supply this route.
+
+Outcome branches:
+
+- Matching non-Windows body, valid access/ABI, initial0, no reset/hidden writer, ordinary returning initializer and reader acquire-load attributable to its release1: retain RC-0062 as a conditional source basis. Any future authorized observation must bind call/control/store/load/data identity and phase, not only success flags.
+- Recursive same-control dependency, nonreturning initializer or valid guest-exit bypass while control survives: reject a progress/retry inference under RC-0063. Return the concrete target dependency and recovery requirement to its owner; no automatic reset or architecture change is granted.
+- Preloaded1, wrong control, different routine on a shared control, raw3, ordinary conflicting access, opaque/wrong-width layout or missing lifetime/binding: the claimed initialization/progress premise is absent. Preserve the contradiction or unknown; do not reinterpret it as success or execute a speculative probe.
+
+If a later owner separately authorizes a controlled fixture, its bounded question should distinguish ordinary normal publication from raw-state impostors and the selected abandonment path, with identity/phase/lifetime receipts and an explicit endpoint/timeout chosen by that owner. It must not treat timeout as proof of universal nontermination, yield counts as fairness, checker expectations as producer evidence, or thread join as once completion. This package supplies no fixture, runtime instructions, input, measured endpoints or target permission.
+
+Stop rule: finish this source candidate and independent review; stop before target access, source execution/build, any initializer/atomic/compiler/assembly/scheduler/pthread/syscall/native oracle, private/game data, publication, architecture/reset change or new authority. Stop target applicability work at the first missing required owner/artifact/storage/order fact and return that precise dependency. Do not reopen unrelated lifecycle/cancellation/unwind campaigns or repeat unchanged receipts. Serialized, native-fixture and game evidence remain absent. Issue #9 stays **OPEN / NOT MET**, with all frozen failures/usability history preserved.
